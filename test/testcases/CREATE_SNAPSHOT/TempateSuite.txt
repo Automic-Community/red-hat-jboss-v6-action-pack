@@ -1,0 +1,33 @@
+*** Settings ***
+Documentation     NOTE:
+...               add note here
+Suite Setup       Suite Setup
+Force Tags        CREATE_SNAPSHOT    _template_
+Test Template     Create Snapshot Template
+Resource          ../../resources/keywords.txt
+
+*** Test Cases ***    PATH     INPUT2    RETURN CODE
+Test Case 1           lorem    ipsum     0
+
+Test Case 2           ipsum    lorem     1
+
+*** Keywords ***
+
+Create Snapshot Template
+    [Arguments]    ${path}    ${input2}    ${returnCode}    ${returnStatus}    ${outVara}
+    Init Action    ${ACTION_CREATE_SNAPSHOT}
+    Action Set    ${PRT_CREATE_SNAPSHOT_SNAPSHOT_MODE}    ${input2}
+    Action Set    ${PRT_CREATE_SNAPSHOT_JBOSS_HOME}    ${input2}
+    Action Set    ${PRT_CREATE_SNAPSHOT_JBOSS_HOST}    ${input2}
+    Action Set    ${PRT_CREATE_SNAPSHOT_JBOSS_PORT}    ${input2}
+    Action Set    ${PRT_CREATE_SNAPSHOT_JBOSS_USERNAME}    ${input2}
+    Action Set    ${PRT_CREATE_SNAPSHOT_JBOSS_PASSWORD}    ${input2}
+    Action Set    ${PRT_CREATE_SNAPSHOT_APP_FILTER_EXCLUDE}    ${input2}
+    Action Set    ${PRT_CREATE_SNAPSHOT_JBOSS_APP_NAME}    ${input2}
+    Action Set    ${PRT_CREATE_SNAPSHOT_JBOSS_HOST_CONTROLLER}    ${input2}
+    Action Set    ${PRT_CREATE_SNAPSHOT_JBOSS_SERVER_NAME}    ${input2}
+    Action Execute
+    Action Report Should Be Found
+    Action Return Code Should Be    ${returnCode}
+    Action Return Status Should Be    ${returnStatus}
+    Action Return Variable Should Be    &UC4RB_OUT_VARA#    ${outVara}

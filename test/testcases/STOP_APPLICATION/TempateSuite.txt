@@ -1,0 +1,32 @@
+*** Settings ***
+Documentation     NOTE:
+...               add note here
+Suite Setup       Suite Setup
+Force Tags        STOP_APPLICATION    _template_
+Test Template     Stop Application Template
+Resource          ../../resources/keywords.txt
+
+*** Test Cases ***    PATH     INPUT2    RETURN CODE
+Test Case 1           lorem    ipsum     0
+
+Test Case 2           ipsum    lorem     1
+
+*** Keywords ***
+
+Stop Application Template
+    [Arguments]    ${path}    ${input2}    ${returnCode}    ${returnStatus}    ${outVara}
+    Init Action    ${ACTION_STOP_APPLICATION}
+    Action Set    ${PRT_STOP_APPLICATION_JBOSS_OPERATING_MODE}    ${input2}
+    Action Set    ${PRT_STOP_APPLICATION_JBOSS_HOME}    ${input2}
+    Action Set    ${PRT_STOP_APPLICATION_JBOSS_HOST}    ${input2}
+    Action Set    ${PRT_STOP_APPLICATION_JBOSS_PORT}    ${input2}
+    Action Set    ${PRT_STOP_APPLICATION_JBOSS_USERNAME}    ${input2}
+    Action Set    ${PRT_STOP_APPLICATION_JBOSS_PASSWORD}    ${input2}
+    Action Set    ${PRT_STOP_APPLICATION_JBOSS_SERVER_GROUPS}    ${input2}
+    Action Set    ${PRT_STOP_APPLICATION_JBOSS_APP_NAME}    ${input2}
+    Action Set    ${PRT_STOP_APPLICATION_JBOSS_FAIL_IF_STOPPED}    ${input2}
+    Action Execute
+    Action Report Should Be Found
+    Action Return Code Should Be    ${returnCode}
+    Action Return Status Should Be    ${returnStatus}
+    Action Return Variable Should Be    &UC4RB_OUT_VARA#    ${outVara}

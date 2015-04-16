@@ -1,0 +1,44 @@
+*** Settings ***
+Documentation     NOTE:
+...               add note here
+Suite Setup       Suite Setup
+Force Tags        CREATE_MQT    _template_
+Test Template     Create Mqt Template
+Resource          ../../resources/keywords.txt
+
+*** Test Cases ***    PATH     INPUT2    RETURN CODE
+Test Case 1           lorem    ipsum     0
+
+Test Case 2           ipsum    lorem     1
+
+*** Keywords ***
+
+Create Mqt Template
+    [Arguments]    ${path}    ${input2}    ${returnCode}    ${returnStatus}    ${outVara}
+    Init Action    ${ACTION_CREATE_MQT}
+    Action Set    ${PRT_CREATE_MQT_JBOSS_HOME}    ${input2}
+    Action Set    ${PRT_CREATE_MQT_JBOSS_HOST}    ${input2}
+    Action Set    ${PRT_CREATE_MQT_JBOSS_PORT}    ${input2}
+    Action Set    ${PRT_CREATE_MQT_JBOSS_USERNAME}    ${input2}
+    Action Set    ${PRT_CREATE_MQT_JBOSS_PASSWORD}    ${input2}
+    Action Set    ${PRT_CREATE_MQT_JBOSS_OPERATING_MODE}    ${input2}
+    Action Set    ${PRT_CREATE_MQT_JBOSS_PROFILE}    ${input2}
+    Action Set    ${PRT_CREATE_MQT_JBOSS_NAME}    ${input2}
+    Action Set    ${PRT_CREATE_MQT_JBOSS_JNDI_NAME}    ${input2}
+    Action Set    ${PRT_CREATE_MQT_JBOSS_MAX_ATTEMPTS}    ${input2}
+    Action Set    ${PRT_CREATE_MQT_JBOSS_RE_DELAY}    ${input2}
+    Action Set    ${PRT_CREATE_MQT_JBOSS_DLA}    ${input2}
+    Action Set    ${PRT_CREATE_MQT_JBOSS_EXPIRY}    ${input2}
+    Action Set    ${PRT_CREATE_MQT_JBOSS_SIZE_MAX}    ${input2}
+    Action Set    ${PRT_CREATE_MQT_JBOSS_SIZE_PAGE}    ${input2}
+    Action Set    ${PRT_CREATE_MQT_JBOSS_SIZE_PAGE_CACHE}    ${input2}
+    Action Set    ${PRT_CREATE_MQT_JBOSS_ADDR_FULL_POLICY}    ${input2}
+    Action Set    ${PRT_CREATE_MQT_JBOSS_REDIS_DELAY}    ${input2}
+    Action Set    ${PRT_CREATE_MQT_JBOSS_TYPE}    ${input2}
+    Action Set    ${PRT_CREATE_MQT_JBOSS_FAIL_EXISTING}    ${input2}
+    Action Set    ${PRT_CREATE_MQT_JBOSS_UPDATE_EXISTING}    ${input2}
+    Action Execute
+    Action Report Should Be Found
+    Action Return Code Should Be    ${returnCode}
+    Action Return Status Should Be    ${returnStatus}
+    Action Return Variable Should Be    &UC4RB_OUT_VARA#    ${outVara}
