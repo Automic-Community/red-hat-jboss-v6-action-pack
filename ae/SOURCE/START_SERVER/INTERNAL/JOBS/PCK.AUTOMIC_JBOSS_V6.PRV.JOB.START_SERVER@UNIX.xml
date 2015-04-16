@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
-<JOBS_UNIX AttrType="UNIX" name="PCK.ITPA_SHARED.PRV.INCLUDE.CONVERT_SLASHES_UNIX_STYLE">
+<JOBS_UNIX AttrType="UNIX" name="PCK.AUTOMIC_JBOSS_V6.PRV.JOB.START_SERVER@UNIX">
 <XHEADER state="1">
 <Title/>
 <ArchiveKey1/>
