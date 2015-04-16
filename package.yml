@@ -1,0 +1,14 @@
+# Package Build Configuration 
+name: PCK.AUTOMIC_JBOSS_V6
+
+source: ae
+  
+# binary object resource mapping will be defined here
+binaries:
+  
+  - object: RESOURCES/LIBS/PCK.AUTOMIC_JBOSS_V6.PRV.STORE
+    resources: 
+      - name: JBOSSV6TOOL.JAR
+        type: BINARY
+        path: tools/jboss-v6-tool/target/jboss-v6-tool.jar
+        version: 1.0.0
