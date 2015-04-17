@@ -159,7 +159,7 @@ if NOT %RC% == 0 (
 ! Need to remove all child processes too.
   taskkill /F /T /PID %PID%
 :ENDIF
-:INCLUDE UC4_SL.JOBI.CHECK_CMDLINE_CMD@WINDOWS
+:INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHECK_CMDLINE_CMD@WINDOWS
 
 &UC4_JBOSS_CLI# --command=^"quit^" | findstr /C:"Failed to connect to the controller" > nul
 if NOT %errorlevel% == 0 (
