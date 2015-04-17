@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
-<JOBP AllowExternal="1" name="PCK.AUTOMIC_JBOSS_V6.PRV.ACTION.RB_STOP_APPLICATION">
+<JOBP AllowExternal="1" name="PCK.AUTOMIC_JBOSS_V6.PRV.ACTION.ROLLBACK_START_APPLICATION">
 <XHEADER state="1">
 <Title/>
 <ArchiveKey1/>
@@ -61,16 +61,16 @@
 </PostCon>
 </postconditions>
 </task>
-<task Alias="START_APP" BranchType="0" Col="2" Lnr="2" OType="JOBP" Object="PCK.AUTOMIC_JBOSS_V6.PUB.ACTION.START_APPLICATION" ParentAlias="" ParentObject="" Row="1" Text2="">
+<task Alias="STOP_APP" BranchType="0" Col="2" Lnr="2" OType="JOBP" Object="PCK.AUTOMIC_JBOSS_V6.PUB.ACTION.STOP_APPLICATION" ParentAlias="" ParentObject="" Row="1" Text2="">
 <checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
-<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="0" WElseS="1" WElseX="0" WhenExecute="" WtimOn="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
 <preconditions>
 <PreCon>
 <conditions id="CONDITIONS">
 <condition active="1" id="USER DEFINED" once="0" type="C" uiinfo="">
 <params>
-<param altview="0" name="XC_P01" type="V" value="&amp;UC4RB_JBOSS_APPLN_STOPPED#"/>
+<param altview="0" name="XC_P01" type="V" value="&amp;UC4RB_JBOSS_APPLN_STARTED#"/>
 <param altview="0" name="XC_P02" type="V" value="="/>
 <param altview="0" name="XC_P03" type="V" value="TRUE"/>
 </params>
@@ -82,7 +82,7 @@
 <else active="1" id="USER DEFINED" once="0" type="E" uiinfo="">
 <action active="1" id="SKIP TASK" once="0" type="A" uiinfo="">
 <params>
-<param altview="0" name="XC_P01" type="V" value="Rollback is not neccessary"/>
+<param altview="0" name="XC_P01" type="V" value="Rollback not available"/>
 </params>
 </action>
 </else>
@@ -100,7 +100,7 @@
 <node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_JBOSS_APPLN_STARTED#" Value="FALSE"/>
+<row Mod="0" Name="&amp;UC4RB_JBOSS_APPLN_STOPPED#" Value="FALSE"/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -113,18 +113,18 @@
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
 <node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
-<node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_APPLICATION" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_APPLICATION" parent="PRPTS" type="PROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_APPLICATION">
-<PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_APPLICATION">
-<UC4RB_JBOSS_APP_NAMEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_APP_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_APPLICATION">&amp;UC4RB_JBOSS_APP_NAME#</UC4RB_JBOSS_APP_NAMEs.00>
-<UC4RB_JBOSS_FAIL_IF_RUNNINGs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_IF_RUNNING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_APPLICATION">NO</UC4RB_JBOSS_FAIL_IF_RUNNINGs.00>
-<UC4RB_JBOSS_HOMEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_APPLICATION">&amp;UC4RB_JBOSS_HOME#</UC4RB_JBOSS_HOMEs.00>
-<UC4RB_JBOSS_HOSTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_APPLICATION">&amp;UC4RB_JBOSS_HOST#</UC4RB_JBOSS_HOSTs.00>
-<UC4RB_JBOSS_OPERATING_MODEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_OPERATING_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_APPLICATION">&amp;UC4RB_JBOSS_OPERATING_MODE#</UC4RB_JBOSS_OPERATING_MODEs.00>
-<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_APPLICATION">&amp;UC4RB_JBOSS_PASSWORD#</UC4RB_JBOSS_PASSWORDs.00>
-<UC4RB_JBOSS_PORTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_APPLICATION">&amp;UC4RB_JBOSS_PORT#</UC4RB_JBOSS_PORTs.00>
-<UC4RB_JBOSS_SERVER_GROUPSs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_GROUPS#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_APPLICATION">&amp;UC4RB_JBOSS_SERVER_GROUPS#</UC4RB_JBOSS_SERVER_GROUPSs.00>
-<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_APPLICATION">&amp;UC4RB_JBOSS_USERNAME#</UC4RB_JBOSS_USERNAMEs.00>
+<node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_APPLICATION" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_APPLICATION" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_APPLICATION">
+<PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_APPLICATION">
+<UC4RB_JBOSS_APP_NAMEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_APP_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_APPLICATION">&amp;UC4RB_JBOSS_APP_NAME#</UC4RB_JBOSS_APP_NAMEs.00>
+<UC4RB_JBOSS_FAIL_IF_STOPPEDs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_IF_STOPPED#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_APPLICATION">NO</UC4RB_JBOSS_FAIL_IF_STOPPEDs.00>
+<UC4RB_JBOSS_HOMEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_APPLICATION">&amp;UC4RB_JBOSS_HOME#</UC4RB_JBOSS_HOMEs.00>
+<UC4RB_JBOSS_HOSTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_APPLICATION">&amp;UC4RB_JBOSS_HOST#</UC4RB_JBOSS_HOSTs.00>
+<UC4RB_JBOSS_OPERATING_MODEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_OPERATING_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_APPLICATION">&amp;UC4RB_JBOSS_OPERATING_MODE#</UC4RB_JBOSS_OPERATING_MODEs.00>
+<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_APPLICATION">&amp;UC4RB_JBOSS_PASSWORD#</UC4RB_JBOSS_PASSWORDs.00>
+<UC4RB_JBOSS_PORTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_APPLICATION">&amp;UC4RB_JBOSS_PORT#</UC4RB_JBOSS_PORTs.00>
+<UC4RB_JBOSS_SERVER_GROUPSs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_GROUPS#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_APPLICATION">&amp;UC4RB_JBOSS_SERVER_GROUPS#</UC4RB_JBOSS_SERVER_GROUPSs.00>
+<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_APPLICATION">&amp;UC4RB_JBOSS_USERNAME#</UC4RB_JBOSS_USERNAMEs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>

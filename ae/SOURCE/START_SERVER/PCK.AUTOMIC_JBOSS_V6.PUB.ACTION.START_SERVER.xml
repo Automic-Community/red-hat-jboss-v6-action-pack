@@ -382,7 +382,7 @@
 <ROLLBACK state="1">
 <RollbackFlag>1</RollbackFlag>
 <CBackupObj/>
-<CRollbackObj>PCK.AUTOMIC_JBOSS_V6.PRV.ACTION.RB_START_SERVER</CRollbackObj>
+<CRollbackObj>PCK.AUTOMIC_JBOSS_V6.PRV.ACTION.ROLLBACK_START_SERVER</CRollbackObj>
 <FBackupPath/>
 <FDeleteBefore>0</FDeleteBefore>
 <FInclSubDirs>0</FInclSubDirs>

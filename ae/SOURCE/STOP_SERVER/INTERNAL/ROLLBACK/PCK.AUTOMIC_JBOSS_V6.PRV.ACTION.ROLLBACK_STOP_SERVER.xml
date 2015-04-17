@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
-<JOBP AllowExternal="1" name="PCK.AUTOMIC_JBOSS_V6.PRV.ACTION.RB_UNDEPLOY_APPLICATION">
+<JOBP AllowExternal="1" name="PCK.AUTOMIC_JBOSS_V6.PRV.ACTION.ROLLBACK_STOP_SERVER">
 <XHEADER state="1">
-<Title>JBoss V6 Rollback Undeploy Application</Title>
+<Title/>
 <ArchiveKey1/>
 <ArchiveKey2/>
 <Active>1</Active>
@@ -61,8 +61,8 @@
 </PostCon>
 </postconditions>
 </task>
-<task Alias="GET_BK.UP_PKG" BranchType="0" Col="2" Lnr="2" OType="JOBS" Object="PCK.AUTOMIC_JBOSS_V6.PRV.JOB.ROLLBACK_UNDEPLOY_APPLICATION@WINDOWS" ParentAlias="" ParentObject="" Row="1" Text2="">
-<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<task Alias="" BranchType="0" Col="2" Lnr="2" OType="JOBS" Object="PCK.AUTOMIC_JBOSS_V6.PRV.JOB.ROLLBACK_STOP_SERVER@WINDOWS" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
 <when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
 <preconditions>
@@ -70,7 +70,7 @@
 <conditions id="CONDITIONS">
 <condition active="1" id="USER DEFINED" once="0" type="C" uiinfo="">
 <params>
-<param altview="0" name="XC_P01" type="V" value="&amp;UC4RB_JBOSS_APPLN_UNDEPLOYED#"/>
+<param altview="0" name="XC_P01" type="V" value="&amp;UC4RB_JBOSS_SERVER_STOPPED#"/>
 <param altview="0" name="XC_P02" type="V" value="="/>
 <param altview="0" name="XC_P03" type="V" value="TRUE"/>
 </params>
@@ -82,7 +82,7 @@
 <else active="1" id="USER DEFINED" once="0" type="E" uiinfo="">
 <action active="1" id="SKIP TASK" once="0" type="A" uiinfo="">
 <params>
-<param altview="0" name="XC_P01" type="V" value="Application has not been undeployed"/>
+<param altview="0" name="XC_P01" type="V" value="Server(s) have not been stopped"/>
 </params>
 </action>
 </else>
@@ -105,10 +105,7 @@
 </node>
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
-<Values>
-<row Mod="0" Name="&amp;UC4RB_BACKUP_REPORT1#" Value="&amp;UC4RB_BACKUP_REPORT#"/>
-<row Mod="0" Name="&amp;UC4RB_JBOSS_APPLICATION_STATE#" Value=""/>
-</Values>
+<Values/>
 <Mode>0</Mode>
 </VALUE>
 </node>
@@ -124,8 +121,8 @@
 </PostCon>
 </postconditions>
 </task>
-<task Alias="GET_BK.UP_PKG" BranchType="0" Col="2" Lnr="3" OType="JOBS" Object="PCK.AUTOMIC_JBOSS_V6.PRV.JOB.ROLLBACK_UNDEPLOY_APPLICATION@UNIX" ParentAlias="" ParentObject="" Row="3" Text2="">
-<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<task Alias="" BranchType="0" Col="2" Lnr="3" OType="JOBS" Object="PCK.AUTOMIC_JBOSS_V6.PRV.JOB.ROLLBACK_STOP_SERVER@UNIX" ParentAlias="" ParentObject="" Row="3" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
 <when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
 <preconditions>
@@ -133,7 +130,7 @@
 <conditions id="CONDITIONS">
 <condition active="1" id="USER DEFINED" once="0" type="C" uiinfo="">
 <params>
-<param altview="0" name="XC_P01" type="V" value="&amp;UC4RB_JBOSS_APPLN_UNDEPLOYED#"/>
+<param altview="0" name="XC_P01" type="V" value="&amp;UC4RB_JBOSS_SERVER_STOPPED#"/>
 <param altview="0" name="XC_P02" type="V" value="="/>
 <param altview="0" name="XC_P03" type="V" value="TRUE"/>
 </params>
@@ -145,7 +142,7 @@
 <else active="1" id="USER DEFINED" once="0" type="E" uiinfo="">
 <action active="1" id="SKIP TASK" once="0" type="A" uiinfo="">
 <params>
-<param altview="0" name="XC_P01" type="V" value="Application has not been undeployed"/>
+<param altview="0" name="XC_P01" type="V" value="Server(s) have not been stopped"/>
 </params>
 </action>
 </else>
@@ -168,10 +165,7 @@
 </node>
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
-<Values>
-<row Mod="0" Name="&amp;UC4RB_BACKUP_REPORT1#" Value="&amp;UC4RB_BACKUP_REPORT#"/>
-<row Mod="0" Name="&amp;UC4RB_JBOSS_APPLICATION_STATE#" Value=""/>
-</Values>
+<Values/>
 <Mode>0</Mode>
 </VALUE>
 </node>
@@ -187,7 +181,7 @@
 </PostCon>
 </postconditions>
 </task>
-<task Alias="DEPLOY_APPLICATION" BranchType="0" Col="3" Lnr="4" OType="JOBP" Object="PCK.AUTOMIC_JBOSS_V6.PUB.ACTION.DEPLOY_APPLICATION" ParentAlias="" ParentObject="" Row="2" Text2="">
+<task Alias="START_SERVER" BranchType="0" Col="3" Lnr="4" OType="JOBP" Object="PCK.AUTOMIC_JBOSS_V6.PUB.ACTION.START_SERVER" ParentAlias="" ParentObject="" Row="2" Text2="">
 <checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
 <when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
@@ -196,7 +190,7 @@
 <conditions id="CONDITIONS">
 <condition active="1" id="USER DEFINED" once="0" type="C" uiinfo="">
 <params>
-<param altview="0" name="XC_P01" type="V" value="&amp;UC4RB_JBOSS_APPLN_UNDEPLOYED#"/>
+<param altview="0" name="XC_P01" type="V" value="&amp;UC4RB_JBOSS_SERVER_STOPPED#"/>
 <param altview="0" name="XC_P02" type="V" value="="/>
 <param altview="0" name="XC_P03" type="V" value="TRUE"/>
 </params>
@@ -208,7 +202,7 @@
 <else active="1" id="USER DEFINED" once="0" type="E" uiinfo="">
 <action active="1" id="SKIP TASK" once="0" type="A" uiinfo="">
 <params>
-<param altview="0" name="XC_P01" type="V" value="Application has not been undeployed"/>
+<param altview="0" name="XC_P01" type="V" value="Server(s) have not been stopped"/>
 </params>
 </action>
 </else>
@@ -227,38 +221,42 @@
 <node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_BACKUP_DIRECTORY#" Value=""/>
 <row Mod="0" Name="&amp;UC4RB_BACKUP_REPORT#" Value=""/>
-<row Mod="0" Name="&amp;UC4RB_JBOSS_APPLN_DEPLOYED#" Value="FALSE"/>
+<row Mod="0" Name="&amp;UC4RB_JBOSS_SERVER_STARTED#" Value="FALSE"/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
 </node>
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
-<Values>
-<row Mod="0" Name="&amp;UC4RB_BACKUP_REPORT1#" Value="&amp;UC4RB_BACKUP_REPORT#"/>
-<row Mod="0" Name="&amp;UC4RB_JBOSS_APPLICATION_STATE#" Value=""/>
-</Values>
+<Values/>
 <Mode>0</Mode>
 </VALUE>
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
 <node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
-<node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION" parent="PRPTS" type="PROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">
-<PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">
-<UC4RB_JBOSS_APP_NAMEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_APP_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">&amp;UC4RB_JBOSS_APP_NAME#</UC4RB_JBOSS_APP_NAMEs.00>
-<UC4RB_JBOSS_FAIL_EXISTINGs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_EXISTING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">YES</UC4RB_JBOSS_FAIL_EXISTINGs.00>
-<UC4RB_JBOSS_HOMEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">&amp;UC4RB_JBOSS_HOME#</UC4RB_JBOSS_HOMEs.00>
-<UC4RB_JBOSS_HOSTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">&amp;UC4RB_JBOSS_HOST#</UC4RB_JBOSS_HOSTs.00>
-<UC4RB_JBOSS_OPERATING_MODEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_OPERATING_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">&amp;UC4RB_JBOSS_OPERATING_MODE#</UC4RB_JBOSS_OPERATING_MODEs.00>
-<UC4RB_JBOSS_PACKAGEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PACKAGE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">&amp;UC4RB_BACKUP_DIRECTORY#/content</UC4RB_JBOSS_PACKAGEs.00>
-<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">&amp;UC4RB_JBOSS_PASSWORD#</UC4RB_JBOSS_PASSWORDs.00>
-<UC4RB_JBOSS_PORTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">&amp;UC4RB_JBOSS_PORT#</UC4RB_JBOSS_PORTs.00>
-<UC4RB_JBOSS_SERVER_GROUPSs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_GROUPS#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">&amp;UC4RB_JBOSS_APPLICATION_STATE#</UC4RB_JBOSS_SERVER_GROUPSs.00>
-<UC4RB_JBOSS_UPDATEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_UPDATE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">NO</UC4RB_JBOSS_UPDATEs.00>
-<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">&amp;UC4RB_JBOSS_USERNAME#</UC4RB_JBOSS_USERNAMEs.00>
+<node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">
+<PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">
+<UC4RB_JBOSS_ADMIN_ONLYs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_ADMIN_ONLY#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">NO</UC4RB_JBOSS_ADMIN_ONLYs.00>
+<UC4RB_JBOSS_CONFIG_FILEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_CONFIG_FILE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER"/>
+<UC4RB_JBOSS_FAIL_RUNNINGs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_RUNNING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">NO</UC4RB_JBOSS_FAIL_RUNNINGs.00>
+<UC4RB_JBOSS_HOMEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">&amp;UC4RB_JBOSS_HOME#</UC4RB_JBOSS_HOMEs.00>
+<UC4RB_JBOSS_HOSTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">&amp;UC4RB_JBOSS_HOST#</UC4RB_JBOSS_HOSTs.00>
+<UC4RB_JBOSS_HOST_CONFIG_FILEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST_CONFIG_FILE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER"/>
+<UC4RB_JBOSS_HOST_CONTROLLERs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST_CONTROLLER#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">&amp;UC4RB_JBOSS_HOST_CONTROLLER#</UC4RB_JBOSS_HOST_CONTROLLERs.00>
+<UC4RB_JBOSS_INTERPROCESS_ADDRs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_INTERPROCESS_ADDR#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER"/>
+<UC4RB_JBOSS_INTERPROCESS_PORTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_INTERPROCESS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER"/>
+<UC4RB_JBOSS_OPERATING_MODEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_OPERATING_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">Managed Domain</UC4RB_JBOSS_OPERATING_MODEs.00>
+<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">&amp;UC4RB_JBOSS_PASSWORD#</UC4RB_JBOSS_PASSWORDs.00>
+<UC4RB_JBOSS_PC_ADDRs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PC_ADDR#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER"/>
+<UC4RB_JBOSS_PC_PORTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PC_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER"/>
+<UC4RB_JBOSS_PORTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">&amp;UC4RB_JBOSS_PORT#</UC4RB_JBOSS_PORTs.00>
+<UC4RB_JBOSS_SERVERs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">&amp;UC4RB_JBOSS_SERVER#</UC4RB_JBOSS_SERVERs.00>
+<UC4RB_JBOSS_SERVICE_NAMEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVICE_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">&amp;UC4RB_JBOSS_SERVICE_NAME#</UC4RB_JBOSS_SERVICE_NAMEs.00>
+<UC4RB_JBOSS_SYSTEM_PROPSs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SYSTEM_PROPS#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER"/>
+<UC4RB_JBOSS_TIMEOUTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_TIMEOUT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">90</UC4RB_JBOSS_TIMEOUTs.00>
+<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">&amp;UC4RB_JBOSS_USERNAME#</UC4RB_JBOSS_USERNAMEs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -346,10 +344,7 @@
 <dyntree>
 <node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
 <VALUE state="1">
-<Values>
-<row ERTUsage="0" Name="&amp;UC4RB_BACKUP_REPORT1#" Value="&amp;UC4RB_BACKUP_REPORT#"/>
-<row ERTUsage="0" Name="&amp;UC4RB_JBOSS_APPLICATION_STATE#" Value=""/>
-</Values>
+<Values/>
 <Mode>0</Mode>
 </VALUE>
 </node>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
-<JOBP AllowExternal="1" name="PCK.AUTOMIC_JBOSS_V6.PRV.ACTION.RB_DEPLOY_APPLICATION">
+<JOBP AllowExternal="1" name="PCK.AUTOMIC_JBOSS_V6.PRV.ACTION.ROLLBACK_DEPLOY_APPLICATION">
 <XHEADER state="1">
 <Title>JBoss V6 Rollback Deploy Application</Title>
 <ArchiveKey1/>
