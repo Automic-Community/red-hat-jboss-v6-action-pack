@@ -5,13 +5,13 @@ Resource          actions.txt
 
 *** Variables ***
 #- CONTEXT VARIABLES ---
-${_AGENT}    /
-${_LOGIN}    /
+${_AGENT}         /
+${_LOGIN}         /
 ${_WORKING_DIR}    /
+${_JBOSS_HOME}    C:\JBoss\jboss-6.1.0.Final
 
 *** Key Words ***
 Init AE And Package
-    Prepare Package    PCK.AUTOMIC_JBOSS_V6
     Action Connect    ${_AE_HOST}    ${_AE_PORT}    ${_AE_USER}    ${_AE_PASS}    ${_AE_TEMP_FOLD}
 
 Init Win Server

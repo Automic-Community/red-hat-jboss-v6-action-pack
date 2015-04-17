@@ -12,7 +12,6 @@ Test Case 1           lorem    ipsum     0
 Test Case 2           ipsum    lorem     1
 
 *** Keywords ***
-
 Start Application Template
     [Arguments]    ${path}    ${input2}    ${returnCode}    ${returnStatus}    ${outVara}
     Init Action    ${ACTION_START_APPLICATION}
