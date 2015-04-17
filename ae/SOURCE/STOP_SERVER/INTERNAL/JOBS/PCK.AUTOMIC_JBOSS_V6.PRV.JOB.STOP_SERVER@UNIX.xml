@@ -207,10 +207,10 @@ StopJBossEAP() {
       output=`&UC4_JBOSS_CLI# --command="/host=$HC:shutdown"`
 :   ENDIF
 : ENDIF
-: INCLUDE UC4_SL.JOBI.CHECK_SHELL_CMD@UNIX
+: INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHECK_SHELL_CMD@UNIX
 
   sleep &UC4RB_JBOSS_TIMEOUT#
-: INCLUDE UC4_SL.JOBI.CHECK_SHELL_CMD@UNIX
+: INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHECK_SHELL_CMD@UNIX
 
   echo "Checking JBoss EAP 6.1 state again ..."
 
@@ -232,7 +232,7 @@ StopJBossEAP() {
 !----------------------------------------------------------------------------------------------------
 
 cd "&UC4RB_JBOSS_HOME#/bin"
-:INCLUDE UC4_SL.JOBI.CHECK_SHELL_CMD@UNIX
+:INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHECK_SHELL_CMD@UNIX
 
 :IF &UC4RB_JBOSS_OPERATING_MODE# = "Standalone"
   StopJBossEAP
@@ -292,7 +292,7 @@ cd "&UC4RB_JBOSS_HOME#/bin"
       fi
 
       sleep &UC4RB_JBOSS_TIMEOUT#
-:     INCLUDE UC4_SL.JOBI.CHECK_SHELL_CMD@UNIX
+:     INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHECK_SHELL_CMD@UNIX
 
       echo  "Checking server instance: &SERVER# status again ..."
 

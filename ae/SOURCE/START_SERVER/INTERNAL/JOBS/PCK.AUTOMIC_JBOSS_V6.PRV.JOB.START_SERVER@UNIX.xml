@@ -230,10 +230,10 @@ StartJBossEAP() {
     echo "Trying to start service &UC4RB_JBOSS_SERVICE_NAME# ..."
     "&UC4RB_JBOSS_SERVICE_NAME#" stop
 : ENDIF
-: INCLUDE UC4_SL.JOBI.CHECK_SHELL_CMD@UNIX
+: INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHECK_SHELL_CMD@UNIX
 
   sleep &UC4RB_JBOSS_TIMEOUT#
-: INCLUDE UC4_SL.JOBI.CHECK_SHELL_CMD@UNIX
+: INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHECK_SHELL_CMD@UNIX
 
   echo "Checking JBoss EAP 6 state ..."
 
@@ -249,7 +249,7 @@ StartJBossEAP() {
 !----------------------------------------------------------------------------------------------------
 
 cd "&UC4RB_JBOSS_HOME#/bin"
-:INCLUDE UC4_SL.JOBI.CHECK_SHELL_CMD@UNIX
+:INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHECK_SHELL_CMD@UNIX
 
 :IF &UC4RB_JBOSS_OPERATING_MODE# = "Standalone"
   StartJBossEAP
@@ -304,7 +304,7 @@ cd "&UC4RB_JBOSS_HOME#/bin"
        fi
 
        sleep &UC4RB_JBOSS_TIMEOUT#
-:      INCLUDE UC4_SL.JOBI.CHECK_SHELL_CMD@UNIX
+:      INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHECK_SHELL_CMD@UNIX
 
        echo  "Checking server instance: &SERVER# status again ..."
 

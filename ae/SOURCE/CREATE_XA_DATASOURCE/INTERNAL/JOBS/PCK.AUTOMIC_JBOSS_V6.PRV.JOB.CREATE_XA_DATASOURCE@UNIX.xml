@@ -174,7 +174,7 @@ updateIfExisting() {
   echo Updating XA datasource &UC4RB_JBOSS_NAME#..
 
   &UC4RB_JBOSS_CLI# --connect --command="&UC4RB_JBOSS_DS_COMMAND# --name=&UC4RB_JBOSS_NAME# --jndi-name=&UC4RB_JBOSS_JNDI_NAME# --driver-name=&UC4RB_JBOSS_DRIVER_NAME# &UC4RB_JBOSS_XA_DS_PARAMS#"
-: INCLUDE UC4_SL.JOBI.CHECK_SHELL_CMD@UNIX
+: INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHECK_SHELL_CMD@UNIX
 
   result=$(&UC4RB_JBOSS_CLI# --command=":reload")
 
@@ -230,7 +230,7 @@ echo Creating new XA datasource &UC4RB_JBOSS_NAME#..
 
 ! create new datasource
 &UC4RB_JBOSS_CLI# --command="&UC4RB_JBOSS_DS_COMMAND# add --name=&UC4RB_JBOSS_NAME# --jndi-name=&UC4RB_JBOSS_JNDI_NAME# --driver-name=&UC4RB_JBOSS_DRIVER_NAME# &UC4RB_JBOSS_XA_DS_PARAMS#"
-:INCLUDE UC4_SL.JOBI.CHECK_SHELL_CMD@UNIX
+:INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHECK_SHELL_CMD@UNIX
 
 result=$(&UC4RB_JBOSS_CLI# --command=":reload")
 
@@ -247,7 +247,7 @@ fi
 updateXADatasourceProperties
 
 echo Successfully create XA datasource &UC4RB_JBOSS_NAME#
-:INCLUDE UC4_SL.JOBI.CHECK_SHELL_CMD@UNIX
+:INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHECK_SHELL_CMD@UNIX
 ]]></MSCRI>
 </SCRIPT>
 <OUTPUTSCAN state="1">

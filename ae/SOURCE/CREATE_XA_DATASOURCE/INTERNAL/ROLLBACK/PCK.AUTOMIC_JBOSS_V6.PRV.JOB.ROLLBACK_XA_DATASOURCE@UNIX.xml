@@ -270,7 +270,7 @@ if $xa_ds_props; then
 fi
 
 echo Successfully rollback datasource &UC4RB_JBOSS_NAME#.
-:INCLUDE UC4_SL.JOBI.CHECK_SHELL_CMD@UNIX
+:INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHECK_SHELL_CMD@UNIX
 ]]></MSCRI>
 </SCRIPT>
 <OUTPUTSCAN state="1">

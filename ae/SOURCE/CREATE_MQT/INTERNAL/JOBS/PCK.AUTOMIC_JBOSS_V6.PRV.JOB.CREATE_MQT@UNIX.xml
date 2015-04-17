@@ -133,7 +133,7 @@ updateIfExisting() {
 
 ! Update queue/topic
   &UC4RB_JBOSS_CLI# --command="&UC4RB_JBOSS_JMS_COMMAND# &UC4RB_JBOSS_QUEUE_PARAMS#"
-: INCLUDE UC4_SL.JOBI.CHECK_SHELL_CMD@UNIX
+: INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHECK_SHELL_CMD@UNIX
 
 ! Update address-setting?
   updateAddressSetting
@@ -168,7 +168,7 @@ echo Creating new &UC4RB_JBOSS_TYPE# &UC4RB_JBOSS_NAME#..
 
 ! create queue/topic using JBoss CLI command
 &UC4RB_JBOSS_CLI# --command="&UC4RB_JBOSS_JMS_COMMAND# add &UC4RB_JBOSS_QUEUE_PARAMS#"
-:INCLUDE UC4_SL.JOBI.CHECK_SHELL_CMD@UNIX
+:INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHECK_SHELL_CMD@UNIX
 
 result=$(&UC4RB_JBOSS_CLI# --command=":reload")
 
@@ -202,7 +202,7 @@ else
   echo Failed to create new address setting for &UC4RB_JBOSS_TYPE# &UC4RB_JBOSS_NAME#, default settings will be used
 fi
 
-:INCLUDE UC4_SL.JOBI.CHECK_SHELL_CMD@UNIX]]></MSCRI>
+:INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHECK_SHELL_CMD@UNIX]]></MSCRI>
 </SCRIPT>
 <OUTPUTSCAN state="1">
 <Inherit>N</Inherit>

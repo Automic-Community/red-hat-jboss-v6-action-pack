@@ -145,7 +145,7 @@ echo "Warning: if server states are modified after finishing START_SERVER, this 
   echo "JBoss PID is $JB_PID. Killing process ..."
   kill -TERM $JB_PID
 :ENDIF
-: INCLUDE UC4_SL.JOBI.CHECK_SHELL_CMD@UNIX
+: INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHECK_SHELL_CMD@UNIX
 
 output=`&UC4_JBOSS_CLI# --command="quit" | grep "Failed to connect to the controller"`
 if [ -z "$output" ]; then

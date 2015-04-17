@@ -165,13 +165,13 @@ echo Deleting queue/topic..
 
 :IF &UC4RB_JBOSS_TYPE# = 'Queue'
    &UC4RB_JBOSS_CLI# --command="&UC4RB_JBOSS_JMS_COMMAND# remove --queue-address=&UC4RB_JBOSS_NAME#"
-:  INCLUDE UC4_SL.JOBI.CHECK_SHELL_CMD@UNIX
+:  INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHECK_SHELL_CMD@UNIX
 !  delete address-setting if it existed
    result=$(&UC4RB_JBOSS_CLI# --command="&UC4RB_JBOSS_JMS_QUERY_CMD#/address-setting=jms.queue.&UC4RB_JBOSS_NAME#:remove")
 :ELSE
 :  IF &UC4RB_JBOSS_TYPE# = 'Topic'
      &UC4RB_JBOSS_CLI# --command="&UC4RB_JBOSS_JMS_COMMAND# remove --topic-address=&UC4RB_JBOSS_NAME#"
-:    INCLUDE UC4_SL.JOBI.CHECK_SHELL_CMD@UNIX
+:    INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHECK_SHELL_CMD@UNIX
      result=$(&UC4RB_JBOSS_CLI# --command="&UC4RB_JBOSS_JMS_QUERY_CMD#/address-setting=jms.topic.&UC4RB_JBOSS_NAME#:remove")
 :  ENDIF
 :ENDIF
@@ -190,7 +190,7 @@ else
   exit 1
 fi
 
-:INCLUDE UC4_SL.JOBI.CHECK_SHELL_CMD@UNIX]]></MSCRI>
+:INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHECK_SHELL_CMD@UNIX]]></MSCRI>
 </SCRIPT>
 <OUTPUTSCAN state="1">
 <Inherit>N</Inherit>

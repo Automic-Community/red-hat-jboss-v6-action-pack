@@ -159,7 +159,7 @@ result=$(&UC4RB_JBOSS_CLI# --command=":reload")
 echo Deleting datasource..
 
 &UC4RB_JBOSS_CLI# --command="&UC4RB_JBOSS_DS_COMMAND# remove --name=&UC4RB_JBOSS_NAME#"
-:INCLUDE UC4_SL.JOBI.CHECK_SHELL_CMD@UNIX
+:INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHECK_SHELL_CMD@UNIX
 
 result=$(&UC4RB_JBOSS_CLI# --command=":reload")
 
