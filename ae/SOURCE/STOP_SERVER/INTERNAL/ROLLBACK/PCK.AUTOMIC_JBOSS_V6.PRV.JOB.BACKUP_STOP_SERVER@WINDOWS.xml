@@ -117,7 +117,7 @@
 <SCRIPT mode="1" state="1">
 <MSCRI><![CDATA[!Backup only in case server was started using domain.bat/standalone.bat.
 !Command line used to run JBoss will be backed up.
-: INCLUDE UC4_RI.AS_TOMCAT.PS.GET_NETWORK_STATISTICS@WINDOWS
+: INCLUDE PCK.AUTOMIC_JBOSS_V6.PRV.INCLUDE.PS.GET_NETWORK_STATISTICS@WINDOWS
 function backUpPID {
 : IF &UC4RB_JBOSS_HOST# EQ ""
 !   If host and port is not provided, use values defined in jboss-cli.xml. If this file is not available, use default value (localhost:9999)
