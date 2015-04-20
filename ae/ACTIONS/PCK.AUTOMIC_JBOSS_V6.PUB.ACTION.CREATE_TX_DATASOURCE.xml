@@ -388,7 +388,7 @@
 <FInclSubDirs>0</FInclSubDirs>
 </ROLLBACK>
 <SCRIPT mode="1" state="1">
-<MSCRI><![CDATA[: INCLUDE UC4_RI.JOBI.AS_JBOSS_PREPARE_ROLLBACK]]></MSCRI>
+<MSCRI><![CDATA[: INCLUDE PCK.AUTOMIC_JBOSS_V5.PRV.INCLUDE.AS_JBOSS_PREPARE_ROLLBACK]]></MSCRI>
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
 <DOC><![CDATA[Create Tx datasource in domain mode (with specified profile) or standalone mode of Jboss V6 application server.
