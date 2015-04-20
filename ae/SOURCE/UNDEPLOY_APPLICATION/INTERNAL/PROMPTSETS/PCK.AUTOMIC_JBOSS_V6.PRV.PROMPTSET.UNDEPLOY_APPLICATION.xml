@@ -22,8 +22,10 @@
         <entry name="modifiable">1</entry>
         <entry name="customfield"/>
       <entry name="initvalue"/>
-         <entry name="xmlkey"/><entry name="xmlpath"/></properties>
-    </dynradiogroup><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_JBOSS_HOMEs.00" inputassistance="0" len="" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Home Directory" tooltip="JBoss home directory. Ex: C:\jboss-eap-6.1" upper="0" multiline="0" multilineIcon="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
+         <entry name="xmlkey"/>
+            <entry name="xmlpath"/>
+         </properties>
+    </dynradiogroup><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_JBOSS_HOMEs.00" inputassistance="0" len="" multiline="0" multilineIcon="0" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Home Directory" tooltip="JBoss home directory. Ex: C:\jboss-eap-6.1" upper="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
          
       <properties>
         <entry listparam="C,N" name="reference" reftype="STATIC">UC_DATATYPE_STRING</entry>
@@ -44,8 +46,14 @@
         <entry name="modifiable">1</entry>
         <entry name="customfield"/>
       <entry name="initvalue"/>
-         <entry name="xmlkey"/><entry name="xmlpath"/><entry name="multiline">0</entry><entry name="multilineIcon">0</entry><entry name="onchangereset"/><entry name="resetable">1</entry></properties>
-    </text><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_JBOSS_HOSTs.00" inputassistance="0" len="" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Host" tooltip="The default controller host to connect. Default is localhost" upper="0" multiline="0" multilineIcon="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
+         <entry name="xmlkey"/>
+            <entry name="xmlpath"/>
+            <entry name="multiline">0</entry>
+            <entry name="multilineIcon">0</entry>
+            <entry name="onchangereset"/>
+            <entry name="resetable">1</entry>
+         </properties>
+    </text><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_JBOSS_HOSTs.00" inputassistance="0" len="" multiline="0" multilineIcon="0" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Host" tooltip="The default controller host to connect. Default is localhost" upper="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
          
       <properties>
         <entry listparam="C,N" name="reference" reftype="STATIC">UC_DATATYPE_STRING</entry>
@@ -66,8 +74,14 @@
         <entry name="modifiable">1</entry>
         <entry name="customfield"/>
       <entry name="initvalue"/>
-         <entry name="xmlkey"/><entry name="xmlpath"/><entry name="multiline">0</entry><entry name="multilineIcon">0</entry><entry name="onchangereset"/><entry name="resetable">1</entry></properties>
-    </text><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_JBOSS_PORTs.00" inputassistance="0" len="" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Port" tooltip="The default controller port to connect. Default is 9999" upper="0" multiline="0" multilineIcon="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
+         <entry name="xmlkey"/>
+            <entry name="xmlpath"/>
+            <entry name="multiline">0</entry>
+            <entry name="multilineIcon">0</entry>
+            <entry name="onchangereset"/>
+            <entry name="resetable">1</entry>
+         </properties>
+    </text><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_JBOSS_PORTs.00" inputassistance="0" len="" multiline="0" multilineIcon="0" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Port" tooltip="The default controller port to connect. Default is 9999" upper="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
          
       <properties>
         <entry listparam="C,N" name="reference" reftype="STATIC">UC_DATATYPE_STRING</entry>
@@ -88,8 +102,14 @@
         <entry name="modifiable">1</entry>
         <entry name="customfield"/>
       <entry name="initvalue"/>
-         <entry name="xmlkey"/><entry name="xmlpath"/><entry name="multiline">0</entry><entry name="multilineIcon">0</entry><entry name="onchangereset"/><entry name="resetable">1</entry></properties>
-    </text><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_JBOSS_USERNAMEs.00" inputassistance="0" len="" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Username" tooltip="Specify the user name if the controller requires user authentication." upper="0" multiline="0" multilineIcon="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
+         <entry name="xmlkey"/>
+            <entry name="xmlpath"/>
+            <entry name="multiline">0</entry>
+            <entry name="multilineIcon">0</entry>
+            <entry name="onchangereset"/>
+            <entry name="resetable">1</entry>
+         </properties>
+    </text><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_JBOSS_USERNAMEs.00" inputassistance="0" len="" multiline="0" multilineIcon="0" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Username" tooltip="Specify the user name if the controller requires user authentication." upper="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
          
       <properties>
         <entry listparam="C,N" name="reference" reftype="STATIC">UC_DATATYPE_STRING</entry>
@@ -110,8 +130,14 @@
         <entry name="modifiable">1</entry>
         <entry name="customfield"/>
       <entry name="initvalue"/>
-         <entry name="xmlkey"/><entry name="xmlpath"/><entry name="multiline">0</entry><entry name="multilineIcon">0</entry><entry name="onchangereset"/><entry name="resetable">1</entry></properties>
-    </text><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_JBOSS_PASSWORDs.00" inputassistance="0" len="" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Password" tooltip="specifies the password for authentication while connecting to the controller." upper="0" multiline="0" multilineIcon="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
+         <entry name="xmlkey"/>
+            <entry name="xmlpath"/>
+            <entry name="multiline">0</entry>
+            <entry name="multilineIcon">0</entry>
+            <entry name="onchangereset"/>
+            <entry name="resetable">1</entry>
+         </properties>
+    </text><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_JBOSS_PASSWORDs.00" inputassistance="0" len="" multiline="0" multilineIcon="0" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Password" tooltip="specifies the password for authentication while connecting to the controller." upper="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
          
       <properties>
         <entry listparam="C,N" name="reference" reftype="STATIC">UC_DATATYPE_STRING</entry>
@@ -132,8 +158,14 @@
         <entry name="modifiable">1</entry>
         <entry name="customfield"/>
       <entry name="initvalue"/>
-         <entry name="xmlkey"/><entry name="xmlpath"/><entry name="multiline">0</entry><entry name="multilineIcon">0</entry><entry name="onchangereset"/><entry name="resetable">1</entry></properties>
-    </text><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_JBOSS_APP_NAMEs.00" inputassistance="0" len="" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Application Name" tooltip="The unique name of the application. Application name shouldn&apos;t contain any whitespace." upper="0" multiline="0" multilineIcon="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
+         <entry name="xmlkey"/>
+            <entry name="xmlpath"/>
+            <entry name="multiline">0</entry>
+            <entry name="multilineIcon">0</entry>
+            <entry name="onchangereset"/>
+            <entry name="resetable">1</entry>
+         </properties>
+    </text><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_JBOSS_APP_NAMEs.00" inputassistance="0" len="" multiline="0" multilineIcon="0" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Application Name" tooltip="The unique name of the application. Application name shouldn&apos;t contain any whitespace." upper="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
          
       <properties>
         <entry listparam="C,N" name="reference" reftype="STATIC">UC_DATATYPE_STRING</entry>
@@ -154,7 +186,13 @@
         <entry name="modifiable">1</entry>
         <entry name="customfield"/>
       <entry name="initvalue"/>
-         <entry name="xmlkey"/><entry name="xmlpath"/><entry name="multiline">0</entry><entry name="multilineIcon">0</entry><entry name="onchangereset"/><entry name="resetable">1</entry></properties>
+         <entry name="xmlkey"/>
+            <entry name="xmlpath"/>
+            <entry name="multiline">0</entry>
+            <entry name="multilineIcon">0</entry>
+            <entry name="onchangereset"/>
+            <entry name="resetable">1</entry>
+         </properties>
     </text><dynradiogroup alt="1" enabled="1" fill="b" focus="" id="UC4RB_JBOSS_FAIL_MISSINGs.00" nl="1" text="Fail if not existing" tooltip="Boolean value specifying whether the application deployment should fail in case the application is not already deployed." required="0">
       <properties>
         <entry listparam="C,N" name="reference" reftype="STATIC">PCK.ITPA_SHARED.PRV.VARA.YES_NO</entry>
@@ -167,7 +205,9 @@
         <entry name="modifiable">1</entry>
         <entry name="customfield"/>
       <entry name="initvalue"/>
-         <entry name="xmlkey"/><entry name="xmlpath"/></properties>
+         <entry name="xmlkey"/>
+            <entry name="xmlpath"/>
+         </properties>
     </dynradiogroup><label fill="b" id="LABEL1s.00" nl="1" text="Domain Configuration" tooltip="" alt="0">
       <properties>
         <entry name="text">Domain Configuration</entry>
@@ -176,7 +216,7 @@
         <entry name="modifiable">1</entry>
         <entry name="customfield"/>
       </properties>
-    </label><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_JBOSS_SERVER_GROUPSs.00" inputassistance="0" len="" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Server groups" tooltip="Comma separated list of server group names the undeploy command should apply to. If empty, undeploy from all relevant server groups. Not applicable in Standalone mode." upper="0" multiline="0" multilineIcon="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
+    </label><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_JBOSS_SERVER_GROUPSs.00" inputassistance="0" len="" multiline="0" multilineIcon="0" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Server groups" tooltip="Comma separated list of server group names the undeploy command should apply to. If empty, undeploy from all relevant server groups. Not applicable in Standalone mode." upper="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
          
       <properties>
         <entry listparam="C,N" name="reference" reftype="STATIC">UC_DATATYPE_STRING</entry>
@@ -197,11 +237,17 @@
         <entry name="modifiable">1</entry>
         <entry name="customfield"/>
       <entry name="initvalue"/>
-         <entry name="xmlkey"/><entry name="xmlpath"/><entry name="multiline">0</entry><entry name="multilineIcon">0</entry><entry name="onchangereset"/><entry name="resetable">1</entry></properties>
+         <entry name="xmlkey"/>
+            <entry name="xmlpath"/>
+            <entry name="multiline">0</entry>
+            <entry name="multilineIcon">0</entry>
+            <entry name="onchangereset"/>
+            <entry name="resetable">1</entry>
+         </properties>
     </text></readpanel></dialog>]]></XUIEDITOR>
 </PROMPTSETXUI>
 <PROMPTSETDATA state="1">
-<DATAEDITOR><![CDATA[<PRPTS ontop="1"><PRPTBOX><UC4RB_JBOSS_OPERATING_MODEs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_JBOSS_OPERATING_MODE#" ReadFromTable="OPSE">EXT:/jboss/operating_mode</UC4RB_JBOSS_OPERATING_MODEs.00><UC4RB_JBOSS_HOMEs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_JBOSS_HOME#" ReadFromTable="OPSE">EXT:/jboss/server/home_directory</UC4RB_JBOSS_HOMEs.00><UC4RB_JBOSS_HOSTs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_JBOSS_HOST#" ReadFromTable="OPSE">EXT:/jboss/host</UC4RB_JBOSS_HOSTs.00><UC4RB_JBOSS_PORTs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_JBOSS_PORT#" ReadFromTable="OPSE">EXT:/jboss/port</UC4RB_JBOSS_PORTs.00><UC4RB_JBOSS_USERNAMEs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_JBOSS_USERNAME#" ReadFromTable="OPSE">EXT:/jboss/username</UC4RB_JBOSS_USERNAMEs.00><UC4RB_JBOSS_PASSWORDs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_JBOSS_PASSWORD#" ReadFromTable="OPSE">EXT:/jboss/password</UC4RB_JBOSS_PASSWORDs.00><UC4RB_JBOSS_APP_NAMEs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_JBOSS_APP_NAME#" ReadFromTable="OPSE">EXT:/jboss/application_name</UC4RB_JBOSS_APP_NAMEs.00><UC4RB_JBOSS_FAIL_MISSINGs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_JBOSS_FAIL_MISSING#" ReadFromTable="OPSE">NO</UC4RB_JBOSS_FAIL_MISSINGs.00><UC4RB_JBOSS_SERVER_GROUPSs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_JBOSS_SERVER_GROUPS#" ReadFromTable="OPSE">EXT:/jboss/server/server_groups</UC4RB_JBOSS_SERVER_GROUPSs.00></PRPTBOX></PRPTS>]]></DATAEDITOR>
+<DATAEDITOR><![CDATA[<PRPTS ontop="1"><PRPTBOX><UC4RB_JBOSS_OPERATING_MODEs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_JBOSS_OPERATING_MODE#" ReadFromTable="OPSE"></UC4RB_JBOSS_OPERATING_MODEs.00><UC4RB_JBOSS_HOMEs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_JBOSS_HOME#" ReadFromTable="OPSE"></UC4RB_JBOSS_HOMEs.00><UC4RB_JBOSS_HOSTs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_JBOSS_HOST#" ReadFromTable="OPSE"></UC4RB_JBOSS_HOSTs.00><UC4RB_JBOSS_PORTs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_JBOSS_PORT#" ReadFromTable="OPSE"></UC4RB_JBOSS_PORTs.00><UC4RB_JBOSS_USERNAMEs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_JBOSS_USERNAME#" ReadFromTable="OPSE"></UC4RB_JBOSS_USERNAMEs.00><UC4RB_JBOSS_PASSWORDs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_JBOSS_PASSWORD#" ReadFromTable="OPSE"></UC4RB_JBOSS_PASSWORDs.00><UC4RB_JBOSS_APP_NAMEs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_JBOSS_APP_NAME#" ReadFromTable="OPSE"></UC4RB_JBOSS_APP_NAMEs.00><UC4RB_JBOSS_FAIL_MISSINGs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_JBOSS_FAIL_MISSING#" ReadFromTable="OPSE">NO</UC4RB_JBOSS_FAIL_MISSINGs.00><UC4RB_JBOSS_SERVER_GROUPSs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_JBOSS_SERVER_GROUPS#" ReadFromTable="OPSE"></UC4RB_JBOSS_SERVER_GROUPSs.00></PRPTBOX></PRPTS>]]></DATAEDITOR>
 </PROMPTSETDATA>
 <DOCU_Docu state="1" type="text">
 <DOC/>
