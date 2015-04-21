@@ -142,7 +142,7 @@ $password=''
 $max_pool_size=''
 $min_pool_size=''
 $enabled=''
-$jta=''
+!$jta=''
 $xa_ds_properties=$false
 $xa_ds_prop_keys=@()
 $xa_ds_prop_values=@()
@@ -191,9 +191,9 @@ ForEach ($line in Get-Content "&UC4RB_BACKUP_REPORT#") {
     if ($key -eq "enabled") {
       $enabled = $val
     }
-    if ($key -eq "jta") {
-      $jta = $val
-    }
+!    if ($key -eq "jta") {
+!      $jta = $val
+!    }
   } else {
     $line = $line.Trim()
     if ($line -eq "xa-datasource-properties") {
@@ -246,11 +246,11 @@ if (($min_pool_size -eq '') -or ($min_pool_size -eq 'n/a')) {
   $uc4_ds_params="$uc4_ds_params--min-pool-size=$min_pool_size "
 }
 
-if (($jta -eq '') -or ($jta -eq 'n/a')) {
-  $uc4_ds_params="$uc4_ds_params--jta=undefined "
-} else {
-  $uc4_ds_params="$uc4_ds_params--jta=$jta "
-}
+!if (($jta -eq '') -or ($jta -eq 'n/a')) {
+!  $uc4_ds_params="$uc4_ds_params--jta=undefined "
+!} else {
+!  $uc4_ds_params="$uc4_ds_params--jta=$jta "
+!}
 
 Write-Host Rollback datasource &UC4RB_JBOSS_NAME#..
 

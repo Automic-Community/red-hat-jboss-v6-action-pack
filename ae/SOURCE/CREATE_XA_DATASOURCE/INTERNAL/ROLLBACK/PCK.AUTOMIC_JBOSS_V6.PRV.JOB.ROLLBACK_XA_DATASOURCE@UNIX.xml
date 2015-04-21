@@ -141,7 +141,7 @@ password=''
 max_pool_size=''
 min_pool_size=''
 enabled=''
-jta=''
+!jta=''
 xa_ds_props=false
 idx=0
 
@@ -192,9 +192,9 @@ do
     if [ "${key}" = 'enabled' ]; then
       enabled="${val}"
     fi;
-    if [ "${key}" = 'jta' ]; then
-      jta="${val}"
-    fi;
+!    if [ "${key}" = 'jta' ]; then
+!      jta="${val}"
+!    fi;
   else
     line=$(trim $line)
     if [ "$line" = "xa-datasource-properties" ]; then
@@ -247,11 +247,11 @@ else
   uc4_ds_params=$(printf "%s--min-pool-size=%s " "$uc4_ds_params" "$min_pool_size")
 fi;
 
-if [ "$jta" = 'n/a' ] || [ "$jta" = '' ]; then
-  uc4_ds_params=$(printf "%s--jta=undefined " "$uc4_ds_params")
-else
-  uc4_ds_params=$(printf "%s--jta=%s " "$uc4_ds_params" "$jta")
-fi;
+!if [ "$jta" = 'n/a' ] || [ "$jta" = '' ]; then
+!  uc4_ds_params=$(printf "%s--jta=undefined " "$uc4_ds_params")
+!else
+!  uc4_ds_params=$(printf "%s--jta=%s " "$uc4_ds_params" "$jta")
+!fi;
 
 echo Rollback datasource &UC4RB_JBOSS_NAME# ..
 
