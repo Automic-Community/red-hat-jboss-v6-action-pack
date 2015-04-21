@@ -348,7 +348,7 @@
 <FInclSubDirs>0</FInclSubDirs>
 </ROLLBACK>
 <SCRIPT mode="1" state="1">
-<MSCRI><![CDATA[:INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.SET_BACKUP_DIRECTORY]]></MSCRI>
+<MSCRI><![CDATA[:INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.SET_BACKUP_DIRECTORY]]]></MSCRI>
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
 <DOC><![CDATA[Deletes a message queue or topic specified by &UC4RB_JBOSS_NAME#.

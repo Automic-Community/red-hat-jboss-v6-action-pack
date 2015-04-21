@@ -355,7 +355,7 @@
 <FInclSubDirs>0</FInclSubDirs>
 </ROLLBACK>
 <SCRIPT mode="1" state="1">
-<MSCRI><![CDATA[:INC PCK.ITPA_SHARED.PRV.INCLUDE.SET_BACKUP_DIRECTORY]></MSCRI>
+<MSCRI><![CDATA[:INC PCK.ITPA_SHARED.PRV.INCLUDE.SET_BACKUP_DIRECTORY]]></MSCRI>
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
 <DOC><![CDATA[Stop JBoss EAP 6.1 Standalone or Managed Domain. If servers have already stopped, return exit code depends on "Fail if not running" flag.
