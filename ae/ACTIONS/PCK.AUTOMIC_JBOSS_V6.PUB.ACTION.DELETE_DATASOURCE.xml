@@ -56,7 +56,7 @@
 <PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">
 <PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">
 <UC4RB_JBOSS_DS_TYPEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_DS_TYPE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">TX datasource</UC4RB_JBOSS_DS_TYPEs.00>
-<UC4RB_JBOSS_FAIL_MISSINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_MISSING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">NO</UC4RB_JBOSS_FAIL_MISSINGs.00>
+<UC4RB_JBOSS_FAIL_MISSINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_MISSING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">No</UC4RB_JBOSS_FAIL_MISSINGs.00>
 <UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">EXT:/jboss/server/home_directory</UC4RB_JBOSS_HOMEs.00>
 <UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">EXT:/jboss/host</UC4RB_JBOSS_HOSTs.00>
 <UC4RB_JBOSS_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">EXT:/jboss/jdbc/tx/name</UC4RB_JBOSS_NAMEs.00>
@@ -123,7 +123,7 @@
 <PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">
 <PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">
 <UC4RB_JBOSS_DS_TYPEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_DS_TYPE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">TX datasource</UC4RB_JBOSS_DS_TYPEs.00>
-<UC4RB_JBOSS_FAIL_MISSINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_MISSING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">NO</UC4RB_JBOSS_FAIL_MISSINGs.00>
+<UC4RB_JBOSS_FAIL_MISSINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_MISSING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">No</UC4RB_JBOSS_FAIL_MISSINGs.00>
 <UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">EXT:/jboss/server/home_directory</UC4RB_JBOSS_HOMEs.00>
 <UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">EXT:/jboss/host</UC4RB_JBOSS_HOSTs.00>
 <UC4RB_JBOSS_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">EXT:/jboss/jdbc/tx/name</UC4RB_JBOSS_NAMEs.00>
@@ -190,7 +190,7 @@
 <PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">
 <PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">
 <UC4RB_JBOSS_DS_TYPEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_DS_TYPE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">TX datasource</UC4RB_JBOSS_DS_TYPEs.00>
-<UC4RB_JBOSS_FAIL_MISSINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_MISSING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">NO</UC4RB_JBOSS_FAIL_MISSINGs.00>
+<UC4RB_JBOSS_FAIL_MISSINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_MISSING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">No</UC4RB_JBOSS_FAIL_MISSINGs.00>
 <UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">EXT:/jboss/server/home_directory</UC4RB_JBOSS_HOMEs.00>
 <UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">EXT:/jboss/host</UC4RB_JBOSS_HOSTs.00>
 <UC4RB_JBOSS_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">EXT:/jboss/jdbc/tx/name</UC4RB_JBOSS_NAMEs.00>
@@ -241,7 +241,7 @@
 <PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">
 <PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">
 <UC4RB_JBOSS_DS_TYPEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_DS_TYPE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">TX datasource</UC4RB_JBOSS_DS_TYPEs.00>
-<UC4RB_JBOSS_FAIL_MISSINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_MISSING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">NO</UC4RB_JBOSS_FAIL_MISSINGs.00>
+<UC4RB_JBOSS_FAIL_MISSINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_MISSING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">No</UC4RB_JBOSS_FAIL_MISSINGs.00>
 <UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">EXT:/jboss/server/home_directory</UC4RB_JBOSS_HOMEs.00>
 <UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">EXT:/jboss/host</UC4RB_JBOSS_HOSTs.00>
 <UC4RB_JBOSS_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">EXT:/jboss/jdbc/tx/name</UC4RB_JBOSS_NAMEs.00>
@@ -348,7 +348,7 @@
 <FInclSubDirs>0</FInclSubDirs>
 </ROLLBACK>
 <SCRIPT mode="1" state="1">
-<MSCRI><![CDATA[:INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.SET_BACKUP_DIRECTORY]]]></MSCRI>
+<MSCRI><![CDATA[:INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.SET_BACKUP_DIRECTORY]]></MSCRI>
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
 <DOC><![CDATA[Deletes a datasource specified by DATASOURCE_NAME value with type of TX datasource or XA datasource.

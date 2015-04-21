@@ -55,7 +55,7 @@
 <node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER">
 <PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER">
-<UC4RB_JBOSS_FAIL_STOPPEDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_STOPPED#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER">NO</UC4RB_JBOSS_FAIL_STOPPEDs.00>
+<UC4RB_JBOSS_FAIL_STOPPEDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_STOPPED#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER">No</UC4RB_JBOSS_FAIL_STOPPEDs.00>
 <UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER">EXT:/jboss/server/home_directory</UC4RB_JBOSS_HOMEs.00>
 <UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER">EXT:/jboss/host</UC4RB_JBOSS_HOSTs.00>
 <UC4RB_JBOSS_HOST_CONTROLLERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST_CONTROLLER#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER">EXT:/jboss/server/host_controller</UC4RB_JBOSS_HOST_CONTROLLERs.00>
@@ -124,7 +124,7 @@
 <node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER">
 <PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER">
-<UC4RB_JBOSS_FAIL_STOPPEDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_STOPPED#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER">NO</UC4RB_JBOSS_FAIL_STOPPEDs.00>
+<UC4RB_JBOSS_FAIL_STOPPEDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_STOPPED#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER">No</UC4RB_JBOSS_FAIL_STOPPEDs.00>
 <UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER">EXT:/jboss/server/home_directory</UC4RB_JBOSS_HOMEs.00>
 <UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER">EXT:/jboss/host</UC4RB_JBOSS_HOSTs.00>
 <UC4RB_JBOSS_HOST_CONTROLLERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST_CONTROLLER#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER">EXT:/jboss/server/host_controller</UC4RB_JBOSS_HOST_CONTROLLERs.00>
@@ -193,7 +193,7 @@
 <node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER">
 <PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER">
-<UC4RB_JBOSS_FAIL_STOPPEDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_STOPPED#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER">NO</UC4RB_JBOSS_FAIL_STOPPEDs.00>
+<UC4RB_JBOSS_FAIL_STOPPEDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_STOPPED#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER">No</UC4RB_JBOSS_FAIL_STOPPEDs.00>
 <UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER">EXT:/jboss/server/home_directory</UC4RB_JBOSS_HOMEs.00>
 <UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER">EXT:/jboss/host</UC4RB_JBOSS_HOSTs.00>
 <UC4RB_JBOSS_HOST_CONTROLLERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST_CONTROLLER#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER">EXT:/jboss/server/host_controller</UC4RB_JBOSS_HOST_CONTROLLERs.00>
@@ -245,7 +245,7 @@
 <node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER">
 <PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER">
-<UC4RB_JBOSS_FAIL_STOPPEDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_STOPPED#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER">NO</UC4RB_JBOSS_FAIL_STOPPEDs.00>
+<UC4RB_JBOSS_FAIL_STOPPEDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_STOPPED#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER">No</UC4RB_JBOSS_FAIL_STOPPEDs.00>
 <UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER">EXT:/jboss/server/home_directory</UC4RB_JBOSS_HOMEs.00>
 <UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER">EXT:/jboss/host</UC4RB_JBOSS_HOSTs.00>
 <UC4RB_JBOSS_HOST_CONTROLLERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST_CONTROLLER#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.STOP_SERVER">EXT:/jboss/server/host_controller</UC4RB_JBOSS_HOST_CONTROLLERs.00>

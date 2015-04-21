@@ -55,9 +55,9 @@
 <node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">
 <PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">
-<UC4RB_JBOSS_ADMIN_ONLYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_ADMIN_ONLY#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">NO</UC4RB_JBOSS_ADMIN_ONLYs.00>
+<UC4RB_JBOSS_ADMIN_ONLYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_ADMIN_ONLY#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">No</UC4RB_JBOSS_ADMIN_ONLYs.00>
 <UC4RB_JBOSS_CONFIG_FILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_CONFIG_FILE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER"/>
-<UC4RB_JBOSS_FAIL_RUNNINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_RUNNING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">NO</UC4RB_JBOSS_FAIL_RUNNINGs.00>
+<UC4RB_JBOSS_FAIL_RUNNINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_RUNNING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">No</UC4RB_JBOSS_FAIL_RUNNINGs.00>
 <UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">EXT:/jboss/server/home_directory</UC4RB_JBOSS_HOMEs.00>
 <UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">EXT:/jboss/host</UC4RB_JBOSS_HOSTs.00>
 <UC4RB_JBOSS_HOST_CONFIG_FILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST_CONFIG_FILE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER"/>
@@ -135,9 +135,9 @@
 <node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">
 <PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">
-<UC4RB_JBOSS_ADMIN_ONLYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_ADMIN_ONLY#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">NO</UC4RB_JBOSS_ADMIN_ONLYs.00>
+<UC4RB_JBOSS_ADMIN_ONLYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_ADMIN_ONLY#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">No</UC4RB_JBOSS_ADMIN_ONLYs.00>
 <UC4RB_JBOSS_CONFIG_FILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_CONFIG_FILE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER"/>
-<UC4RB_JBOSS_FAIL_RUNNINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_RUNNING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">NO</UC4RB_JBOSS_FAIL_RUNNINGs.00>
+<UC4RB_JBOSS_FAIL_RUNNINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_RUNNING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">No</UC4RB_JBOSS_FAIL_RUNNINGs.00>
 <UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">EXT:/jboss/server/home_directory</UC4RB_JBOSS_HOMEs.00>
 <UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">EXT:/jboss/host</UC4RB_JBOSS_HOSTs.00>
 <UC4RB_JBOSS_HOST_CONFIG_FILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST_CONFIG_FILE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER"/>
@@ -211,9 +211,9 @@
 <node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">
 <PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">
-<UC4RB_JBOSS_ADMIN_ONLYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_ADMIN_ONLY#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">NO</UC4RB_JBOSS_ADMIN_ONLYs.00>
+<UC4RB_JBOSS_ADMIN_ONLYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_ADMIN_ONLY#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">No</UC4RB_JBOSS_ADMIN_ONLYs.00>
 <UC4RB_JBOSS_CONFIG_FILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_CONFIG_FILE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER"/>
-<UC4RB_JBOSS_FAIL_RUNNINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_RUNNING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">NO</UC4RB_JBOSS_FAIL_RUNNINGs.00>
+<UC4RB_JBOSS_FAIL_RUNNINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_RUNNING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">No</UC4RB_JBOSS_FAIL_RUNNINGs.00>
 <UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">EXT:/jboss/server/home_directory</UC4RB_JBOSS_HOMEs.00>
 <UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">EXT:/jboss/host</UC4RB_JBOSS_HOSTs.00>
 <UC4RB_JBOSS_HOST_CONFIG_FILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST_CONFIG_FILE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER"/>
@@ -271,9 +271,9 @@
 <node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">
 <PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">
-<UC4RB_JBOSS_ADMIN_ONLYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_ADMIN_ONLY#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">NO</UC4RB_JBOSS_ADMIN_ONLYs.00>
+<UC4RB_JBOSS_ADMIN_ONLYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_ADMIN_ONLY#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">No</UC4RB_JBOSS_ADMIN_ONLYs.00>
 <UC4RB_JBOSS_CONFIG_FILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_CONFIG_FILE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER"/>
-<UC4RB_JBOSS_FAIL_RUNNINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_RUNNING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">NO</UC4RB_JBOSS_FAIL_RUNNINGs.00>
+<UC4RB_JBOSS_FAIL_RUNNINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_RUNNING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">No</UC4RB_JBOSS_FAIL_RUNNINGs.00>
 <UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">EXT:/jboss/server/home_directory</UC4RB_JBOSS_HOMEs.00>
 <UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER">EXT:/jboss/host</UC4RB_JBOSS_HOSTs.00>
 <UC4RB_JBOSS_HOST_CONFIG_FILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST_CONFIG_FILE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.START_SERVER"/>
