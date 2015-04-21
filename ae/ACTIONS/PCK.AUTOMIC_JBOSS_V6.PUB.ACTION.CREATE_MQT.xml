@@ -392,7 +392,7 @@
 <FInclSubDirs>0</FInclSubDirs>
 </ROLLBACK>
 <SCRIPT mode="1" state="1">
-<MSCRI><![CDATA[:INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.SET_BACKUP_DIRECTORY]]]></MSCRI>
+<MSCRI><![CDATA[:INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.SET_BACKUP_DIRECTORY]]></MSCRI>
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
 <DOC><![CDATA[Creates a message queue or topic in domain mode (with specified profile) or standalone mode of Jboss V6 application server.
