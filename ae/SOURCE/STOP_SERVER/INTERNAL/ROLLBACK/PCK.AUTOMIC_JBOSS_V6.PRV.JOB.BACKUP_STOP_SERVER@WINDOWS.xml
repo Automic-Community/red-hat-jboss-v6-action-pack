@@ -117,6 +117,8 @@
 <SCRIPT mode="1" state="1">
 <MSCRI><![CDATA[!Backup only in case server was started using domain.bat/standalone.bat.
 !Command line used to run JBoss will be backed up.
+:INCLUDE PCK.ITPA_SHARED.PUB.INCLUDE.POWERSHELL_UTILITY
+:INCLUDE PCK.AUTOMIC_JBOSS_V6.PRV.INCLUDE.ATTACH
 : INCLUDE PCK.AUTOMIC_JBOSS_V6.PRV.INCLUDE.PS.GET_NETWORK_STATISTICS@WINDOWS
 function backUpPID {
 : IF &UC4RB_JBOSS_HOST# EQ ""
