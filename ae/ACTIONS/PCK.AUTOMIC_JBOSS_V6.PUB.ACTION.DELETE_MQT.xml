@@ -55,16 +55,16 @@
 <node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT">
 <PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT">
-<UC4RB_JBOSS_FAIL_MISSINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_MISSING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT">No</UC4RB_JBOSS_FAIL_MISSINGs.00>
-<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"></UC4RB_JBOSS_HOMEs.00>
-<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"></UC4RB_JBOSS_HOSTs.00>
-<UC4RB_JBOSS_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"></UC4RB_JBOSS_NAMEs.00>
+<UC4RB_JBOSS_FAIL_MISSINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_MISSING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT">NO</UC4RB_JBOSS_FAIL_MISSINGs.00>
+<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"/>
+<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"/>
+<UC4RB_JBOSS_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"/>
 <UC4RB_JBOSS_OPERATING_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_OPERATING_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT">Standalone</UC4RB_JBOSS_OPERATING_MODEs.00>
-<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"></UC4RB_JBOSS_PASSWORDs.00>
-<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"></UC4RB_JBOSS_PORTs.00>
-<UC4RB_JBOSS_PROFILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PROFILE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"></UC4RB_JBOSS_PROFILEs.00>
+<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"/>
+<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"/>
+<UC4RB_JBOSS_PROFILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PROFILE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"/>
 <UC4RB_JBOSS_TYPEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_TYPE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT">Queue</UC4RB_JBOSS_TYPEs.00>
-<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"></UC4RB_JBOSS_USERNAMEs.00>
+<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -122,16 +122,16 @@
 <node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT">
 <PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT">
-<UC4RB_JBOSS_FAIL_MISSINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_MISSING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT">No</UC4RB_JBOSS_FAIL_MISSINGs.00>
-<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"></UC4RB_JBOSS_HOMEs.00>
-<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"></UC4RB_JBOSS_HOSTs.00>
-<UC4RB_JBOSS_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"></UC4RB_JBOSS_NAMEs.00>
+<UC4RB_JBOSS_FAIL_MISSINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_MISSING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT">NO</UC4RB_JBOSS_FAIL_MISSINGs.00>
+<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"/>
+<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"/>
+<UC4RB_JBOSS_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"/>
 <UC4RB_JBOSS_OPERATING_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_OPERATING_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT">Standalone</UC4RB_JBOSS_OPERATING_MODEs.00>
-<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"></UC4RB_JBOSS_PASSWORDs.00>
-<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"></UC4RB_JBOSS_PORTs.00>
-<UC4RB_JBOSS_PROFILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PROFILE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"></UC4RB_JBOSS_PROFILEs.00>
+<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"/>
+<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"/>
+<UC4RB_JBOSS_PROFILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PROFILE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"/>
 <UC4RB_JBOSS_TYPEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_TYPE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT">Queue</UC4RB_JBOSS_TYPEs.00>
-<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"></UC4RB_JBOSS_USERNAMEs.00>
+<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -189,16 +189,16 @@
 <node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT">
 <PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT">
-<UC4RB_JBOSS_FAIL_MISSINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_MISSING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT">No</UC4RB_JBOSS_FAIL_MISSINGs.00>
-<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"></UC4RB_JBOSS_HOMEs.00>
-<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"></UC4RB_JBOSS_HOSTs.00>
-<UC4RB_JBOSS_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"></UC4RB_JBOSS_NAMEs.00>
+<UC4RB_JBOSS_FAIL_MISSINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_MISSING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT">NO</UC4RB_JBOSS_FAIL_MISSINGs.00>
+<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"/>
+<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"/>
+<UC4RB_JBOSS_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"/>
 <UC4RB_JBOSS_OPERATING_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_OPERATING_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT">Standalone</UC4RB_JBOSS_OPERATING_MODEs.00>
-<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"></UC4RB_JBOSS_PASSWORDs.00>
-<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"></UC4RB_JBOSS_PORTs.00>
-<UC4RB_JBOSS_PROFILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PROFILE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"></UC4RB_JBOSS_PROFILEs.00>
+<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"/>
+<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"/>
+<UC4RB_JBOSS_PROFILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PROFILE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"/>
 <UC4RB_JBOSS_TYPEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_TYPE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT">Queue</UC4RB_JBOSS_TYPEs.00>
-<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"></UC4RB_JBOSS_USERNAMEs.00>
+<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -240,16 +240,16 @@
 <node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT">
 <PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT">
-<UC4RB_JBOSS_FAIL_MISSINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_MISSING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT">No</UC4RB_JBOSS_FAIL_MISSINGs.00>
-<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"></UC4RB_JBOSS_HOMEs.00>
-<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"></UC4RB_JBOSS_HOSTs.00>
-<UC4RB_JBOSS_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"></UC4RB_JBOSS_NAMEs.00>
+<UC4RB_JBOSS_FAIL_MISSINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_MISSING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT">NO</UC4RB_JBOSS_FAIL_MISSINGs.00>
+<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"/>
+<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"/>
+<UC4RB_JBOSS_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"/>
 <UC4RB_JBOSS_OPERATING_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_OPERATING_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT">Standalone</UC4RB_JBOSS_OPERATING_MODEs.00>
-<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"></UC4RB_JBOSS_PASSWORDs.00>
-<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"></UC4RB_JBOSS_PORTs.00>
-<UC4RB_JBOSS_PROFILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PROFILE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"></UC4RB_JBOSS_PROFILEs.00>
+<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"/>
+<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"/>
+<UC4RB_JBOSS_PROFILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PROFILE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"/>
 <UC4RB_JBOSS_TYPEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_TYPE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT">Queue</UC4RB_JBOSS_TYPEs.00>
-<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"></UC4RB_JBOSS_USERNAMEs.00>
+<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_MQT"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>

@@ -59,7 +59,7 @@
 <UC4RB_JBOSS_DRIVER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_DRIVER_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
 <UC4RB_JBOSS_DS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_DS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
 <UC4RB_JBOSS_DS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_DS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
-<UC4RB_JBOSS_FAIL_EXISTINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_EXISTING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE">Yes</UC4RB_JBOSS_FAIL_EXISTINGs.00>
+<UC4RB_JBOSS_FAIL_EXISTINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_EXISTING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE">YES</UC4RB_JBOSS_FAIL_EXISTINGs.00>
 <UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
 <UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
 <UC4RB_JBOSS_JNDI_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_JNDI_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
@@ -72,7 +72,7 @@
 <UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
 <UC4RB_JBOSS_PROFILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PROFILE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
 <UC4RB_JBOSS_PROPERTIESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PROPERTIES#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
-<UC4RB_JBOSS_UPDATE_EXISTINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_UPDATE_EXISTING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE">Yes</UC4RB_JBOSS_UPDATE_EXISTINGs.00>
+<UC4RB_JBOSS_UPDATE_EXISTINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_UPDATE_EXISTING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE">YES</UC4RB_JBOSS_UPDATE_EXISTINGs.00>
 <UC4RB_JBOSS_URLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_URL#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
 <UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
 </PRPTBOX>
@@ -136,7 +136,7 @@
 <UC4RB_JBOSS_DRIVER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_DRIVER_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
 <UC4RB_JBOSS_DS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_DS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
 <UC4RB_JBOSS_DS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_DS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
-<UC4RB_JBOSS_FAIL_EXISTINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_EXISTING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE">Yes</UC4RB_JBOSS_FAIL_EXISTINGs.00>
+<UC4RB_JBOSS_FAIL_EXISTINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_EXISTING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE">YES</UC4RB_JBOSS_FAIL_EXISTINGs.00>
 <UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
 <UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
 <UC4RB_JBOSS_JNDI_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_JNDI_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
@@ -149,7 +149,7 @@
 <UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
 <UC4RB_JBOSS_PROFILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PROFILE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
 <UC4RB_JBOSS_PROPERTIESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PROPERTIES#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
-<UC4RB_JBOSS_UPDATE_EXISTINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_UPDATE_EXISTING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE">Yes</UC4RB_JBOSS_UPDATE_EXISTINGs.00>
+<UC4RB_JBOSS_UPDATE_EXISTINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_UPDATE_EXISTING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE">YES</UC4RB_JBOSS_UPDATE_EXISTINGs.00>
 <UC4RB_JBOSS_URLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_URL#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
 <UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
 </PRPTBOX>
@@ -213,7 +213,7 @@
 <UC4RB_JBOSS_DRIVER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_DRIVER_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
 <UC4RB_JBOSS_DS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_DS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
 <UC4RB_JBOSS_DS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_DS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
-<UC4RB_JBOSS_FAIL_EXISTINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_EXISTING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE">Yes</UC4RB_JBOSS_FAIL_EXISTINGs.00>
+<UC4RB_JBOSS_FAIL_EXISTINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_EXISTING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE">YES</UC4RB_JBOSS_FAIL_EXISTINGs.00>
 <UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
 <UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
 <UC4RB_JBOSS_JNDI_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_JNDI_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
@@ -226,7 +226,7 @@
 <UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
 <UC4RB_JBOSS_PROFILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PROFILE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
 <UC4RB_JBOSS_PROPERTIESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PROPERTIES#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
-<UC4RB_JBOSS_UPDATE_EXISTINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_UPDATE_EXISTING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE">Yes</UC4RB_JBOSS_UPDATE_EXISTINGs.00>
+<UC4RB_JBOSS_UPDATE_EXISTINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_UPDATE_EXISTING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE">YES</UC4RB_JBOSS_UPDATE_EXISTINGs.00>
 <UC4RB_JBOSS_URLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_URL#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
 <UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
 </PRPTBOX>
@@ -274,7 +274,7 @@
 <UC4RB_JBOSS_DRIVER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_DRIVER_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
 <UC4RB_JBOSS_DS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_DS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
 <UC4RB_JBOSS_DS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_DS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
-<UC4RB_JBOSS_FAIL_EXISTINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_EXISTING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE">Yes</UC4RB_JBOSS_FAIL_EXISTINGs.00>
+<UC4RB_JBOSS_FAIL_EXISTINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_EXISTING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE">YES</UC4RB_JBOSS_FAIL_EXISTINGs.00>
 <UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
 <UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
 <UC4RB_JBOSS_JNDI_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_JNDI_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
@@ -287,7 +287,7 @@
 <UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
 <UC4RB_JBOSS_PROFILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PROFILE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
 <UC4RB_JBOSS_PROPERTIESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PROPERTIES#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
-<UC4RB_JBOSS_UPDATE_EXISTINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_UPDATE_EXISTING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE">Yes</UC4RB_JBOSS_UPDATE_EXISTINGs.00>
+<UC4RB_JBOSS_UPDATE_EXISTINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_UPDATE_EXISTING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE">YES</UC4RB_JBOSS_UPDATE_EXISTINGs.00>
 <UC4RB_JBOSS_URLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_URL#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
 <UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
 </PRPTBOX>

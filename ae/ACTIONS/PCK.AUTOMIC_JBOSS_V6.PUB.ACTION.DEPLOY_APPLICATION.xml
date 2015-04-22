@@ -55,17 +55,17 @@
 <node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">
 <PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">
-<UC4RB_JBOSS_APP_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_APP_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_APP_NAMEs.00>
-<UC4RB_JBOSS_FAIL_EXISTINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_EXISTING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">Yes</UC4RB_JBOSS_FAIL_EXISTINGs.00>
-<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_HOMEs.00>
-<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_HOSTs.00>
-<UC4RB_JBOSS_OPERATING_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_OPERATING_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_OPERATING_MODEs.00>
-<UC4RB_JBOSS_PACKAGEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PACKAGE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_PACKAGEs.00>
-<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_PASSWORDs.00>
-<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_PORTs.00>
-<UC4RB_JBOSS_SERVER_GROUPSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_GROUPS#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_SERVER_GROUPSs.00>
-<UC4RB_JBOSS_UPDATEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_UPDATE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">No</UC4RB_JBOSS_UPDATEs.00>
-<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_USERNAMEs.00>
+<UC4RB_JBOSS_APP_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_APP_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
+<UC4RB_JBOSS_FAIL_EXISTINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_EXISTING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">YES</UC4RB_JBOSS_FAIL_EXISTINGs.00>
+<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
+<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
+<UC4RB_JBOSS_OPERATING_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_OPERATING_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
+<UC4RB_JBOSS_PACKAGEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PACKAGE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
+<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
+<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
+<UC4RB_JBOSS_SERVER_GROUPSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_GROUPS#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
+<UC4RB_JBOSS_UPDATEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_UPDATE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">NO</UC4RB_JBOSS_UPDATEs.00>
+<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -126,17 +126,17 @@
 <node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">
 <PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">
-<UC4RB_JBOSS_APP_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_APP_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_APP_NAMEs.00>
-<UC4RB_JBOSS_FAIL_EXISTINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_EXISTING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">Yes</UC4RB_JBOSS_FAIL_EXISTINGs.00>
-<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_HOMEs.00>
-<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_HOSTs.00>
-<UC4RB_JBOSS_OPERATING_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_OPERATING_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_OPERATING_MODEs.00>
-<UC4RB_JBOSS_PACKAGEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PACKAGE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_PACKAGEs.00>
-<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_PASSWORDs.00>
-<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_PORTs.00>
-<UC4RB_JBOSS_SERVER_GROUPSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_GROUPS#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_SERVER_GROUPSs.00>
-<UC4RB_JBOSS_UPDATEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_UPDATE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">No</UC4RB_JBOSS_UPDATEs.00>
-<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_USERNAMEs.00>
+<UC4RB_JBOSS_APP_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_APP_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
+<UC4RB_JBOSS_FAIL_EXISTINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_EXISTING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">YES</UC4RB_JBOSS_FAIL_EXISTINGs.00>
+<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
+<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
+<UC4RB_JBOSS_OPERATING_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_OPERATING_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
+<UC4RB_JBOSS_PACKAGEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PACKAGE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
+<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
+<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
+<UC4RB_JBOSS_SERVER_GROUPSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_GROUPS#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
+<UC4RB_JBOSS_UPDATEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_UPDATE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">NO</UC4RB_JBOSS_UPDATEs.00>
+<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -195,17 +195,17 @@
 <node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">
 <PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">
-<UC4RB_JBOSS_APP_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_APP_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_APP_NAMEs.00>
-<UC4RB_JBOSS_FAIL_EXISTINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_EXISTING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">Yes</UC4RB_JBOSS_FAIL_EXISTINGs.00>
-<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_HOMEs.00>
-<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_HOSTs.00>
-<UC4RB_JBOSS_OPERATING_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_OPERATING_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_OPERATING_MODEs.00>
-<UC4RB_JBOSS_PACKAGEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PACKAGE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_PACKAGEs.00>
-<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_PASSWORDs.00>
-<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_PORTs.00>
-<UC4RB_JBOSS_SERVER_GROUPSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_GROUPS#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_SERVER_GROUPSs.00>
-<UC4RB_JBOSS_UPDATEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_UPDATE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">No</UC4RB_JBOSS_UPDATEs.00>
-<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_USERNAMEs.00>
+<UC4RB_JBOSS_APP_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_APP_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
+<UC4RB_JBOSS_FAIL_EXISTINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_EXISTING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">YES</UC4RB_JBOSS_FAIL_EXISTINGs.00>
+<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
+<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
+<UC4RB_JBOSS_OPERATING_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_OPERATING_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
+<UC4RB_JBOSS_PACKAGEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PACKAGE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
+<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
+<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
+<UC4RB_JBOSS_SERVER_GROUPSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_GROUPS#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
+<UC4RB_JBOSS_UPDATEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_UPDATE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">NO</UC4RB_JBOSS_UPDATEs.00>
+<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -247,17 +247,17 @@
 <node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">
 <PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">
-<UC4RB_JBOSS_APP_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_APP_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_APP_NAMEs.00>
-<UC4RB_JBOSS_FAIL_EXISTINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_EXISTING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">Yes</UC4RB_JBOSS_FAIL_EXISTINGs.00>
-<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_HOMEs.00>
-<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_HOSTs.00>
-<UC4RB_JBOSS_OPERATING_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_OPERATING_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_OPERATING_MODEs.00>
-<UC4RB_JBOSS_PACKAGEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PACKAGE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_PACKAGEs.00>
-<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_PASSWORDs.00>
-<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_PORTs.00>
-<UC4RB_JBOSS_SERVER_GROUPSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_GROUPS#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_SERVER_GROUPSs.00>
-<UC4RB_JBOSS_UPDATEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_UPDATE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">No</UC4RB_JBOSS_UPDATEs.00>
-<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"></UC4RB_JBOSS_USERNAMEs.00>
+<UC4RB_JBOSS_APP_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_APP_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
+<UC4RB_JBOSS_FAIL_EXISTINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_EXISTING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">YES</UC4RB_JBOSS_FAIL_EXISTINGs.00>
+<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
+<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
+<UC4RB_JBOSS_OPERATING_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_OPERATING_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
+<UC4RB_JBOSS_PACKAGEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PACKAGE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
+<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
+<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
+<UC4RB_JBOSS_SERVER_GROUPSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_GROUPS#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
+<UC4RB_JBOSS_UPDATEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_UPDATE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION">NO</UC4RB_JBOSS_UPDATEs.00>
+<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DEPLOY_APPLICATION"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
