@@ -5,10 +5,14 @@ Resource          context.txt
 Library           com.automic.robot.itpa.ItpaLibrary
 
 *** Key Words ***
+Suite Setup
+    Init Target Server
+    Init AE And Package
+
 Init Action
     [Arguments]    ${actionName}
     Action Create    ${actionName}
-    Action Set    ${PROMPTSET_AGENT}      ${_AGENT}
+    Action Set    ${PROMPTSET_AGENT}    ${_AGENT}
     Action Set    ${PROMPTSET_LOGIN}    ${_LOGIN}
 
 Action Report Should Contain
@@ -48,3 +52,59 @@ Action Return Variable Should Be Equal As Integers
     [Arguments]    ${variableValue}
     ${out}=    Action Get Variable    ${variableName}
     Should Be Equal As Integers    ${out}    ${variableValue}
+
+JBOSS Commont Setting No User
+    [Documentation]    Requirement
+    Run Keyword If    '${OS}' == 'WIN'    JBOSS Commont Setting No User Win
+    Run Keyword If    '${OS}' == 'UNIX'    JBOSS Commont Setting No User Unix
+
+JBOSS Commont Setting No User Win
+    Action Set    ${PRT_START_SERVER_JBOSS_HOME}    C:\\JBoss\\jboss-eap-6.3
+    Action Set    ${PRT_START_SERVER_JBOSS_HOST}    localhost
+    Action Set    ${PRT_START_SERVER_JBOSS_PORT}    9999
+    Action Set    ${PRT_START_SERVER_JBOSS_USERNAME}    ${EMPTY}
+    Action Set    ${PRT_START_SERVER_JBOSS_PASSWORD}    ${EMPTY}
+    Action Set    ${PRT_STOP_SERVER_JBOSS_HOST_CONTROLLER}    ${EMPTY}
+    Action Set    ${PRT_STOP_SERVER_JBOSS_SERVER}    ${EMPTY}
+
+JBOSS Commont Setting No User Unix
+    Action Set    ${PRT_START_SERVER_JBOSS_HOME}    /usr/local/JBoss/jboss-eap-6.3
+    Action Set    ${PRT_START_SERVER_JBOSS_HOST}    localhost
+    Action Set    ${PRT_START_SERVER_JBOSS_PORT}    9999
+    Action Set    ${PRT_START_SERVER_JBOSS_USERNAME}    ${EMPTY}
+    Action Set    ${PRT_START_SERVER_JBOSS_PASSWORD}    ${EMPTY}
+    Action Set    ${PRT_STOP_SERVER_JBOSS_HOST_CONTROLLER}    ${EMPTY}
+    Action Set    ${PRT_STOP_SERVER_JBOSS_SERVER}    ${EMPTY}
+
+JBOSS Commont Setting With User
+    [Documentation]    Requirement
+    Run Keyword If    '${OS}' == 'WIN'    JBOSS Commont Setting With User Win
+    Run Keyword If    '${OS}' == 'UNIX'    JBOSS Commont Setting With User Unix
+
+JBOSS Commont Setting With User Win
+    Action Set    ${PRT_START_SERVER_JBOSS_HOME}    C:\\JBoss\\jboss-eap-6.3
+    Action Set    ${PRT_START_SERVER_JBOSS_HOST}    localhost
+    Action Set    ${PRT_START_SERVER_JBOSS_PORT}    9999
+    Action Set    ${PRT_START_SERVER_JBOSS_USERNAME}    admin
+    Action Set    ${PRT_START_SERVER_JBOSS_PASSWORD}    ventum2011@
+    Action Set    ${PRT_STOP_SERVER_JBOSS_HOST_CONTROLLER}    ${EMPTY}
+    Action Set    ${PRT_STOP_SERVER_JBOSS_SERVER}    ${EMPTY}
+
+JBOSS Commont Setting With User Unix
+    Action Set    ${PRT_START_SERVER_JBOSS_HOME}    /usr/local/JBoss/jboss-eap-6.3
+    Action Set    ${PRT_START_SERVER_JBOSS_HOST}    localhost
+    Action Set    ${PRT_START_SERVER_JBOSS_PORT}    9999
+    Action Set    ${PRT_START_SERVER_JBOSS_USERNAME}    admin
+    Action Set    ${PRT_START_SERVER_JBOSS_PASSWORD}    ventum2011@
+    Action Set    ${PRT_STOP_SERVER_JBOSS_HOST_CONTROLLER}    ${EMPTY}
+    Action Set    ${PRT_STOP_SERVER_JBOSS_SERVER}    ${EMPTY}
+
+JBOSS Setting Package
+    Run Keyword If    '${OS}' == 'WIN'    JBOSS Setting Win Package
+    Run Keyword If    '${OS}' == 'UNIX'    JBOSS Setting Unix Package
+
+JBOSS Setting Win Package
+    Action Set    ${PRT_DEPLOY_APPLICATION_JBOSS_PACKAGE}    C:\\automic\\sample.war
+
+JBOSS Setting Unix Package
+    Action Set    ${PRT_DEPLOY_APPLICATION_JBOSS_PACKAGE}    /usr/local/JBoss/sample.war
