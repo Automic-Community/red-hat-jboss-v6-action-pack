@@ -265,8 +265,8 @@
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
-<AGENTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">SD01DEV1</AGENTs.00>
-<LOGINs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">VVNSAT.LOGIN_ALL</LOGINs.00>
+<AGENTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"></AGENTs.00>
+<LOGINs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"></LOGINs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
