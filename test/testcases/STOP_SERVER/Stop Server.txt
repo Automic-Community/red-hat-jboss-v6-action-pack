@@ -23,3 +23,7 @@ Stop Server Template
     Action Report Should Be Found
     Action Return Code Should Be    ${returnCode}
     Action Return Status Should Be    ${returnStatus}
+    Init Action    ${ACTION_START_SERVER}
+    Action Set    ${PRT_START_SERVER_JBOSS_OPERATING_MODE}    ${mode}
+    JBOSS Commont Setting No User
+    Action Execute

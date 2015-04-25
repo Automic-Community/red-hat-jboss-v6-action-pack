@@ -2,31 +2,25 @@
 Documentation     NOTE:
 ...               add note here
 Suite Setup       Suite Setup
-Force Tags        DELETE_MQT    _template_
+Force Tags        DELETE_MQT    win    unix
 Test Template     Delete Mqt Template
 Resource          ../../resources/keywords.txt
 
-*** Test Cases ***    PATH     INPUT2    RETURN CODE
-Test Case 1           lorem    ipsum     0
-
-Test Case 2           ipsum    lorem     1
+*** Test Cases ***    MODE          PROFILE       NAME       TYPE     FAIL IF MISSING    RETURN CODE    RETURN STATUS
+Delete MQT Normal     Standalone    mqtprofile    mqtname    Queue    NO                 0              ${ENDED_OK - ended normally}
 
 *** Keywords ***
 Delete Mqt Template
-    [Arguments]    ${path}    ${input2}    ${returnCode}    ${returnStatus}    ${outVara}
+    [Arguments]    ${mode}    ${profile}    ${name}    ${type}    ${fail_if_missing}    ${returnCode}
+    ...    ${returnStatus}
     Init Action    ${ACTION_DELETE_MQT}
-    Action Set    ${PRT_DELETE_MQT_JBOSS_HOME}    ${input2}
-    Action Set    ${PRT_DELETE_MQT_JBOSS_HOST}    ${input2}
-    Action Set    ${PRT_DELETE_MQT_JBOSS_PORT}    ${input2}
-    Action Set    ${PRT_DELETE_MQT_JBOSS_USERNAME}    ${input2}
-    Action Set    ${PRT_DELETE_MQT_JBOSS_PASSWORD}    ${input2}
-    Action Set    ${PRT_DELETE_MQT_JBOSS_OPERATING_MODE}    ${input2}
-    Action Set    ${PRT_DELETE_MQT_JBOSS_PROFILE}    ${input2}
-    Action Set    ${PRT_DELETE_MQT_JBOSS_NAME}    ${input2}
-    Action Set    ${PRT_DELETE_MQT_JBOSS_TYPE}    ${input2}
-    Action Set    ${PRT_DELETE_MQT_JBOSS_FAIL_MISSING}    ${input2}
+    Action Set    ${PRT_DELETE_MQT_JBOSS_OPERATING_MODE}    ${mode}
+    Action Set    ${PRT_DELETE_MQT_JBOSS_PROFILE}    ${profile}
+    Action Set    ${PRT_DELETE_MQT_JBOSS_NAME}    ${name}
+    Action Set    ${PRT_DELETE_MQT_JBOSS_TYPE}    ${type}
+    Action Set    ${PRT_DELETE_MQT_JBOSS_FAIL_MISSING}    ${fail_if_missing}
+    JBOSS Commont Setting With User
     Action Execute
     Action Report Should Be Found
     Action Return Code Should Be    ${returnCode}
     Action Return Status Should Be    ${returnStatus}
-    Action Return Variable Should Be    &UC4RB_OUT_VARA#    ${outVara}

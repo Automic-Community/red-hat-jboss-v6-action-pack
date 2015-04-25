@@ -13,6 +13,15 @@ Start Application Normal
 *** Keywords ***
 Start Application Template
     [Arguments]    ${mode}    ${appname}    ${failifrunning}    ${returnCode}    ${returnStatus}
+    Init Action    ${ACTION_DEPLOY_APPLICATION}
+    Action Set    ${PRT_DEPLOY_APPLICATION_JBOSS_OPERATING_MODE}    ${mode}
+    Action Set    ${PRT_DEPLOY_APPLICATION_JBOSS_APP_NAME}    ${appname}
+    Action Set    ${PRT_DEPLOY_APPLICATION_JBOSS_FAIL_EXISTING}    NO
+    Action Set    ${PRT_DEPLOY_APPLICATION_JBOSS_UPDATE}    YES
+    Action Set    ${PRT_DEPLOY_APPLICATION_JBOSS_SERVER_GROUPS}    ${EMPTY}
+    JBOSS Commont Setting With User
+    JBOSS Setting Package
+    Action Execute
     Init Action    ${ACTION_START_APPLICATION}
     Action Set    ${PRT_START_APPLICATION_JBOSS_OPERATING_MODE}    ${mode}
     Action Set    ${PRT_START_APPLICATION_JBOSS_SERVER_GROUPS}    ${EMPTY}
@@ -23,3 +32,10 @@ Start Application Template
     Action Report Should Be Found
     Action Return Code Should Be    ${returnCode}
     Action Return Status Should Be    ${returnStatus}
+    Init Action    ${ACTION_UNDEPLOY_APPLICATION}
+    Action Set    ${PRT_UNDEPLOY_APPLICATION_JBOSS_OPERATING_MODE}    ${mode}
+    Action Set    ${PRT_UNDEPLOY_APPLICATION_JBOSS_APP_NAME}    ${appname}
+    Action Set    ${PRT_UNDEPLOY_APPLICATION_JBOSS_FAIL_MISSING}    NO
+    Action Set    ${PRT_UNDEPLOY_APPLICATION_JBOSS_SERVER_GROUPS}    ${EMPTY}
+    JBOSS Commont Setting With User
+    Action Execute
