@@ -55,12 +55,12 @@
 <node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">
 <PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">
-<UC4RB_JBOSS_DS_TYPEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_DS_TYPE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">TX datasource</UC4RB_JBOSS_DS_TYPEs.00>
-<UC4RB_JBOSS_FAIL_MISSINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_MISSING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">NO</UC4RB_JBOSS_FAIL_MISSINGs.00>
+<UC4RB_JBOSS_DS_TYPEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_DS_TYPE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">TX datasource</UC4RB_JBOSS_DS_TYPEs.00>
+<UC4RB_JBOSS_FAIL_MISSINGs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_MISSING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">NO</UC4RB_JBOSS_FAIL_MISSINGs.00>
 <UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE"/>
 <UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE"/>
 <UC4RB_JBOSS_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE"/>
-<UC4RB_JBOSS_OPERATING_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_OPERATING_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">Standalone</UC4RB_JBOSS_OPERATING_MODEs.00>
+<UC4RB_JBOSS_OPERATING_MODEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_OPERATING_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">Standalone</UC4RB_JBOSS_OPERATING_MODEs.00>
 <UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE"/>
 <UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE"/>
 <UC4RB_JBOSS_PROFILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PROFILE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE"/>
@@ -122,12 +122,12 @@
 <node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">
 <PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">
-<UC4RB_JBOSS_DS_TYPEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_DS_TYPE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">TX datasource</UC4RB_JBOSS_DS_TYPEs.00>
-<UC4RB_JBOSS_FAIL_MISSINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_MISSING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">NO</UC4RB_JBOSS_FAIL_MISSINGs.00>
+<UC4RB_JBOSS_DS_TYPEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_DS_TYPE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">TX datasource</UC4RB_JBOSS_DS_TYPEs.00>
+<UC4RB_JBOSS_FAIL_MISSINGs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_MISSING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">NO</UC4RB_JBOSS_FAIL_MISSINGs.00>
 <UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE"/>
 <UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE"/>
 <UC4RB_JBOSS_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE"/>
-<UC4RB_JBOSS_OPERATING_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_OPERATING_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">Standalone</UC4RB_JBOSS_OPERATING_MODEs.00>
+<UC4RB_JBOSS_OPERATING_MODEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_OPERATING_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">Standalone</UC4RB_JBOSS_OPERATING_MODEs.00>
 <UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE"/>
 <UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE"/>
 <UC4RB_JBOSS_PROFILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PROFILE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE"/>
@@ -189,12 +189,12 @@
 <node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">
 <PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">
-<UC4RB_JBOSS_DS_TYPEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_DS_TYPE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">TX datasource</UC4RB_JBOSS_DS_TYPEs.00>
-<UC4RB_JBOSS_FAIL_MISSINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_MISSING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">NO</UC4RB_JBOSS_FAIL_MISSINGs.00>
+<UC4RB_JBOSS_DS_TYPEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_DS_TYPE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">TX datasource</UC4RB_JBOSS_DS_TYPEs.00>
+<UC4RB_JBOSS_FAIL_MISSINGs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_MISSING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">NO</UC4RB_JBOSS_FAIL_MISSINGs.00>
 <UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE"/>
 <UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE"/>
 <UC4RB_JBOSS_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE"/>
-<UC4RB_JBOSS_OPERATING_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_OPERATING_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">Standalone</UC4RB_JBOSS_OPERATING_MODEs.00>
+<UC4RB_JBOSS_OPERATING_MODEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_OPERATING_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">Standalone</UC4RB_JBOSS_OPERATING_MODEs.00>
 <UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE"/>
 <UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE"/>
 <UC4RB_JBOSS_PROFILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PROFILE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE"/>
@@ -240,12 +240,12 @@
 <node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">
 <PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">
-<UC4RB_JBOSS_DS_TYPEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_DS_TYPE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">TX datasource</UC4RB_JBOSS_DS_TYPEs.00>
-<UC4RB_JBOSS_FAIL_MISSINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_MISSING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">NO</UC4RB_JBOSS_FAIL_MISSINGs.00>
+<UC4RB_JBOSS_DS_TYPEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_DS_TYPE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">TX datasource</UC4RB_JBOSS_DS_TYPEs.00>
+<UC4RB_JBOSS_FAIL_MISSINGs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_MISSING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">NO</UC4RB_JBOSS_FAIL_MISSINGs.00>
 <UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE"/>
 <UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE"/>
 <UC4RB_JBOSS_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE"/>
-<UC4RB_JBOSS_OPERATING_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_OPERATING_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">Standalone</UC4RB_JBOSS_OPERATING_MODEs.00>
+<UC4RB_JBOSS_OPERATING_MODEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_OPERATING_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE">Standalone</UC4RB_JBOSS_OPERATING_MODEs.00>
 <UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE"/>
 <UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE"/>
 <UC4RB_JBOSS_PROFILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PROFILE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE"/>
@@ -321,7 +321,11 @@
 </node>
 <node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE" parent="PRPTS" type="PROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE" ontop="1">
-<PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE" prptmode="1"/>
+<PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_DATASOURCE" prptmode="1">
+<UC4RB_JBOSS_OPERATING_MODEs.00 altview="0" haslist="0">Standalone</UC4RB_JBOSS_OPERATING_MODEs.00>
+<UC4RB_JBOSS_DS_TYPEs.00 altview="0" haslist="0">TX datasource</UC4RB_JBOSS_DS_TYPEs.00>
+<UC4RB_JBOSS_FAIL_MISSINGs.00 altview="0" haslist="0">NO</UC4RB_JBOSS_FAIL_MISSINGs.00>
+</PRPTBOX>
 </PROMPTSET>
 </node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">

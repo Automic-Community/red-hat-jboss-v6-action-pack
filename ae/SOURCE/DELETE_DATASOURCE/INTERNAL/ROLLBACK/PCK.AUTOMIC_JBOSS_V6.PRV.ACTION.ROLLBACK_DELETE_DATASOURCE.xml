@@ -137,11 +137,11 @@
 <UC4RB_JBOSS_DRIVER_NAMEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_DRIVER_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE">h2</UC4RB_JBOSS_DRIVER_NAMEs.00>
 <UC4RB_JBOSS_DS_PASSWORDs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_DS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE">sa</UC4RB_JBOSS_DS_PASSWORDs.00>
 <UC4RB_JBOSS_DS_USERNAMEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_DS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE">sa</UC4RB_JBOSS_DS_USERNAMEs.00>
-<UC4RB_JBOSS_FAIL_EXISTINGs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_EXISTING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE">No</UC4RB_JBOSS_FAIL_EXISTINGs.00>
+<UC4RB_JBOSS_FAIL_EXISTINGs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_EXISTING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE">NO</UC4RB_JBOSS_FAIL_EXISTINGs.00>
 <UC4RB_JBOSS_HOMEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE">&amp;UC4RB_JBOSS_HOME#</UC4RB_JBOSS_HOMEs.00>
 <UC4RB_JBOSS_HOSTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE">&amp;UC4RB_JBOSS_HOST#</UC4RB_JBOSS_HOSTs.00>
 <UC4RB_JBOSS_JNDI_NAMEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_JNDI_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE">java:jboss/datasources/temp_jndi</UC4RB_JBOSS_JNDI_NAMEs.00>
-<UC4RB_JBOSS_JTA_INTEGRATIONs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_JTA_INTEGRATION#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE">Yes</UC4RB_JBOSS_JTA_INTEGRATIONs.00>
+<UC4RB_JBOSS_JTA_INTEGRATIONs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_JTA_INTEGRATION#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE">YES</UC4RB_JBOSS_JTA_INTEGRATIONs.00>
 <UC4RB_JBOSS_MAX_POOL_SIZEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_MAX_POOL_SIZE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE">10</UC4RB_JBOSS_MAX_POOL_SIZEs.00>
 <UC4RB_JBOSS_MIN_POOL_SIZEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_MIN_POOL_SIZE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE">0</UC4RB_JBOSS_MIN_POOL_SIZEs.00>
 <UC4RB_JBOSS_NAMEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE">&amp;UC4RB_JBOSS_NAME#</UC4RB_JBOSS_NAMEs.00>
@@ -150,7 +150,7 @@
 <UC4RB_JBOSS_PORTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE">&amp;UC4RB_JBOSS_PORT#</UC4RB_JBOSS_PORTs.00>
 <UC4RB_JBOSS_PROFILEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PROFILE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE">&amp;UC4RB_JBOSS_PROFILE#</UC4RB_JBOSS_PROFILEs.00>
 <UC4RB_JBOSS_PROPERTIESs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PROPERTIES#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE"/>
-<UC4RB_JBOSS_UPDATE_EXISTINGs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_UPDATE_EXISTING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE">Yes</UC4RB_JBOSS_UPDATE_EXISTINGs.00>
+<UC4RB_JBOSS_UPDATE_EXISTINGs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_UPDATE_EXISTING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE">YES</UC4RB_JBOSS_UPDATE_EXISTINGs.00>
 <UC4RB_JBOSS_URLs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_URL#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE">jdbc:h2:mem:test</UC4RB_JBOSS_URLs.00>
 <UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_TX_DATASOURCE">&amp;UC4RB_JBOSS_USERNAME#</UC4RB_JBOSS_USERNAMEs.00>
 </PRPTBOX>
@@ -159,8 +159,8 @@
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
-<AGENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
-<LOGINs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<AGENTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -250,7 +250,7 @@
 <UC4RB_JBOSS_DS_CLASSs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_DS_CLASS#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE">jdbc:h2:xa:driver_class</UC4RB_JBOSS_DS_CLASSs.00>
 <UC4RB_JBOSS_DS_PASSWORDs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_DS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE">sa</UC4RB_JBOSS_DS_PASSWORDs.00>
 <UC4RB_JBOSS_DS_USERNAMEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_DS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE">sa</UC4RB_JBOSS_DS_USERNAMEs.00>
-<UC4RB_JBOSS_FAIL_EXISTINGs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_EXISTING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE">No</UC4RB_JBOSS_FAIL_EXISTINGs.00>
+<UC4RB_JBOSS_FAIL_EXISTINGs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_FAIL_EXISTING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE">NO</UC4RB_JBOSS_FAIL_EXISTINGs.00>
 <UC4RB_JBOSS_HOMEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE">&amp;UC4RB_JBOSS_HOME#</UC4RB_JBOSS_HOMEs.00>
 <UC4RB_JBOSS_HOSTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE">&amp;UC4RB_JBOSS_HOST#</UC4RB_JBOSS_HOSTs.00>
 <UC4RB_JBOSS_JNDI_NAMEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_JNDI_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE">java:jboss/datasources/temp_jndi_name</UC4RB_JBOSS_JNDI_NAMEs.00>
@@ -263,7 +263,7 @@
 <UC4RB_JBOSS_PORTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE">&amp;UC4RB_JBOSS_PORT#</UC4RB_JBOSS_PORTs.00>
 <UC4RB_JBOSS_PROFILEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PROFILE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE">&amp;UC4RB_JBOSS_PROFILE#</UC4RB_JBOSS_PROFILEs.00>
 <UC4RB_JBOSS_PROPERTIESs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PROPERTIES#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE"/>
-<UC4RB_JBOSS_UPDATE_EXISTINGs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_UPDATE_EXISTING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE">Yes</UC4RB_JBOSS_UPDATE_EXISTINGs.00>
+<UC4RB_JBOSS_UPDATE_EXISTINGs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_UPDATE_EXISTING#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE">YES</UC4RB_JBOSS_UPDATE_EXISTINGs.00>
 <UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE">&amp;UC4RB_JBOSS_USERNAME#</UC4RB_JBOSS_USERNAMEs.00>
 </PRPTBOX>
 </PROMPTSET>
@@ -271,8 +271,8 @@
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
-<AGENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
-<LOGINs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<AGENTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
