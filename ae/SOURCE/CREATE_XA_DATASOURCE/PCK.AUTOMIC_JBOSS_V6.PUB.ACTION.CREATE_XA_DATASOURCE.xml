@@ -67,7 +67,7 @@
 <UC4RB_JBOSS_MIN_POOL_SIZEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_MIN_POOL_SIZE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE"/>
 <UC4RB_JBOSS_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE"/>
 <UC4RB_JBOSS_OPERATING_MODEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_OPERATING_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE">Standalone</UC4RB_JBOSS_OPERATING_MODEs.00>
-<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE">--10</UC4RB_JBOSS_PASSWORDs.00>
+<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE"/>
 <UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE"/>
 <UC4RB_JBOSS_PROFILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PROFILE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE"/>
 <UC4RB_JBOSS_PROPERTIESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PROPERTIES#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE"/>
@@ -142,7 +142,7 @@
 <UC4RB_JBOSS_MIN_POOL_SIZEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_MIN_POOL_SIZE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE"/>
 <UC4RB_JBOSS_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE"/>
 <UC4RB_JBOSS_OPERATING_MODEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_OPERATING_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE">Standalone</UC4RB_JBOSS_OPERATING_MODEs.00>
-<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE">--10</UC4RB_JBOSS_PASSWORDs.00>
+<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE"/>
 <UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE"/>
 <UC4RB_JBOSS_PROFILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PROFILE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE"/>
 <UC4RB_JBOSS_PROPERTIESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PROPERTIES#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE"/>
@@ -217,7 +217,7 @@
 <UC4RB_JBOSS_MIN_POOL_SIZEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_MIN_POOL_SIZE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE"/>
 <UC4RB_JBOSS_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE"/>
 <UC4RB_JBOSS_OPERATING_MODEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_OPERATING_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE">Standalone</UC4RB_JBOSS_OPERATING_MODEs.00>
-<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE">--10</UC4RB_JBOSS_PASSWORDs.00>
+<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE"/>
 <UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE"/>
 <UC4RB_JBOSS_PROFILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PROFILE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE"/>
 <UC4RB_JBOSS_PROPERTIESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PROPERTIES#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE"/>
@@ -276,7 +276,7 @@
 <UC4RB_JBOSS_MIN_POOL_SIZEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_MIN_POOL_SIZE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE"/>
 <UC4RB_JBOSS_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE"/>
 <UC4RB_JBOSS_OPERATING_MODEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_OPERATING_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE">Standalone</UC4RB_JBOSS_OPERATING_MODEs.00>
-<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE">--10</UC4RB_JBOSS_PASSWORDs.00>
+<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE"/>
 <UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE"/>
 <UC4RB_JBOSS_PROFILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PROFILE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE"/>
 <UC4RB_JBOSS_PROPERTIESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PROPERTIES#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE"/>
@@ -354,7 +354,6 @@
 <node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE" parent="PRPTS" type="PROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE" ontop="1">
 <PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_XA_DATASOURCE" prptmode="1">
-<UC4RB_JBOSS_PASSWORDs.00 altview="0" haslist="0">--10</UC4RB_JBOSS_PASSWORDs.00>
 <UC4RB_JBOSS_OPERATING_MODEs.00 altview="0" haslist="0">Standalone</UC4RB_JBOSS_OPERATING_MODEs.00>
 <UC4RB_JBOSS_FAIL_EXISTINGs.00 altview="0" haslist="0">YES</UC4RB_JBOSS_FAIL_EXISTINGs.00>
 <UC4RB_JBOSS_UPDATE_EXISTINGs.00 altview="0" haslist="0">YES</UC4RB_JBOSS_UPDATE_EXISTINGs.00>
