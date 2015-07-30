@@ -192,6 +192,7 @@ $result = &UC4RB_JBOSS_CLI# --command=":reload"
 Write-Host Re-checking newly created &UC4RB_JBOSS_TYPE#..
 
 ! re-check
+sleep 2
 $result = &UC4RB_JBOSS_CLI# --command="&UC4RB_JBOSS_JMS_QUERY_CMD#/&UC4RB_JBOSS_JMS_TYPE#=&UC4RB_JBOSS_NAME#:read-resource"
 
 $result = $result | select-string -pattern '"outcome" => "success"' -caseSensitive
