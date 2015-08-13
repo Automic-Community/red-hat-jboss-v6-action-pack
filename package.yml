@@ -1,8 +1,8 @@
 name: PCK.AUTOMIC_JBOSS_V6
 source: ae
 binaries: 
-- timestamp: disabled
-  object: RESOURCES/PCK.AUTOMIC_JBOSS_V6.PRV.CUSTOM_TYPES
+- object: RESOURCES/PCK.AUTOMIC_JBOSS_V6.PRV.CUSTOM_TYPES
+  timestamp: disabled
   resources: 
   - name: DEPLOYMENTTARGET#JBOSS_V6
     type: TEXT
