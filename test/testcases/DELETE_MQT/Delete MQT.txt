@@ -2,7 +2,7 @@
 Documentation     NOTE:
 ...               add note here
 Suite Setup       Suite Setup
-Force Tags        DELETE_MQT    win    unix
+Force Tags        DELETE_MQT    win
 Test Template     Delete Mqt Template
 Resource          ../../resources/keywords.txt
 

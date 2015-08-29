@@ -2,7 +2,7 @@
 Documentation     NOTE:
 ...               add note here
 Suite Setup       Suite Setup
-Force Tags        CREATE_MQT    win    unix
+Force Tags        CREATE_MQT    win
 Test Template     Create Mqt Template
 Resource          ../../resources/keywords.txt
 
