@@ -2,7 +2,7 @@
 Documentation     NOTE:
 ...               add note here
 Suite Setup       Suite Setup
-Force Tags        STOP_APPLICATION    win    unix
+Force Tags        STOP_APPLICATION    unix
 Test Template     Stop Application Template
 Resource          ../../resources/keywords.txt
 

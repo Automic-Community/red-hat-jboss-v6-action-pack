@@ -104,7 +104,7 @@ JBOSS Setting Package
     Run Keyword If    '${OS}' == 'UNIX'    JBOSS Setting Unix Package
 
 JBOSS Setting Win Package
-    Action Set    ${PRT_DEPLOY_APPLICATION_JBOSS_PACKAGE}    C:\\automic\\sample.war
+    Action Set    ${PRT_DEPLOY_APPLICATION_JBOSS_PACKAGE}    C:\\JBoss\\sample.war
 
 JBOSS Setting Unix Package
     Action Set    ${PRT_DEPLOY_APPLICATION_JBOSS_PACKAGE}    /usr/local/JBoss/sample.war

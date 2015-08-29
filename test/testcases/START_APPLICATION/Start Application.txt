@@ -2,7 +2,7 @@
 Documentation     NOTE:
 ...               add note here
 Suite Setup       Suite Setup
-Force Tags        START_APPLICATION    win    unix
+Force Tags        START_APPLICATION    unix
 Test Template     Start Application Template
 Resource          ../../resources/keywords.txt
 

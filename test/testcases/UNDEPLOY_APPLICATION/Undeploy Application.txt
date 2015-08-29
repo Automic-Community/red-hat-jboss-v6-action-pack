@@ -2,7 +2,7 @@
 Documentation     NOTE:
 ...               add note here
 Suite Setup       Suite Setup
-Force Tags        UNDEPLOY_APPLICATION    win    unix
+Force Tags        UNDEPLOY_APPLICATION    unix
 Test Template     Undeploy Application Template
 Resource          ../../resources/keywords.txt
 
