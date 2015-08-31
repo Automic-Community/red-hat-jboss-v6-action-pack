@@ -189,7 +189,8 @@ Write-Host Deleting queue/topic..
 
 $result = &UC4RB_JBOSS_CLI# --command=":reload"
 
-! recheck
+! re-check
+sleep 5
 $result = &UC4RB_JBOSS_CLI# --command="&UC4RB_JBOSS_JMS_QUERY_CMD#/&UC4RB_JBOSS_JMS_TYPE#=&UC4RB_JBOSS_NAME#:read-resource"
 
 $result = $result | select-string -pattern '"outcome" => "success"' -caseSensitive

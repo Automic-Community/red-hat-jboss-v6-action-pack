@@ -174,6 +174,7 @@ Write-Host Deleting datasource..
 $result = &UC4RB_JBOSS_CLI# --command=":reload"
 
 ! re-check
+sleep 5
 $result = &UC4RB_JBOSS_CLI# --command="&UC4RB_JBOSS_DS_QUERY_CMD#/&UC4RB_JBOSS_DS_TYPE_CMD#=&UC4RB_JBOSS_NAME#:read-resource"
 
 $result = $result | select-string -pattern '"outcome" => "success"' -caseSensitive

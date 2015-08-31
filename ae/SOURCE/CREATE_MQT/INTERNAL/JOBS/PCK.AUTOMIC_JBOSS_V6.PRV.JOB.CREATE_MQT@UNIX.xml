@@ -176,7 +176,8 @@ result=$(&UC4RB_JBOSS_CLI# --command=":reload")
 
 echo Re-checking newly created &UC4RB_JBOSS_TYPE#..
 
-! recheck
+! re-check
+sleep 5
 result=$(&UC4RB_JBOSS_CLI# --command="&UC4RB_JBOSS_JMS_QUERY_CMD#/&UC4RB_JBOSS_JMS_TYPE#=&UC4RB_JBOSS_NAME#:read-resource")
 
 result=$(printf "%s\n" "$result" | grep '"outcome" => "success"')

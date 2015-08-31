@@ -233,7 +233,8 @@ echo Creating new datasource &UC4RB_JBOSS_NAME#..
 &UC4RB_JBOSS_CLI# --command="&UC4RB_JBOSS_DS_COMMAND# add --name=&UC4RB_JBOSS_NAME# --jndi-name=&UC4RB_JBOSS_JNDI_NAME# --driver-name=&UC4RB_JBOSS_DRIVER_NAME# --connection-url=&UC4RB_JBOSS_URL# &UC4RB_JBOSS_DS_PARAMS#"
 :INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHECK_SHELL_CMD@UNIX
 
-! recheck
+! re-check
+sleep 5
 result=$(&UC4RB_JBOSS_CLI# --command="&UC4RB_JBOSS_DS_QUERY_CMD#/data-source=&UC4RB_JBOSS_NAME#:read-resource")
 
 result=$(printf "%s\n" "$result" | grep '"outcome" => "success"')

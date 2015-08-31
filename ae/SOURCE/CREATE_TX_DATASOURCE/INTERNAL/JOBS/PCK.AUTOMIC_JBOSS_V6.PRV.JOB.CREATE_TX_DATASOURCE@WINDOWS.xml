@@ -253,6 +253,7 @@ Write-Host Creating new datasource &UC4RB_JBOSS_NAME#..
 :INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHECK_POWERSHELL_CMD@WINDOWS
 
 ! re-check
+sleep 5
 $result = &UC4RB_JBOSS_CLI# --command="&UC4RB_JBOSS_DS_QUERY_CMD#/data-source=&UC4RB_JBOSS_NAME#:read-resource"
 
 $result = $result | select-string -pattern '"outcome" => "success"' -caseSensitive
