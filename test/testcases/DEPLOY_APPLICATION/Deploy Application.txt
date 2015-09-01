@@ -2,7 +2,7 @@
 Documentation     NOTE:
 ...               add note here
 Suite Setup       Suite Setup
-Force Tags        DEPLOY_APPLICATION    unix
+Force Tags        DEPLOY_APPLICATION    unix    win
 Test Template     Deploy Application Template
 Resource          ../../resources/keywords.txt
 
