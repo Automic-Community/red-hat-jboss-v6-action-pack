@@ -6,7 +6,6 @@
    
 	<Properties>
 	
-	
 		<Group name="package_group" displayName="Package">
 			<Property name="package" type="SingleLineText" mode="EDITABLE" displayName="Package Name">
 				<Defaultvalue>myPackage.war</Defaultvalue>
@@ -18,8 +17,6 @@
 			</Property>			
 		</Group>
 		
-		
-
 		<Group name="jdbc_tx_group" displayName="JDBC - TX">
 			<Property name="jdbc_tx_name" type="SingleLineText" mode="EDITABLE" displayName="Tx Datasource Name">
 				<Description>Name of the Tx datasource</Description>
@@ -61,7 +58,6 @@
 			</Property>
 		</Group>
    
-	 
 		<Group name="jdbc_xa_group" displayName="JDBC - XA">
 			<Property name="jdbc_xa_name" type="SingleLineText" mode="EDITABLE" displayName="XA Datasource Name">
 				<Description>Name of the XA datasource</Description>
@@ -99,7 +95,6 @@
 				<Description>Enable JTA Integration? Options: Yes/No. Default value is No.</Description>
 			</Property>		
 		</Group>
-
 
 		<Group name="jms_group" displayName="JMS">
 			<Property name="jms_name" type="SingleLineText" mode="EDITABLE" displayName="Queue or Topic name">
@@ -152,16 +147,8 @@
 		</Group>
   </Properties>
 
-
   <DynamicProperties>
 
-      
-
-
-
-
-
-		
 		<!-- SNAPSHOTS -->
 		<Property name="/snapshot/archive_path" highlighted="false">
 			<Value></Value>
@@ -214,7 +201,6 @@
 			<Description>Path of the application directory, archive file, or root of the exploded archive directory to be deployed</Description>
 		</Property>
 		
-		
 		<!-- JDBC -->
 		<Property name="/jboss/jdbc/tx/jndi_name" highlighted="false">
 			<Value>{/custom/jdbc_tx_jndi_name}</Value>
@@ -261,7 +247,6 @@
 			<Description>Enable JTA Integration. Options: Yes/No. Default value is No.</Description>
 		</Property>
 
-		
 		<Property name="/jboss/jdbc/xa/name" highlighted="false">
 			<Value>{/custom/jdbc_xa_name}</Value>
 			<Description>Name of the XA datasource</Description>
@@ -303,7 +288,6 @@
 			<Description>Enable JTA Integration. Options: Yes/No. Default value is No.</Description>
 		</Property>
    
-		   
 		<!-- JMS -->
 		<Property name="/jboss/jms/name" highlighted="false">
 			<Value>{/custom/jms_name}</Value>
@@ -354,7 +338,6 @@
 			<Description>Determines what happens when an address where max-size-bytes is specified becomes full. Choice list: PAGE, DROP or BLOCK. Default value: PAGE then further messages will be paged to disk.</Description>
 		</Property>
 
-		
 		<Property name="/jboss/server/home_directory" highlighted="false">
 			<Value>{@target/custom/home_directory}</Value>
 			<Description>JBoss home directory. Eg: /var/jboss/jboss-eap-6.1</Description>
@@ -391,7 +374,12 @@
 			<List>Yes#;#No</List>
 		</Property>
 
-		<!-- HTTP -->
+		<!-- HTTP/S -->
+		<Property name="/source/http/protocol" highlighted="false">
+			<Value>http</Value>
+			<List>http,https</List>
+			<Description>Protocol</Description>
+		</Property>
 		<Property name="/source/http/url" highlighted="false">
 			<Description>URL</Description>
 		</Property>
@@ -422,38 +410,12 @@
 			<Description>Password if proxy requires authentication.</Description>
 		</Property>
 
-		<!-- HTTPS -->
-		<Property name="/source/https/url" highlighted="false">
-			<Description>URL</Description>
+		<!-- FTP/S -->
+		<Property name="/source/ftp/protocol" highlighted="false">
+			<Value>ftp</Value>
+			<List>ftp, ftps</List>
+			<Description>Protocol</Description>
 		</Property>
-		<Property name="/source/https/port" highlighted="false">
-			<Value>443</Value>
-			<Description>Port of HTTPS connection</Description>
-		</Property>
-		<Property name="/source/https/username" highlighted="false">
-			<Description>Username to authenticate with the server (if required by the server)</Description>
-		</Property>
-		<Property name="/source/https/password" highlighted="false"  type="Protected" >
-			<Description>Password to authenticate with the server (if required by the server)</Description>
-		</Property>
-		<Property name="/source/https/connection_timeout" highlighted="false" type="Float">
-			<Value>5000</Value>
-			<Description>Timeout in miliseconds to wait to build up a connection to the target host. Default: 5000.</Description>
-		</Property>
-		<Property name="/source/https/proxy_host" highlighted="false">
-			<Description>Proxy host to use.</Description>
-		</Property>
-		<Property name="/source/https/proxy_port" highlighted="false">
-			<Description>Proxy port to use.</Description>
-		</Property>
-		<Property name="/source/https/proxy_user" highlighted="false">
-			<Description>Username if proxy requires authentication.</Description>
-		</Property>
-		<Property name="/source/https/proxy_pwd" highlighted="false"  type="Protected">
-			<Description>Password if proxy requires authentication.</Description>
-		</Property>
-
-		<!-- FTP -->
 		<Property name="/source/ftp/host" highlighted="false">
 			<Description>Host to connect to.</Description>
 		</Property>
@@ -494,47 +456,6 @@
 			<List>BINARY#;#TEXT</List>
 		</Property>				
 		
-		<!-- FTPS -->
-		<Property name="/source/ftps/host" highlighted="false">
-			<Description>Host to connect to.</Description>
-		</Property>
-		<Property name="/source/ftps/port" highlighted="false">
-			<Value>990</Value>
-			<Description>Port to connect to.</Description>
-		</Property>		
-		<Property name="/source/ftps/username" highlighted="false">
-			<Description>Username to authenticate with the server (if required by the server)</Description>
-		</Property>
-		<Property name="/source/ftps/password" highlighted="false" type="Protected">
-			<Description>Password to authenticate with the server (if required by the server)</Description>
-		</Property>
-		<Property name="/source/ftps/recursive_download" highlighted="false" type="SingleChoice">
-			<Value>Yes</Value>	
-			<Description>Recursively get files and directories. If set to no, only direct children of the directory are downloaded</Description>
-			<List>Yes#;#No</List>
-		</Property>
-		<Property name="/source/ftps/connection_timeout" highlighted="false" type="Float">
-			<Value>5000</Value>
-			<Description>Timeout in miliseconds to wait to build up a connection to the target host. Default: 5000.</Description>
-		</Property>
-		<Property name="/source/ftps/proxy_host" highlighted="false">
-			<Description>Proxy host to use.</Description>
-		</Property>
-		<Property name="/source/ftps/proxy_port" highlighted="false">
-			<Description>Proxy port to use.</Description>
-		</Property>
-		<Property name="/source/ftps/proxy_user" highlighted="false">
-			<Description>Username if proxy requires authentication.</Description>
-		</Property>
-		<Property name="/source/ftps/proxy_pwd" highlighted="false" type="Protected">
-			<Description>Password if proxy requires authentication.</Description>
-		</Property>	
-		<Property name="/source/ftps/transfer_mode" highlighted="false" type="SingleChoice" >
-			<Value>BINARY</Value>
-			<Description>Text/Binary transfer modes.</Description>
-			<List>BINARY#;#TEXT</List>
-		</Property>			
-
 		<!-- SFTP -->
 		<Property name="/source/sftp/host" highlighted="false">
 			<Description>Host to connect to.</Description>
@@ -563,7 +484,6 @@
 			<Description>Preserves creation/modification times and modes of the original files. Default: yes</Description>
 			<List>Yes#;#No</List>
 		</Property>
-
 
 		<!-- SCP -->
 		<Property name="/source/scp/host" highlighted="false">
@@ -722,7 +642,6 @@
 			<Value>{@target/custom/staging_remote_directory}</Value>
 			<Description>Base directory on the staging server where package should be downloaded to.</Description>
 		</Property>	
-
 
 		</DynamicProperties>
 </ComponentType>
