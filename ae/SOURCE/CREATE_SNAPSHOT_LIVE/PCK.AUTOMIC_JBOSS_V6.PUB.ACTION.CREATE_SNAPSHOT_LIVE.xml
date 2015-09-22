@@ -105,7 +105,7 @@
 <node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_ENV_GUID#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ENV_GUID#" Value=""/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -113,9 +113,9 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_ARCHIVE_PATH#" Value="snapshot"/>
-<row Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
-<row Mod="0" Name="&amp;UC4RB_OUT_TARGET_GUID#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ARCHIVE_PATH#" Value="snapshot"/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_OUT_TARGET_GUID#" Value=""/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -183,7 +183,7 @@
 <node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_TARGET_GUID#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_TARGET_GUID#" Value=""/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -191,9 +191,9 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_ARCHIVE_PATH#" Value="snapshot"/>
-<row Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
-<row Mod="0" Name="&amp;UC4RB_OUT_TARGET_GUID#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ARCHIVE_PATH#" Value="snapshot"/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_OUT_TARGET_GUID#" Value=""/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -267,9 +267,9 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_ARCHIVE_PATH#" Value="snapshot"/>
-<row Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
-<row Mod="0" Name="&amp;UC4RB_OUT_TARGET_GUID#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ARCHIVE_PATH#" Value="snapshot"/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_OUT_TARGET_GUID#" Value=""/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -335,9 +335,9 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_ARCHIVE_PATH#" Value="snapshot"/>
-<row Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
-<row Mod="0" Name="&amp;UC4RB_OUT_TARGET_GUID#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ARCHIVE_PATH#" Value="snapshot"/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_OUT_TARGET_GUID#" Value=""/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -404,9 +404,9 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_ARCHIVE_PATH#" Value="snapshot"/>
-<row Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
-<row Mod="0" Name="&amp;UC4RB_OUT_TARGET_GUID#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ARCHIVE_PATH#" Value="snapshot"/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_OUT_TARGET_GUID#" Value=""/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -496,9 +496,9 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_ARCHIVE_PATH#" Value="snapshot"/>
-<row Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
-<row Mod="0" Name="&amp;UC4RB_OUT_TARGET_GUID#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ARCHIVE_PATH#" Value="snapshot"/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_OUT_TARGET_GUID#" Value=""/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -564,9 +564,9 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_ARCHIVE_PATH#" Value="snapshot"/>
-<row Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
-<row Mod="0" Name="&amp;UC4RB_OUT_TARGET_GUID#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ARCHIVE_PATH#" Value="snapshot"/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_OUT_TARGET_GUID#" Value=""/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -627,7 +627,7 @@
 <node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_CONTENT_STATUS#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_CONTENT_STATUS#" Value=""/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -635,9 +635,9 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_ARCHIVE_PATH#" Value="snapshot"/>
-<row Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
-<row Mod="0" Name="&amp;UC4RB_OUT_TARGET_GUID#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ARCHIVE_PATH#" Value="snapshot"/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_OUT_TARGET_GUID#" Value=""/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -650,7 +650,7 @@
 <UC4RB_REPORT_COMPRESSIONs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_REPORT_COMPRESSION#" promptsetname="PCK.AUTOMIC_BOND.PUB.PRPT.SNAPSHOT.REGISTER_REPORT.V3">NONE</UC4RB_REPORT_COMPRESSIONs.00>
 <UC4RB_REPORT_FORMATs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_REPORT_FORMAT#" promptsetname="PCK.AUTOMIC_BOND.PUB.PRPT.SNAPSHOT.REGISTER_REPORT.V3">XML</UC4RB_REPORT_FORMATs.00>
 <UC4RB_REPORT_STATUSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_REPORT_STATUS#" promptsetname="PCK.AUTOMIC_BOND.PUB.PRPT.SNAPSHOT.REGISTER_REPORT.V3">Consistent</UC4RB_REPORT_STATUSs.00>
-<UC4RB_REPORT_TYPEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_REPORT_TYPE#" promptsetname="PCK.AUTOMIC_BOND.PUB.PRPT.SNAPSHOT.REGISTER_REPORT.V3">SNAPSHOTCOMPARE</UC4RB_REPORT_TYPEs.00>
+<UC4RB_REPORT_TYPEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_REPORT_TYPE#" promptsetname="PCK.AUTOMIC_BOND.PUB.PRPT.SNAPSHOT.REGISTER_REPORT.V3">EXT:/Report_type</UC4RB_REPORT_TYPEs.00>
 <UC4RB_SNAPSHOT_GUIDs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_GUID#" promptsetname="PCK.AUTOMIC_BOND.PUB.PRPT.SNAPSHOT.REGISTER_REPORT.V3">&amp;UC4RB_OUT_TARGET_GUID#</UC4RB_SNAPSHOT_GUIDs.00>
 <UC4RB_XML_FILE_NAMEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_XML_FILE_NAME#" promptsetname="PCK.AUTOMIC_BOND.PUB.PRPT.SNAPSHOT.REGISTER_REPORT.V3">&amp;UC4RB_ARCHIVE_PATH#/&amp;UC4RB_OUT_TARGET_GUID#/OverviewSnap.xml</UC4RB_XML_FILE_NAMEs.00>
 <UC4RB_XSLT_FILE_NAMEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_XSLT_FILE_NAME#" promptsetname="PCK.AUTOMIC_BOND.PUB.PRPT.SNAPSHOT.REGISTER_REPORT.V3">CompareJbossSnapshot.xslt</UC4RB_XSLT_FILE_NAMEs.00>
@@ -757,7 +757,7 @@
 <MaxRetCode>0</MaxRetCode>
 <MrcExecute/>
 <MrcElseE>0</MrcElseE>
-<FcstStatus>0|U00000000 ??? ""</FcstStatus>
+<FcstStatus>0| |</FcstStatus>
 
 <ErtMethodDef>1</ErtMethodDef>
 <ErtMethodFix>0</ErtMethodFix>

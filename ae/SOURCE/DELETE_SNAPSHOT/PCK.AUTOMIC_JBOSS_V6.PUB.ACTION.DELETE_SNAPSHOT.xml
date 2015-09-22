@@ -55,7 +55,6 @@
 <node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_SNAPSHOT" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_SNAPSHOT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_SNAPSHOT">
 <PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_SNAPSHOT">
-<ELEMENT ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="ELEMENT" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_SNAPSHOT"/>
 <UC4RB_SNAPSHOT_ARCHIVE_PATHs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_ARCHIVE_PATH#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_SNAPSHOT">EXT:@snapshot/variables/archivepath</UC4RB_SNAPSHOT_ARCHIVE_PATHs.00>
 <UC4RB_SNAPSHOT_GUIDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_GUID#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_SNAPSHOT">EXT:@snapshot/guid</UC4RB_SNAPSHOT_GUIDs.00>
 </PRPTBOX>
@@ -90,8 +89,8 @@
 <node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;AGENT#" Value="EXT:agent"/>
-<row Mod="0" Name="&amp;UC4RB_SNAPSHOT_ARCHIVE_PATH#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_SNAPSHOT_ARCHIVE_PATH#" Value=""/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -115,7 +114,6 @@
 <node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_SNAPSHOT" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_SNAPSHOT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_SNAPSHOT">
 <PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_SNAPSHOT">
-<ELEMENT ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="ELEMENT" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_SNAPSHOT"/>
 <UC4RB_SNAPSHOT_ARCHIVE_PATHs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_ARCHIVE_PATH#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_SNAPSHOT">EXT:@snapshot/variables/archivepath</UC4RB_SNAPSHOT_ARCHIVE_PATHs.00>
 <UC4RB_SNAPSHOT_GUIDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_GUID#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_SNAPSHOT">EXT:@snapshot/guid</UC4RB_SNAPSHOT_GUIDs.00>
 </PRPTBOX>
@@ -164,7 +162,6 @@
 <node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_SNAPSHOT" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_SNAPSHOT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_SNAPSHOT">
 <PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_SNAPSHOT">
-<ELEMENT ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="ELEMENT" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_SNAPSHOT"/>
 <UC4RB_SNAPSHOT_ARCHIVE_PATHs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_ARCHIVE_PATH#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_SNAPSHOT">EXT:@snapshot/variables/archivepath</UC4RB_SNAPSHOT_ARCHIVE_PATHs.00>
 <UC4RB_SNAPSHOT_GUIDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_GUID#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_SNAPSHOT">EXT:@snapshot/guid</UC4RB_SNAPSHOT_GUIDs.00>
 </PRPTBOX>
@@ -200,7 +197,6 @@
 <node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_SNAPSHOT" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_SNAPSHOT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_SNAPSHOT">
 <PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_SNAPSHOT">
-<ELEMENT ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="ELEMENT" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_SNAPSHOT"/>
 <UC4RB_SNAPSHOT_ARCHIVE_PATHs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_ARCHIVE_PATH#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_SNAPSHOT">EXT:@snapshot/variables/archivepath</UC4RB_SNAPSHOT_ARCHIVE_PATHs.00>
 <UC4RB_SNAPSHOT_GUIDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_GUID#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.DELETE_SNAPSHOT">EXT:@snapshot/guid</UC4RB_SNAPSHOT_GUIDs.00>
 </PRPTBOX>
@@ -223,7 +219,7 @@
 <MaxRetCode>0</MaxRetCode>
 <MrcExecute/>
 <MrcElseE>0</MrcElseE>
-<FcstStatus>0|U00000000 ??? ""</FcstStatus>
+<FcstStatus>0| |</FcstStatus>
 
 <ErtMethodDef>1</ErtMethodDef>
 <ErtMethodFix>0</ErtMethodFix>

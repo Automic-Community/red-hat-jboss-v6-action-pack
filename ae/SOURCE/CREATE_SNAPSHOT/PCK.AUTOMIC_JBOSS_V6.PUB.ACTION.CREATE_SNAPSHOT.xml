@@ -64,15 +64,15 @@
 <UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">EXT:/jboss/port</UC4RB_JBOSS_PORTs.00>
 <UC4RB_JBOSS_SERVER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT"/>
 <UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">EXT:/jboss/username</UC4RB_JBOSS_USERNAMEs.00>
-<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">APPLICATION</UC4RB_SNAPSHOT_MODEs.00>
+<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">BOTH</UC4RB_SNAPSHOT_MODEs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
-<AGENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
-<LOGINs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<AGENTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -86,34 +86,36 @@
 </PostCon>
 </postconditions>
 </task>
-<task Alias="SET_ENV_GUID" BranchType="0" Col="2" Lnr="2" OType="JOBP" Object="UC4_RF.INTERNAL_SNAPSHOT.SET_ENVIRONMENT_GUID" ParentAlias="" ParentObject="" Row="2" Text2="">
-<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<task Alias="" BranchType="0" Col="2" Lnr="2" OType="JOBP" Object="PCK.AUTOMIC_BOND.PUB.ACTION.SET_ENVIRONMENT_GUID" ParentAlias="" ParentObject="" Row="2" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
-<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
 <preconditions>
 <PreCon>
 <conditions id="CONDITIONS"/>
 </PreCon>
 </preconditions>
 <predecessors>
-<pre BranchType="0" Lnr="1" PreLnr="1" When="ANY_OK" type="container"/>
+<pre BranchType="0" Lnr="1" PreLnr="1" When="" type="container"/>
 </predecessors>
 <runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
-<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<result ChkRExec="0" RElseHalt="1" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
 <dynvalues>
 <dyntree>
 <node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
-<Values/>
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ENV_GUID#" Value=""/>
+</Values>
 <Mode>0</Mode>
 </VALUE>
 </node>
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_ARCHIVE_PATH#" Value="snapshot"/>
-<row Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
-<row Mod="0" Name="&amp;UC4RB_OUT_TARGET_GUID#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ARCHIVE_PATH#" Value="snapshot"/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_OUT_TARGET_GUID#" Value=""/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -132,15 +134,15 @@
 <UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">EXT:/jboss/port</UC4RB_JBOSS_PORTs.00>
 <UC4RB_JBOSS_SERVER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT"/>
 <UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">EXT:/jboss/username</UC4RB_JBOSS_USERNAMEs.00>
-<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">APPLICATION</UC4RB_SNAPSHOT_MODEs.00>
+<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">BOTH</UC4RB_SNAPSHOT_MODEs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
-<AGENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
-<LOGINs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<AGENTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -162,34 +164,36 @@
 </PostCon>
 </postconditions>
 </task>
-<task Alias="SET_TARGET_GUID" BranchType="0" Col="3" Lnr="3" OType="JOBP" Object="UC4_RF.INTERNAL_SNAPSHOT.SET_TARGETSNAPSHOT_GUID" ParentAlias="" ParentObject="" Row="2" Text2="">
-<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<task Alias="" BranchType="0" Col="3" Lnr="3" OType="JOBP" Object="PCK.AUTOMIC_BOND.PUB.ACTION.SET_TARGETSNAPSHOT_GUID" ParentAlias="" ParentObject="" Row="2" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
-<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
 <preconditions>
 <PreCon>
 <conditions id="CONDITIONS"/>
 </PreCon>
 </preconditions>
 <predecessors>
-<pre BranchType="0" Lnr="1" PreLnr="2" When="ANY_OK" type="container"/>
+<pre BranchType="0" Lnr="1" PreLnr="2" When="" type="container"/>
 </predecessors>
 <runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
-<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<result ChkRExec="0" RElseHalt="1" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
 <dynvalues>
 <dyntree>
 <node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
-<Values/>
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_TARGET_GUID#" Value=""/>
+</Values>
 <Mode>0</Mode>
 </VALUE>
 </node>
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_ARCHIVE_PATH#" Value="snapshot"/>
-<row Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
-<row Mod="0" Name="&amp;UC4RB_OUT_TARGET_GUID#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ARCHIVE_PATH#" Value="snapshot"/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_OUT_TARGET_GUID#" Value=""/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -208,15 +212,15 @@
 <UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">EXT:/jboss/port</UC4RB_JBOSS_PORTs.00>
 <UC4RB_JBOSS_SERVER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT"/>
 <UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">EXT:/jboss/username</UC4RB_JBOSS_USERNAMEs.00>
-<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">APPLICATION</UC4RB_SNAPSHOT_MODEs.00>
+<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">BOTH</UC4RB_SNAPSHOT_MODEs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
-<AGENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
-<LOGINs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<AGENTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -241,14 +245,14 @@
 <task Alias="" BranchType="0" Col="4" Lnr="4" OType="JOBS" Object="PCK.AUTOMIC_JBOSS_V6.PRV.JOB.CREATE_SNAPSHOT@WINDOWS" ParentAlias="" ParentObject="" Row="1" Text2="">
 <checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
-<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
 <preconditions>
 <PreCon>
 <conditions id="CONDITIONS"/>
 </PreCon>
 </preconditions>
 <predecessors>
-<pre BranchType="0" Lnr="1" PreLnr="3" When="ANY_OK" type="container"/>
+<pre BranchType="0" Lnr="1" PreLnr="3" When="" type="container"/>
 </predecessors>
 <runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
 <result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
@@ -263,9 +267,9 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_ARCHIVE_PATH#" Value="snapshot"/>
-<row Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
-<row Mod="0" Name="&amp;UC4RB_OUT_TARGET_GUID#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ARCHIVE_PATH#" Value="snapshot"/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_OUT_TARGET_GUID#" Value=""/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -284,15 +288,15 @@
 <UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">EXT:/jboss/port</UC4RB_JBOSS_PORTs.00>
 <UC4RB_JBOSS_SERVER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT"/>
 <UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">EXT:/jboss/username</UC4RB_JBOSS_USERNAMEs.00>
-<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">APPLICATION</UC4RB_SNAPSHOT_MODEs.00>
+<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">BOTH</UC4RB_SNAPSHOT_MODEs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
-<AGENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
-<LOGINs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<AGENTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -309,14 +313,14 @@
 <task Alias="" BranchType="0" Col="4" Lnr="5" OType="JOBS" Object="PCK.AUTOMIC_JBOSS_V6.PRV.JOB.CREATE_SNAPSHOT@UNIX" ParentAlias="" ParentObject="" Row="3" Text2="">
 <checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
-<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
 <preconditions>
 <PreCon>
 <conditions id="CONDITIONS"/>
 </PreCon>
 </preconditions>
 <predecessors>
-<pre BranchType="0" Lnr="1" PreLnr="3" When="ANY_OK" type="container"/>
+<pre BranchType="0" Lnr="1" PreLnr="3" When="" type="container"/>
 </predecessors>
 <runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
 <result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
@@ -331,9 +335,9 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_ARCHIVE_PATH#" Value="snapshot"/>
-<row Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
-<row Mod="0" Name="&amp;UC4RB_OUT_TARGET_GUID#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ARCHIVE_PATH#" Value="snapshot"/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_OUT_TARGET_GUID#" Value=""/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -352,15 +356,15 @@
 <UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">EXT:/jboss/port</UC4RB_JBOSS_PORTs.00>
 <UC4RB_JBOSS_SERVER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT"/>
 <UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">EXT:/jboss/username</UC4RB_JBOSS_USERNAMEs.00>
-<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">APPLICATION</UC4RB_SNAPSHOT_MODEs.00>
+<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">BOTH</UC4RB_SNAPSHOT_MODEs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
-<AGENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
-<LOGINs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<AGENTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -374,8 +378,8 @@
 </PostCon>
 </postconditions>
 </task>
-<task Alias="REGISTER_SNAP" BranchType="0" Col="5" Lnr="6" OType="JOBP" Object="UC4_RF.INTERNAL_SNAPSHOT.REGISTER_SNAPSHOT" ParentAlias="" ParentObject="" Row="2" Text2="">
-<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<task Alias="" BranchType="0" Col="5" Lnr="6" OType="JOBP" Object="PCK.AUTOMIC_BOND.PUB.ACTION.SNAPSHOT.REGISTER_SNAPSHOT" ParentAlias="" ParentObject="" Row="2" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
 <when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
 <preconditions>
@@ -384,11 +388,11 @@
 </PreCon>
 </preconditions>
 <predecessors>
-<pre BranchType="0" Lnr="1" PreLnr="4" When="ANY_OK" type="container"/>
-<pre BranchType="0" Lnr="2" PreLnr="5" When="ANY_OK" type="container"/>
+<pre BranchType="0" Lnr="1" PreLnr="4" When="" type="container"/>
+<pre BranchType="0" Lnr="2" PreLnr="5" When="" type="container"/>
 </predecessors>
 <runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
-<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<result ChkRExec="0" RElseHalt="1" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
 <dynvalues>
 <dyntree>
 <node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
@@ -400,15 +404,39 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_ARCHIVE_PATH#" Value="snapshot"/>
-<row Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
-<row Mod="0" Name="&amp;UC4RB_OUT_TARGET_GUID#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ARCHIVE_PATH#" Value="snapshot"/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_OUT_TARGET_GUID#" Value=""/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
 <node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+<node content="1" id="PCK.AUTOMIC_BOND.PRPT.SNAPSHOT.CREATE_SNAPSHOT_V3" name="PCK.AUTOMIC_BOND.PRPT.SNAPSHOT.CREATE_SNAPSHOT_V3" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_BOND.PRPT.SNAPSHOT.CREATE_SNAPSHOT_V3">
+<PRPTBOX promptset="PCK.AUTOMIC_BOND.PRPT.SNAPSHOT.CREATE_SNAPSHOT_V3">
+<UC4RB_COMPONENT_IDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_COMPONENT_ID#" promptsetname="PCK.AUTOMIC_BOND.PRPT.SNAPSHOT.CREATE_SNAPSHOT_V3">EXT:/system/id</UC4RB_COMPONENT_IDs.00>
+<UC4RB_DEPLOYTARGET_IDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DEPLOYTARGET_ID#" promptsetname="PCK.AUTOMIC_BOND.PRPT.SNAPSHOT.CREATE_SNAPSHOT_V3">EXT:@target/system/id</UC4RB_DEPLOYTARGET_IDs.00>
+<UC4RB_REPORT_FILENAMEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_REPORT_FILENAME#" promptsetname="PCK.AUTOMIC_BOND.PRPT.SNAPSHOT.CREATE_SNAPSHOT_V3">snapshot/&amp;UC4RB_OUT_TARGET_GUID#/&amp;UC4RB_OUT_SNAP_FILE#</UC4RB_REPORT_FILENAMEs.00>
+<UC4RB_SNAPSHOT_ARCHIVEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_ARCHIVE#" promptsetname="PCK.AUTOMIC_BOND.PRPT.SNAPSHOT.CREATE_SNAPSHOT_V3">&amp;UC4RB_ARCHIVE_PATH#</UC4RB_SNAPSHOT_ARCHIVEs.00>
+<UC4RB_SNAPSHOT_EXCLUDEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_EXCLUDE#" promptsetname="PCK.AUTOMIC_BOND.PRPT.SNAPSHOT.CREATE_SNAPSHOT_V3">&amp;UC4RB_SERVER_FILTER_EXCLUDE#</UC4RB_SNAPSHOT_EXCLUDEs.00>
+<UC4RB_SNAPSHOT_GUIDs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_GUID#" promptsetname="PCK.AUTOMIC_BOND.PRPT.SNAPSHOT.CREATE_SNAPSHOT_V3">&amp;UC4RB_OUT_TARGET_GUID#</UC4RB_SNAPSHOT_GUIDs.00>
+<UC4RB_SNAPSHOT_INCLUDEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_INCLUDE#" promptsetname="PCK.AUTOMIC_BOND.PRPT.SNAPSHOT.CREATE_SNAPSHOT_V3">&amp;UC4RB_APP_FILTER_EXCLUDE#</UC4RB_SNAPSHOT_INCLUDEs.00>
+<UC4RB_SNAPSHOT_TYPEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_TYPE#" promptsetname="PCK.AUTOMIC_BOND.PRPT.SNAPSHOT.CREATE_SNAPSHOT_V3">JBOSS</UC4RB_SNAPSHOT_TYPEs.00>
+<UC4RB_SNAPSHOT_VARIABLESs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_VARIABLES#" promptsetname="PCK.AUTOMIC_BOND.PRPT.SNAPSHOT.CREATE_SNAPSHOT_V3">&amp;UC4RB_SNAPSHOT_VARIABLES#</UC4RB_SNAPSHOT_VARIABLESs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.AUTOMIC_BOND.PUB.PRPT.CONNECTION_SETTINGS" name="PCK.AUTOMIC_BOND.PUB.PRPT.CONNECTION_SETTINGS" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_BOND.PUB.PRPT.CONNECTION_SETTINGS">
+<PRPTBOX promptset="PCK.AUTOMIC_BOND.PUB.PRPT.CONNECTION_SETTINGS">
+<UC4RB_RM_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_RM_HOST#" promptsetname="PCK.AUTOMIC_BOND.PUB.PRPT.CONNECTION_SETTINGS">EXT:@global/CallbackURL</UC4RB_RM_HOSTs.00>
+<UC4RB_RM_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_RM_PASSWORD#" promptsetname="PCK.AUTOMIC_BOND.PUB.PRPT.CONNECTION_SETTINGS">EXT:@global/token</UC4RB_RM_PASSWORDs.00>
+<UC4RB_RM_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_RM_USERNAME#" promptsetname="PCK.AUTOMIC_BOND.PUB.PRPT.CONNECTION_SETTINGS">EXT:@global/username</UC4RB_RM_USERNAMEs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
 <node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">
 <PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">
@@ -421,15 +449,15 @@
 <UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">EXT:/jboss/port</UC4RB_JBOSS_PORTs.00>
 <UC4RB_JBOSS_SERVER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT"/>
 <UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">EXT:/jboss/username</UC4RB_JBOSS_USERNAMEs.00>
-<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">APPLICATION</UC4RB_SNAPSHOT_MODEs.00>
+<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">BOTH</UC4RB_SNAPSHOT_MODEs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
-<AGENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
-<LOGINs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<AGENTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -446,14 +474,14 @@
 <task Alias="" BranchType="0" Col="6" Lnr="7" OType="JOBS" Object="PCK.AUTOMIC_JBOSS_V6.PRV.JOB.CREATE_SNAPSHOT_OVERVIEW_REPORT@WINDOWS" ParentAlias="" ParentObject="" Row="1" Text2="">
 <checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
-<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
 <preconditions>
 <PreCon>
 <conditions id="CONDITIONS"/>
 </PreCon>
 </preconditions>
 <predecessors>
-<pre BranchType="0" Lnr="1" PreLnr="6" When="ANY_OK" type="container"/>
+<pre BranchType="0" Lnr="1" PreLnr="6" When="" type="container"/>
 </predecessors>
 <runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
 <result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
@@ -468,9 +496,9 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_ARCHIVE_PATH#" Value="snapshot"/>
-<row Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
-<row Mod="0" Name="&amp;UC4RB_OUT_TARGET_GUID#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ARCHIVE_PATH#" Value="snapshot"/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_OUT_TARGET_GUID#" Value=""/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -489,15 +517,15 @@
 <UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">EXT:/jboss/port</UC4RB_JBOSS_PORTs.00>
 <UC4RB_JBOSS_SERVER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT"/>
 <UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">EXT:/jboss/username</UC4RB_JBOSS_USERNAMEs.00>
-<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">APPLICATION</UC4RB_SNAPSHOT_MODEs.00>
+<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">BOTH</UC4RB_SNAPSHOT_MODEs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
-<AGENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
-<LOGINs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<AGENTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -514,14 +542,14 @@
 <task Alias="" BranchType="0" Col="6" Lnr="8" OType="JOBS" Object="PCK.AUTOMIC_JBOSS_V6.PRV.JOB.CREATE_SNAPSHOT_OVERVIEW_REPORT@UNIX" ParentAlias="" ParentObject="" Row="3" Text2="">
 <checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
-<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
 <preconditions>
 <PreCon>
 <conditions id="CONDITIONS"/>
 </PreCon>
 </preconditions>
 <predecessors>
-<pre BranchType="0" Lnr="1" PreLnr="6" When="ANY_OK" type="container"/>
+<pre BranchType="0" Lnr="1" PreLnr="6" When="" type="container"/>
 </predecessors>
 <runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
 <result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
@@ -536,9 +564,9 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_ARCHIVE_PATH#" Value="snapshot"/>
-<row Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
-<row Mod="0" Name="&amp;UC4RB_OUT_TARGET_GUID#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ARCHIVE_PATH#" Value="snapshot"/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_OUT_TARGET_GUID#" Value=""/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -557,15 +585,15 @@
 <UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">EXT:/jboss/port</UC4RB_JBOSS_PORTs.00>
 <UC4RB_JBOSS_SERVER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT"/>
 <UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">EXT:/jboss/username</UC4RB_JBOSS_USERNAMEs.00>
-<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">APPLICATION</UC4RB_SNAPSHOT_MODEs.00>
+<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">BOTH</UC4RB_SNAPSHOT_MODEs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
-<AGENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
-<LOGINs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<AGENTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -579,41 +607,65 @@
 </PostCon>
 </postconditions>
 </task>
-<task Alias="REGISTER_REPORT" BranchType="0" Col="7" Lnr="9" OType="JOBP" Object="UC4_RF.INTERNAL_SNAPSHOT.REGISTER_REPORT" ParentAlias="" ParentObject="" Row="2" Text2="">
-<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<task Alias="" BranchType="0" Col="7" Lnr="9" OType="JOBP" Object="PCK.AUTOMIC_BOND.PUB.ACTION.SNAPSHOT.REGISTER_REPORT" ParentAlias="" ParentObject="" Row="2" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
-<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
 <preconditions>
 <PreCon>
 <conditions id="CONDITIONS"/>
 </PreCon>
 </preconditions>
 <predecessors>
-<pre BranchType="0" Lnr="1" PreLnr="7" When="ANY_OK" type="container"/>
-<pre BranchType="0" Lnr="2" PreLnr="8" When="ANY_OK" type="container"/>
+<pre BranchType="0" Lnr="1" PreLnr="8" When="" type="container"/>
+<pre BranchType="0" Lnr="2" PreLnr="7" When="" type="container"/>
 </predecessors>
 <runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
-<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<result ChkRExec="0" RElseHalt="1" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
 <dynvalues>
 <dyntree>
 <node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
-<Values/>
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_CONTENT_STATUS#" Value=""/>
+</Values>
 <Mode>0</Mode>
 </VALUE>
 </node>
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_ARCHIVE_PATH#" Value="snapshot"/>
-<row Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
-<row Mod="0" Name="&amp;UC4RB_OUT_TARGET_GUID#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ARCHIVE_PATH#" Value="snapshot"/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_OUT_TARGET_GUID#" Value=""/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
 <node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+<node content="1" id="PCK.AUTOMIC_BOND.PUB.PRPT.SNAPSHOT.REGISTER_REPORT.V3" name="PCK.AUTOMIC_BOND.PUB.PRPT.SNAPSHOT.REGISTER_REPORT.V3" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_BOND.PUB.PRPT.SNAPSHOT.REGISTER_REPORT.V3">
+<PRPTBOX promptset="PCK.AUTOMIC_BOND.PUB.PRPT.SNAPSHOT.REGISTER_REPORT.V3">
+<UC4RB_REPORT_COMPRESSIONs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_REPORT_COMPRESSION#" promptsetname="PCK.AUTOMIC_BOND.PUB.PRPT.SNAPSHOT.REGISTER_REPORT.V3">NONE</UC4RB_REPORT_COMPRESSIONs.00>
+<UC4RB_REPORT_FORMATs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_REPORT_FORMAT#" promptsetname="PCK.AUTOMIC_BOND.PUB.PRPT.SNAPSHOT.REGISTER_REPORT.V3">XML</UC4RB_REPORT_FORMATs.00>
+<UC4RB_REPORT_STATUSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_REPORT_STATUS#" promptsetname="PCK.AUTOMIC_BOND.PUB.PRPT.SNAPSHOT.REGISTER_REPORT.V3">Consistent</UC4RB_REPORT_STATUSs.00>
+<UC4RB_REPORT_TYPEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_REPORT_TYPE#" promptsetname="PCK.AUTOMIC_BOND.PUB.PRPT.SNAPSHOT.REGISTER_REPORT.V3">SNAPSHOTOVERVIEW</UC4RB_REPORT_TYPEs.00>
+<UC4RB_SNAPSHOT_GUIDs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_GUID#" promptsetname="PCK.AUTOMIC_BOND.PUB.PRPT.SNAPSHOT.REGISTER_REPORT.V3">&amp;UC4RB_OUT_TARGET_GUID#</UC4RB_SNAPSHOT_GUIDs.00>
+<UC4RB_XML_FILE_NAMEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_XML_FILE_NAME#" promptsetname="PCK.AUTOMIC_BOND.PUB.PRPT.SNAPSHOT.REGISTER_REPORT.V3">&amp;UC4RB_ARCHIVE_PATH#/&amp;UC4RB_OUT_TARGET_GUID#/OverviewSnap.xml</UC4RB_XML_FILE_NAMEs.00>
+<UC4RB_XSLT_FILE_NAMEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_XSLT_FILE_NAME#" promptsetname="PCK.AUTOMIC_BOND.PUB.PRPT.SNAPSHOT.REGISTER_REPORT.V3">CompareJbossSnapshot.xslt</UC4RB_XSLT_FILE_NAMEs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.AUTOMIC_BOND.PUB.PRPT.CONNECTION_SETTINGS" name="PCK.AUTOMIC_BOND.PUB.PRPT.CONNECTION_SETTINGS" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_BOND.PUB.PRPT.CONNECTION_SETTINGS">
+<PRPTBOX promptset="PCK.AUTOMIC_BOND.PUB.PRPT.CONNECTION_SETTINGS">
+<UC4RB_RM_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_RM_HOST#" promptsetname="PCK.AUTOMIC_BOND.PUB.PRPT.CONNECTION_SETTINGS">EXT:@global/CallbackURL</UC4RB_RM_HOSTs.00>
+<UC4RB_RM_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_RM_PASSWORD#" promptsetname="PCK.AUTOMIC_BOND.PUB.PRPT.CONNECTION_SETTINGS">EXT:@global/token</UC4RB_RM_PASSWORDs.00>
+<UC4RB_RM_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_RM_USERNAME#" promptsetname="PCK.AUTOMIC_BOND.PUB.PRPT.CONNECTION_SETTINGS">EXT:@global/username</UC4RB_RM_USERNAMEs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
 <node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">
 <PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">
@@ -626,15 +678,15 @@
 <UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">EXT:/jboss/port</UC4RB_JBOSS_PORTs.00>
 <UC4RB_JBOSS_SERVER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT"/>
 <UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">EXT:/jboss/username</UC4RB_JBOSS_USERNAMEs.00>
-<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">APPLICATION</UC4RB_SNAPSHOT_MODEs.00>
+<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">BOTH</UC4RB_SNAPSHOT_MODEs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
-<AGENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
-<LOGINs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<AGENTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -651,14 +703,14 @@
 <task Alias="" BranchType="0" Col="8" Lnr="10" OType="&lt;END&gt;" Object="END" ParentAlias="" ParentObject="" Row="2" Text2="">
 <checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
-<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
 <preconditions>
 <PreCon>
 <conditions id="CONDITIONS"/>
 </PreCon>
 </preconditions>
 <predecessors>
-<pre BranchType="0" Lnr="1" PreLnr="9" When="ANY_OK" type="container"/>
+<pre BranchType="0" Lnr="1" PreLnr="9" When="" type="container"/>
 </predecessors>
 <runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
 <result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
@@ -676,15 +728,15 @@
 <UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">EXT:/jboss/port</UC4RB_JBOSS_PORTs.00>
 <UC4RB_JBOSS_SERVER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT"/>
 <UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">EXT:/jboss/username</UC4RB_JBOSS_USERNAMEs.00>
-<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">APPLICATION</UC4RB_SNAPSHOT_MODEs.00>
+<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT">BOTH</UC4RB_SNAPSHOT_MODEs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
-<AGENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
-<LOGINs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<AGENTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -705,7 +757,7 @@
 <MaxRetCode>0</MaxRetCode>
 <MrcExecute/>
 <MrcElseE>0</MrcElseE>
-<FcstStatus>0|U00000000 ??? ""</FcstStatus>
+<FcstStatus>0| |</FcstStatus>
 
 <ErtMethodDef>1</ErtMethodDef>
 <ErtMethodFix>0</ErtMethodFix>
@@ -749,12 +801,17 @@
 </node>
 <node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT" parent="PRPTS" type="PROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT" ontop="1">
-<PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT" prptmode="1"/>
+<PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT" prptmode="1">
+<UC4RB_SNAPSHOT_MODEs.00 altview="0" haslist="0">BOTH</UC4RB_SNAPSHOT_MODEs.00>
+</PRPTBOX>
 </PROMPTSET>
 </node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" ontop="1">
-<PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" prptmode="1"/>
+<PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" prptmode="1">
+<AGENTs.00 altview="1" haslist="0">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 altview="1" haslist="0">&amp;LOGIN#</LOGINs.00>
+</PRPTBOX>
 </PROMPTSET>
 </node>
 </dyntree>
