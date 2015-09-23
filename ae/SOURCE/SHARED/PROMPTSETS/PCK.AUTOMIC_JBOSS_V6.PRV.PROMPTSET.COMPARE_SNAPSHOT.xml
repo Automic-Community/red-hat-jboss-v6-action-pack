@@ -11,7 +11,7 @@
 </PROMPTDESIGNER>
 <PROMPTSETXUI state="1">
 <XUIEDITOR><![CDATA[<dialog height="424" icon="PRPT" id="PRPTS" left="0" top="0" width="441"><readpanel fill="b" id="PRPTBOX" nl="1" scroll="v" text="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.COMPARE_SNAPSHOT"><properties><entry name="text">PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.COMPARE_SNAPSHOT</entry><entry name="modifiable">0</entry></properties><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_ARCHIVE_PATHs.00" inputassistance="0" len="" multiline="0" multilineIcon="0" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Archive Path" tooltip="" upper="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
-      
+         
       <properties>
         <entry listparam="C,N" name="reference" reftype="STATIC">UC_DATATYPE_STRING</entry>
         <entry name="xmlkey"/>
@@ -36,9 +36,10 @@
         <entry name="customfield"/>
         <entry name="onchangereset"/>
         <entry name="resetable">1</entry>
-      <entry name="initvalue"/></properties>
-    </text><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_OUT_TARGET_GUID" inputassistance="0" len="" multiline="0" multilineIcon="0" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Snapshot GUID" tooltip="" upper="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
-      
+      <entry name="initvalue"/>
+         </properties>
+    </text><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_OUT_TARGET_GUIDs.00" inputassistance="0" len="" multiline="0" multilineIcon="0" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Snapshot GUID" tooltip="" upper="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
+         
       <properties>
         <entry listparam="C,N" name="reference" reftype="STATIC">UC_DATATYPE_STRING</entry>
         <entry name="xmlkey"/>
@@ -50,7 +51,7 @@
         <entry name="separator">;</entry>
         <entry name="len"/>
         <entry name="quotes"/>
-        <entry name="id">UC4RB_OUT_TARGET_GUID</entry>
+        <entry name="id">UC4RB_OUT_TARGET_GUIDs.00</entry>
         <entry name="regex"/>
         <entry name="inputassistance">0</entry>
         <entry name="enabled">0</entry>
@@ -63,9 +64,10 @@
         <entry name="customfield"/>
         <entry name="onchangereset"/>
         <entry name="resetable">1</entry>
-      <entry name="initvalue"/></properties>
+      <entry name="initvalue"/>
+         </properties>
     </text><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_APP_FILTER_EXCLUDEs.00" inputassistance="0" len="" multiline="0" multilineIcon="0" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Application exclude filter" tooltip="" upper="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
-      
+         
       <properties>
         <entry listparam="C,N" name="reference" reftype="STATIC">UC_DATATYPE_STRING</entry>
         <entry name="xmlkey"/>
@@ -90,9 +92,10 @@
         <entry name="customfield"/>
         <entry name="onchangereset"/>
         <entry name="resetable">1</entry>
-      <entry name="initvalue"/></properties>
+      <entry name="initvalue"/>
+         </properties>
     </text><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_JBOSS_HOMEs.00" inputassistance="0" len="" multiline="0" multilineIcon="0" nl="1" regex="" required="0" separator=";" showaspassword="0" text="JBoss home" tooltip="" upper="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
-      
+         
       <properties>
         <entry listparam="C,N" name="reference" reftype="STATIC">UC_DATATYPE_STRING</entry>
         <entry name="xmlkey"/>
@@ -117,9 +120,10 @@
         <entry name="customfield"/>
         <entry name="onchangereset"/>
         <entry name="resetable">1</entry>
-      <entry name="initvalue"/></properties>
+      <entry name="initvalue"/>
+         </properties>
     </text><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_JBOSS_HOSTs.00" inputassistance="0" len="" multiline="0" multilineIcon="0" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Host" tooltip="" upper="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
-      
+         
       <properties>
         <entry listparam="C,N" name="reference" reftype="STATIC">UC_DATATYPE_STRING</entry>
         <entry name="xmlkey"/>
@@ -144,9 +148,10 @@
         <entry name="customfield"/>
         <entry name="onchangereset"/>
         <entry name="resetable">1</entry>
-      <entry name="initvalue"/></properties>
+      <entry name="initvalue"/>
+         </properties>
     </text><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_JBOSS_PORTs.00" inputassistance="0" len="" multiline="0" multilineIcon="0" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Port" tooltip="" upper="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
-      
+         
       <properties>
         <entry listparam="C,N" name="reference" reftype="STATIC">UC_DATATYPE_STRING</entry>
         <entry name="xmlkey"/>
@@ -171,9 +176,10 @@
         <entry name="customfield"/>
         <entry name="onchangereset"/>
         <entry name="resetable">1</entry>
-      <entry name="initvalue"/></properties>
+      <entry name="initvalue"/>
+         </properties>
     </text><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_JBOSS_PASSWORDs.00" inputassistance="0" len="" multiline="0" multilineIcon="0" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Password" tooltip="" upper="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
-      
+         
       <properties>
         <entry listparam="C,N" name="reference" reftype="STATIC">UC_DATATYPE_STRING</entry>
         <entry name="xmlkey"/>
@@ -198,9 +204,10 @@
         <entry name="customfield"/>
         <entry name="onchangereset"/>
         <entry name="resetable">1</entry>
-      <entry name="initvalue"/></properties>
+      <entry name="initvalue"/>
+         </properties>
     </text><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_JBOSS_USERNAMEs.00" inputassistance="0" len="" multiline="0" multilineIcon="0" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Username" tooltip="" upper="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
-      
+         
       <properties>
         <entry listparam="C,N" name="reference" reftype="STATIC">UC_DATATYPE_STRING</entry>
         <entry name="xmlkey"/>
@@ -225,11 +232,12 @@
         <entry name="customfield"/>
         <entry name="onchangereset"/>
         <entry name="resetable">1</entry>
-      <entry name="initvalue"/></properties>
+      <entry name="initvalue"/>
+         </properties>
     </text></readpanel></dialog>]]></XUIEDITOR>
 </PROMPTSETXUI>
 <PROMPTSETDATA state="1">
-<DATAEDITOR><![CDATA[<PRPTS ontop="1"><PRPTBOX><UC4RB_ARCHIVE_PATHs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_ARCHIVE_PATH#" ReadFromTable="OPSE">EXT:@snapshot/variables/archivepath</UC4RB_ARCHIVE_PATHs.00><UC4RB_OUT_TARGET_GUID haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_OUT_TARGET_GUID" ReadFromTable="OPSE">EXT:@snapshot/guid</UC4RB_OUT_TARGET_GUID><UC4RB_APP_FILTER_EXCLUDEs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_APP_FILTER_EXCLUDE#" ReadFromTable="OPSE">EXT:@snapshot/variables/excludefilter</UC4RB_APP_FILTER_EXCLUDEs.00><UC4RB_JBOSS_HOMEs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_JBOSS_HOME#" ReadFromTable="OPSE">EXT:@snapshot/variables/home</UC4RB_JBOSS_HOMEs.00><UC4RB_JBOSS_HOSTs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_JBOSS_HOST#" ReadFromTable="OPSE">EXT:@snapshot/variables/host</UC4RB_JBOSS_HOSTs.00><UC4RB_JBOSS_PORTs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_JBOSS_PORT#" ReadFromTable="OPSE">EXT:@snapshot/variables/port</UC4RB_JBOSS_PORTs.00><UC4RB_JBOSS_PASSWORDs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_JBOSS_PASSWORD#" ReadFromTable="OPSE">EXT:@snapshot/variables/password</UC4RB_JBOSS_PASSWORDs.00><UC4RB_JBOSS_USERNAMEs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_JBOSS_USERNAME#" ReadFromTable="OPSE">EXT:@snapshot/variables/username</UC4RB_JBOSS_USERNAMEs.00></PRPTBOX></PRPTS>]]></DATAEDITOR>
+<DATAEDITOR><![CDATA[<PRPTS ontop="1"><PRPTBOX><UC4RB_ARCHIVE_PATHs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_ARCHIVE_PATH#" ReadFromTable="OPSE">EXT:@snapshot/variables/archivepath</UC4RB_ARCHIVE_PATHs.00><UC4RB_OUT_TARGET_GUIDs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_OUT_TARGET_GUID#" ReadFromTable="OPSE">EXT:@snapshot/guid</UC4RB_OUT_TARGET_GUIDs.00><UC4RB_APP_FILTER_EXCLUDEs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_APP_FILTER_EXCLUDE#" ReadFromTable="OPSE">EXT:@snapshot/variables/excludefilter</UC4RB_APP_FILTER_EXCLUDEs.00><UC4RB_JBOSS_HOMEs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_JBOSS_HOME#" ReadFromTable="OPSE">EXT:@snapshot/variables/home</UC4RB_JBOSS_HOMEs.00><UC4RB_JBOSS_HOSTs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_JBOSS_HOST#" ReadFromTable="OPSE">EXT:@snapshot/variables/host</UC4RB_JBOSS_HOSTs.00><UC4RB_JBOSS_PORTs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_JBOSS_PORT#" ReadFromTable="OPSE">EXT:@snapshot/variables/port</UC4RB_JBOSS_PORTs.00><UC4RB_JBOSS_PASSWORDs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_JBOSS_PASSWORD#" ReadFromTable="OPSE">EXT:@snapshot/variables/password</UC4RB_JBOSS_PASSWORDs.00><UC4RB_JBOSS_USERNAMEs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_JBOSS_USERNAME#" ReadFromTable="OPSE">EXT:@snapshot/variables/username</UC4RB_JBOSS_USERNAMEs.00></PRPTBOX></PRPTS>]]></DATAEDITOR>
 </PROMPTSETDATA>
 <DOCU_Docu state="1" type="text">
 <DOC/>
