@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
-<PRPT name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">
+<PRPT name="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">
 <HEADER state="1">
 <Title/>
 <ArchiveKey1/>
@@ -15,7 +15,7 @@
       
       
       <properties>
-        <entry listparam="" name="reference" reftype="STATIC">UC4_RV.ARA_AF.INSTALLATION_MODES</entry>
+        <entry listparam="" name="reference" reftype="">UC4_RV.ARA_AF.INSTALLATION_MODES</entry>
         <entry name="xmlkey"/>
         <entry name="xmlpath"/>
         <entry name="text">Snapshot mode</entry>
@@ -33,7 +33,7 @@
     </combo><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_JBOSS_HOMEs.00" inputassistance="0" len="" multiline="0" multilineIcon="0" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Home Directory" tooltip="JBoss home directory. Ex: C:\jboss-eap-6.1" upper="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
          
       <properties>
-        <entry listparam="C,N" name="reference" reftype="STATIC">UC4_RV.ARA_AF.INSTALLATION_MODES</entry>
+        <entry listparam="C,N" name="reference" reftype="">UC4_RV.ARA_AF.INSTALLATION_MODES</entry>
         <entry name="xmlkey"/>
         <entry name="xmlpath"/>
         <entry name="text">Home Directory</entry>

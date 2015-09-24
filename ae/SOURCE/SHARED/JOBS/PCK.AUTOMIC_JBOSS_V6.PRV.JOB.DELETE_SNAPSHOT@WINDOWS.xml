@@ -63,7 +63,7 @@
 <MaxRetCode>0</MaxRetCode>
 <MrcExecute/>
 <MrcElseE>0</MrcElseE>
-<FcstStatus>0|U00000000 ??? ""</FcstStatus>
+<FcstStatus>0| |</FcstStatus>
 
 <ErtMethodDef>1</ErtMethodDef>
 <ErtMethodFix>0</ErtMethodFix>
@@ -120,7 +120,8 @@
 <FInclSubDirs>0</FInclSubDirs>
 </ROLLBACK>
 <PRE_SCRIPT mode="1" replacementmode="1" state="1">
-<PSCRI><![CDATA[:INCLUDE PCK.AUTOMIC_SHARED.PUB.INCLUDE.START_STOP_JOB_ACCORDING_TO_AGENT_OS]]></PSCRI>
+<PSCRI><![CDATA[:INCLUDE PCK.ITPA_SHARED.PUB.INCLUDE.START_STOP_JOB_ACCORDING_TO_AGENT_OS
+]]></PSCRI>
 </PRE_SCRIPT>
 <SCRIPT mode="1" state="1">
 <MSCRI><![CDATA[!deletes the guid folder inside the archive folder of a snapshot

@@ -55,7 +55,7 @@
 <MaxRetCode>0</MaxRetCode>
 <MrcExecute/>
 <MrcElseE>0</MrcElseE>
-<FcstStatus>0|U00000000 ??? ""</FcstStatus>
+<FcstStatus>0| |</FcstStatus>
 
 <ErtMethodDef>1</ErtMethodDef>
 <ErtMethodFix>0</ErtMethodFix>
@@ -113,6 +113,8 @@
 :SET &UC4RB_CONVERTED_STRING# = &UC4RB_JBOSS_HOME#
 :INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CONVERT_SLASHES_UNIX_STYLE
 :SET &UC4RB_JBOSS_HOME# = &UC4RB_CONVERTED_STRING#
+
+:SET &UC4RB_FILE_NAME# = STR_TRIM(&UC4RB_FILE_NAME#)
 
 :JCL_CONCAT_CHAR "?"
 java -jar "&$AGENT_RESOURCES_CLIENT#jboss-v6-tool.jar" jbossv6 DetailedCompareJBossV6Snapshot  --home "&UC4RB_JBOSS_HOME#" --host "&UC4RB_JBOSS_HOST#" ?

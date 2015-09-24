@@ -381,7 +381,7 @@
 <task Alias="" BranchType="0" Col="5" Lnr="6" OType="JOBP" Object="PCK.AUTOMIC_BOND.PUB.ACTION.SNAPSHOT.REGISTER_SNAPSHOT" ParentAlias="" ParentObject="" Row="2" Text2="">
 <checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
-<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
 <preconditions>
 <PreCon>
 <conditions id="CONDITIONS"/>
@@ -418,13 +418,13 @@
 <PRPTBOX promptset="PCK.AUTOMIC_BOND.PRPT.SNAPSHOT.CREATE_SNAPSHOT_V3">
 <UC4RB_COMPONENT_IDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_COMPONENT_ID#" promptsetname="PCK.AUTOMIC_BOND.PRPT.SNAPSHOT.CREATE_SNAPSHOT_V3">EXT:/system/id</UC4RB_COMPONENT_IDs.00>
 <UC4RB_DEPLOYTARGET_IDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DEPLOYTARGET_ID#" promptsetname="PCK.AUTOMIC_BOND.PRPT.SNAPSHOT.CREATE_SNAPSHOT_V3">EXT:@target/system/id</UC4RB_DEPLOYTARGET_IDs.00>
-<UC4RB_REPORT_FILENAMEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_REPORT_FILENAME#" promptsetname="PCK.AUTOMIC_BOND.PRPT.SNAPSHOT.CREATE_SNAPSHOT_V3">snapshot/&amp;UC4RB_OUT_TARGET_GUID#/&amp;UC4RB_OUT_SNAP_FILE#</UC4RB_REPORT_FILENAMEs.00>
+<UC4RB_REPORT_FILENAMEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_REPORT_FILENAME#" promptsetname="PCK.AUTOMIC_BOND.PRPT.SNAPSHOT.CREATE_SNAPSHOT_V3">&amp;UC4RB_ARCHIVE_PATH#/&amp;UC4RB_OUT_TARGET_GUID#/snap.xml</UC4RB_REPORT_FILENAMEs.00>
 <UC4RB_SNAPSHOT_ARCHIVEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_ARCHIVE#" promptsetname="PCK.AUTOMIC_BOND.PRPT.SNAPSHOT.CREATE_SNAPSHOT_V3">&amp;UC4RB_ARCHIVE_PATH#</UC4RB_SNAPSHOT_ARCHIVEs.00>
-<UC4RB_SNAPSHOT_EXCLUDEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_EXCLUDE#" promptsetname="PCK.AUTOMIC_BOND.PRPT.SNAPSHOT.CREATE_SNAPSHOT_V3">&amp;UC4RB_SERVER_FILTER_EXCLUDE#</UC4RB_SNAPSHOT_EXCLUDEs.00>
+<UC4RB_SNAPSHOT_EXCLUDEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_EXCLUDE#" promptsetname="PCK.AUTOMIC_BOND.PRPT.SNAPSHOT.CREATE_SNAPSHOT_V3">&amp;UC4RB_APP_FILTER_EXCLUDE#</UC4RB_SNAPSHOT_EXCLUDEs.00>
 <UC4RB_SNAPSHOT_GUIDs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_GUID#" promptsetname="PCK.AUTOMIC_BOND.PRPT.SNAPSHOT.CREATE_SNAPSHOT_V3">&amp;UC4RB_OUT_TARGET_GUID#</UC4RB_SNAPSHOT_GUIDs.00>
-<UC4RB_SNAPSHOT_INCLUDEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_INCLUDE#" promptsetname="PCK.AUTOMIC_BOND.PRPT.SNAPSHOT.CREATE_SNAPSHOT_V3">&amp;UC4RB_APP_FILTER_EXCLUDE#</UC4RB_SNAPSHOT_INCLUDEs.00>
+<UC4RB_SNAPSHOT_INCLUDEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_INCLUDE#" promptsetname="PCK.AUTOMIC_BOND.PRPT.SNAPSHOT.CREATE_SNAPSHOT_V3"/>
 <UC4RB_SNAPSHOT_TYPEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_TYPE#" promptsetname="PCK.AUTOMIC_BOND.PRPT.SNAPSHOT.CREATE_SNAPSHOT_V3">JBOSS</UC4RB_SNAPSHOT_TYPEs.00>
-<UC4RB_SNAPSHOT_VARIABLESs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_VARIABLES#" promptsetname="PCK.AUTOMIC_BOND.PRPT.SNAPSHOT.CREATE_SNAPSHOT_V3">&amp;UC4RB_SNAPSHOT_VARIABLES#</UC4RB_SNAPSHOT_VARIABLESs.00>
+<UC4RB_SNAPSHOT_VARIABLESs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_VARIABLES#" promptsetname="PCK.AUTOMIC_BOND.PRPT.SNAPSHOT.CREATE_SNAPSHOT_V3">home=&amp;UC4RB_JBOSS_HOME##;#host=&amp;UC4RB_JBOSS_HOST##;#port=&amp;UC4RB_JBOSS_PORT##;#username=&amp;UC4RB_JBOSS_USERNAME##;#password=&amp;UC4RB_JBOSS_PASSWORD#</UC4RB_SNAPSHOT_VARIABLESs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>

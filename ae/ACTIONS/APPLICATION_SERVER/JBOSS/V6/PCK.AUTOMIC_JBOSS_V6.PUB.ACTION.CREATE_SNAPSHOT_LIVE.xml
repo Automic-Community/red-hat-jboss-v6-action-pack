@@ -52,27 +52,27 @@
 <result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
 <dynvalues>
 <dyntree>
-<node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">
-<PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">
-<UC4RB_APP_FILTER_EXCLUDEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_APP_FILTER_EXCLUDE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
-<UC4RB_JBOSS_APP_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_APP_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/snapshot/application_name</UC4RB_JBOSS_APP_NAMEs.00>
-<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/server/home_directory</UC4RB_JBOSS_HOMEs.00>
-<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/host</UC4RB_JBOSS_HOSTs.00>
-<UC4RB_JBOSS_HOST_CONTROLLERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST_CONTROLLER#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
-<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/password</UC4RB_JBOSS_PASSWORDs.00>
-<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/port</UC4RB_JBOSS_PORTs.00>
-<UC4RB_JBOSS_SERVER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
-<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/username</UC4RB_JBOSS_USERNAMEs.00>
-<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:@snapshot/UC4RB_SNAPSHOT_MODE</UC4RB_SNAPSHOT_MODEs.00>
-</PRPTBOX>
-</PROMPTSET>
-</node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
-<AGENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
-<LOGINs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<AGENTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE" name="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">
+<PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">
+<UC4RB_APP_FILTER_EXCLUDEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_APP_FILTER_EXCLUDE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
+<UC4RB_JBOSS_APP_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_APP_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/snapshot/application_name</UC4RB_JBOSS_APP_NAMEs.00>
+<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/server/home_directory</UC4RB_JBOSS_HOMEs.00>
+<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/host</UC4RB_JBOSS_HOSTs.00>
+<UC4RB_JBOSS_HOST_CONTROLLERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST_CONTROLLER#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
+<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/password</UC4RB_JBOSS_PASSWORDs.00>
+<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/port</UC4RB_JBOSS_PORTs.00>
+<UC4RB_JBOSS_SERVER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
+<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/username</UC4RB_JBOSS_USERNAMEs.00>
+<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">APPLICATION</UC4RB_SNAPSHOT_MODEs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -122,27 +122,27 @@
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
 <node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
-<node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">
-<PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">
-<UC4RB_APP_FILTER_EXCLUDEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_APP_FILTER_EXCLUDE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
-<UC4RB_JBOSS_APP_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_APP_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/snapshot/application_name</UC4RB_JBOSS_APP_NAMEs.00>
-<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/server/home_directory</UC4RB_JBOSS_HOMEs.00>
-<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/host</UC4RB_JBOSS_HOSTs.00>
-<UC4RB_JBOSS_HOST_CONTROLLERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST_CONTROLLER#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
-<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/password</UC4RB_JBOSS_PASSWORDs.00>
-<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/port</UC4RB_JBOSS_PORTs.00>
-<UC4RB_JBOSS_SERVER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
-<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/username</UC4RB_JBOSS_USERNAMEs.00>
-<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:@snapshot/UC4RB_SNAPSHOT_MODE</UC4RB_SNAPSHOT_MODEs.00>
-</PRPTBOX>
-</PROMPTSET>
-</node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
-<AGENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
-<LOGINs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<AGENTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE" name="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">
+<PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">
+<UC4RB_APP_FILTER_EXCLUDEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_APP_FILTER_EXCLUDE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
+<UC4RB_JBOSS_APP_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_APP_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/snapshot/application_name</UC4RB_JBOSS_APP_NAMEs.00>
+<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/server/home_directory</UC4RB_JBOSS_HOMEs.00>
+<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/host</UC4RB_JBOSS_HOSTs.00>
+<UC4RB_JBOSS_HOST_CONTROLLERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST_CONTROLLER#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
+<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/password</UC4RB_JBOSS_PASSWORDs.00>
+<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/port</UC4RB_JBOSS_PORTs.00>
+<UC4RB_JBOSS_SERVER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
+<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/username</UC4RB_JBOSS_USERNAMEs.00>
+<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">APPLICATION</UC4RB_SNAPSHOT_MODEs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -200,27 +200,27 @@
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
 <node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
-<node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">
-<PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">
-<UC4RB_APP_FILTER_EXCLUDEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_APP_FILTER_EXCLUDE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
-<UC4RB_JBOSS_APP_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_APP_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/snapshot/application_name</UC4RB_JBOSS_APP_NAMEs.00>
-<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/server/home_directory</UC4RB_JBOSS_HOMEs.00>
-<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/host</UC4RB_JBOSS_HOSTs.00>
-<UC4RB_JBOSS_HOST_CONTROLLERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST_CONTROLLER#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
-<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/password</UC4RB_JBOSS_PASSWORDs.00>
-<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/port</UC4RB_JBOSS_PORTs.00>
-<UC4RB_JBOSS_SERVER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
-<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/username</UC4RB_JBOSS_USERNAMEs.00>
-<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:@snapshot/UC4RB_SNAPSHOT_MODE</UC4RB_SNAPSHOT_MODEs.00>
-</PRPTBOX>
-</PROMPTSET>
-</node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
-<AGENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
-<LOGINs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<AGENTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE" name="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">
+<PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">
+<UC4RB_APP_FILTER_EXCLUDEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_APP_FILTER_EXCLUDE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
+<UC4RB_JBOSS_APP_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_APP_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/snapshot/application_name</UC4RB_JBOSS_APP_NAMEs.00>
+<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/server/home_directory</UC4RB_JBOSS_HOMEs.00>
+<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/host</UC4RB_JBOSS_HOSTs.00>
+<UC4RB_JBOSS_HOST_CONTROLLERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST_CONTROLLER#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
+<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/password</UC4RB_JBOSS_PASSWORDs.00>
+<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/port</UC4RB_JBOSS_PORTs.00>
+<UC4RB_JBOSS_SERVER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
+<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/username</UC4RB_JBOSS_USERNAMEs.00>
+<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">APPLICATION</UC4RB_SNAPSHOT_MODEs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -276,27 +276,27 @@
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
 <node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
-<node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">
-<PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">
-<UC4RB_APP_FILTER_EXCLUDEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_APP_FILTER_EXCLUDE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
-<UC4RB_JBOSS_APP_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_APP_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/snapshot/application_name</UC4RB_JBOSS_APP_NAMEs.00>
-<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/server/home_directory</UC4RB_JBOSS_HOMEs.00>
-<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/host</UC4RB_JBOSS_HOSTs.00>
-<UC4RB_JBOSS_HOST_CONTROLLERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST_CONTROLLER#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
-<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/password</UC4RB_JBOSS_PASSWORDs.00>
-<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/port</UC4RB_JBOSS_PORTs.00>
-<UC4RB_JBOSS_SERVER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
-<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/username</UC4RB_JBOSS_USERNAMEs.00>
-<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:@snapshot/UC4RB_SNAPSHOT_MODE</UC4RB_SNAPSHOT_MODEs.00>
-</PRPTBOX>
-</PROMPTSET>
-</node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
-<AGENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
-<LOGINs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<AGENTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE" name="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">
+<PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">
+<UC4RB_APP_FILTER_EXCLUDEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_APP_FILTER_EXCLUDE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
+<UC4RB_JBOSS_APP_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_APP_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/snapshot/application_name</UC4RB_JBOSS_APP_NAMEs.00>
+<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/server/home_directory</UC4RB_JBOSS_HOMEs.00>
+<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/host</UC4RB_JBOSS_HOSTs.00>
+<UC4RB_JBOSS_HOST_CONTROLLERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST_CONTROLLER#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
+<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/password</UC4RB_JBOSS_PASSWORDs.00>
+<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/port</UC4RB_JBOSS_PORTs.00>
+<UC4RB_JBOSS_SERVER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
+<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/username</UC4RB_JBOSS_USERNAMEs.00>
+<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">APPLICATION</UC4RB_SNAPSHOT_MODEs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -344,27 +344,27 @@
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
 <node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
-<node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">
-<PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">
-<UC4RB_APP_FILTER_EXCLUDEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_APP_FILTER_EXCLUDE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
-<UC4RB_JBOSS_APP_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_APP_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/snapshot/application_name</UC4RB_JBOSS_APP_NAMEs.00>
-<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/server/home_directory</UC4RB_JBOSS_HOMEs.00>
-<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/host</UC4RB_JBOSS_HOSTs.00>
-<UC4RB_JBOSS_HOST_CONTROLLERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST_CONTROLLER#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
-<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/password</UC4RB_JBOSS_PASSWORDs.00>
-<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/port</UC4RB_JBOSS_PORTs.00>
-<UC4RB_JBOSS_SERVER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
-<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/username</UC4RB_JBOSS_USERNAMEs.00>
-<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:@snapshot/UC4RB_SNAPSHOT_MODE</UC4RB_SNAPSHOT_MODEs.00>
-</PRPTBOX>
-</PROMPTSET>
-</node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
-<AGENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
-<LOGINs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<AGENTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE" name="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">
+<PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">
+<UC4RB_APP_FILTER_EXCLUDEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_APP_FILTER_EXCLUDE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
+<UC4RB_JBOSS_APP_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_APP_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/snapshot/application_name</UC4RB_JBOSS_APP_NAMEs.00>
+<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/server/home_directory</UC4RB_JBOSS_HOMEs.00>
+<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/host</UC4RB_JBOSS_HOSTs.00>
+<UC4RB_JBOSS_HOST_CONTROLLERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST_CONTROLLER#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
+<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/password</UC4RB_JBOSS_PASSWORDs.00>
+<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/port</UC4RB_JBOSS_PORTs.00>
+<UC4RB_JBOSS_SERVER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
+<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/username</UC4RB_JBOSS_USERNAMEs.00>
+<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">APPLICATION</UC4RB_SNAPSHOT_MODEs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -437,27 +437,27 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
-<node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">
-<PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">
-<UC4RB_APP_FILTER_EXCLUDEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_APP_FILTER_EXCLUDE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
-<UC4RB_JBOSS_APP_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_APP_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/snapshot/application_name</UC4RB_JBOSS_APP_NAMEs.00>
-<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/server/home_directory</UC4RB_JBOSS_HOMEs.00>
-<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/host</UC4RB_JBOSS_HOSTs.00>
-<UC4RB_JBOSS_HOST_CONTROLLERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST_CONTROLLER#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
-<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/password</UC4RB_JBOSS_PASSWORDs.00>
-<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/port</UC4RB_JBOSS_PORTs.00>
-<UC4RB_JBOSS_SERVER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
-<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/username</UC4RB_JBOSS_USERNAMEs.00>
-<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:@snapshot/UC4RB_SNAPSHOT_MODE</UC4RB_SNAPSHOT_MODEs.00>
-</PRPTBOX>
-</PROMPTSET>
-</node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
-<AGENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
-<LOGINs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<AGENTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE" name="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">
+<PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">
+<UC4RB_APP_FILTER_EXCLUDEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_APP_FILTER_EXCLUDE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
+<UC4RB_JBOSS_APP_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_APP_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/snapshot/application_name</UC4RB_JBOSS_APP_NAMEs.00>
+<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/server/home_directory</UC4RB_JBOSS_HOMEs.00>
+<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/host</UC4RB_JBOSS_HOSTs.00>
+<UC4RB_JBOSS_HOST_CONTROLLERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST_CONTROLLER#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
+<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/password</UC4RB_JBOSS_PASSWORDs.00>
+<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/port</UC4RB_JBOSS_PORTs.00>
+<UC4RB_JBOSS_SERVER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
+<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/username</UC4RB_JBOSS_USERNAMEs.00>
+<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">APPLICATION</UC4RB_SNAPSHOT_MODEs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -505,27 +505,27 @@
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
 <node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
-<node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">
-<PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">
-<UC4RB_APP_FILTER_EXCLUDEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_APP_FILTER_EXCLUDE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
-<UC4RB_JBOSS_APP_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_APP_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/snapshot/application_name</UC4RB_JBOSS_APP_NAMEs.00>
-<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/server/home_directory</UC4RB_JBOSS_HOMEs.00>
-<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/host</UC4RB_JBOSS_HOSTs.00>
-<UC4RB_JBOSS_HOST_CONTROLLERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST_CONTROLLER#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
-<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/password</UC4RB_JBOSS_PASSWORDs.00>
-<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/port</UC4RB_JBOSS_PORTs.00>
-<UC4RB_JBOSS_SERVER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
-<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/username</UC4RB_JBOSS_USERNAMEs.00>
-<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:@snapshot/UC4RB_SNAPSHOT_MODE</UC4RB_SNAPSHOT_MODEs.00>
-</PRPTBOX>
-</PROMPTSET>
-</node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
-<AGENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
-<LOGINs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<AGENTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE" name="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">
+<PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">
+<UC4RB_APP_FILTER_EXCLUDEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_APP_FILTER_EXCLUDE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
+<UC4RB_JBOSS_APP_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_APP_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/snapshot/application_name</UC4RB_JBOSS_APP_NAMEs.00>
+<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/server/home_directory</UC4RB_JBOSS_HOMEs.00>
+<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/host</UC4RB_JBOSS_HOSTs.00>
+<UC4RB_JBOSS_HOST_CONTROLLERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST_CONTROLLER#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
+<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/password</UC4RB_JBOSS_PASSWORDs.00>
+<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/port</UC4RB_JBOSS_PORTs.00>
+<UC4RB_JBOSS_SERVER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
+<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/username</UC4RB_JBOSS_USERNAMEs.00>
+<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">APPLICATION</UC4RB_SNAPSHOT_MODEs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -573,27 +573,27 @@
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
 <node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
-<node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">
-<PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">
-<UC4RB_APP_FILTER_EXCLUDEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_APP_FILTER_EXCLUDE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
-<UC4RB_JBOSS_APP_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_APP_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/snapshot/application_name</UC4RB_JBOSS_APP_NAMEs.00>
-<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/server/home_directory</UC4RB_JBOSS_HOMEs.00>
-<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/host</UC4RB_JBOSS_HOSTs.00>
-<UC4RB_JBOSS_HOST_CONTROLLERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST_CONTROLLER#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
-<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/password</UC4RB_JBOSS_PASSWORDs.00>
-<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/port</UC4RB_JBOSS_PORTs.00>
-<UC4RB_JBOSS_SERVER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
-<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/username</UC4RB_JBOSS_USERNAMEs.00>
-<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:@snapshot/UC4RB_SNAPSHOT_MODE</UC4RB_SNAPSHOT_MODEs.00>
-</PRPTBOX>
-</PROMPTSET>
-</node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
-<AGENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
-<LOGINs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<AGENTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE" name="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">
+<PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">
+<UC4RB_APP_FILTER_EXCLUDEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_APP_FILTER_EXCLUDE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
+<UC4RB_JBOSS_APP_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_APP_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/snapshot/application_name</UC4RB_JBOSS_APP_NAMEs.00>
+<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/server/home_directory</UC4RB_JBOSS_HOMEs.00>
+<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/host</UC4RB_JBOSS_HOSTs.00>
+<UC4RB_JBOSS_HOST_CONTROLLERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST_CONTROLLER#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
+<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/password</UC4RB_JBOSS_PASSWORDs.00>
+<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/port</UC4RB_JBOSS_PORTs.00>
+<UC4RB_JBOSS_SERVER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
+<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/username</UC4RB_JBOSS_USERNAMEs.00>
+<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">APPLICATION</UC4RB_SNAPSHOT_MODEs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -666,27 +666,27 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
-<node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">
-<PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">
-<UC4RB_APP_FILTER_EXCLUDEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_APP_FILTER_EXCLUDE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
-<UC4RB_JBOSS_APP_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_APP_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/snapshot/application_name</UC4RB_JBOSS_APP_NAMEs.00>
-<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/server/home_directory</UC4RB_JBOSS_HOMEs.00>
-<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/host</UC4RB_JBOSS_HOSTs.00>
-<UC4RB_JBOSS_HOST_CONTROLLERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST_CONTROLLER#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
-<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/password</UC4RB_JBOSS_PASSWORDs.00>
-<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/port</UC4RB_JBOSS_PORTs.00>
-<UC4RB_JBOSS_SERVER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
-<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/username</UC4RB_JBOSS_USERNAMEs.00>
-<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:@snapshot/UC4RB_SNAPSHOT_MODE</UC4RB_SNAPSHOT_MODEs.00>
-</PRPTBOX>
-</PROMPTSET>
-</node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
-<AGENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
-<LOGINs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<AGENTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE" name="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">
+<PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">
+<UC4RB_APP_FILTER_EXCLUDEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_APP_FILTER_EXCLUDE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
+<UC4RB_JBOSS_APP_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_APP_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/snapshot/application_name</UC4RB_JBOSS_APP_NAMEs.00>
+<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/server/home_directory</UC4RB_JBOSS_HOMEs.00>
+<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/host</UC4RB_JBOSS_HOSTs.00>
+<UC4RB_JBOSS_HOST_CONTROLLERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST_CONTROLLER#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
+<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/password</UC4RB_JBOSS_PASSWORDs.00>
+<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/port</UC4RB_JBOSS_PORTs.00>
+<UC4RB_JBOSS_SERVER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
+<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/username</UC4RB_JBOSS_USERNAMEs.00>
+<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">APPLICATION</UC4RB_SNAPSHOT_MODEs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -716,27 +716,27 @@
 <result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
 <dynvalues>
 <dyntree>
-<node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">
-<PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">
-<UC4RB_APP_FILTER_EXCLUDEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_APP_FILTER_EXCLUDE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
-<UC4RB_JBOSS_APP_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_APP_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/snapshot/application_name</UC4RB_JBOSS_APP_NAMEs.00>
-<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/server/home_directory</UC4RB_JBOSS_HOMEs.00>
-<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/host</UC4RB_JBOSS_HOSTs.00>
-<UC4RB_JBOSS_HOST_CONTROLLERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST_CONTROLLER#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
-<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/password</UC4RB_JBOSS_PASSWORDs.00>
-<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/port</UC4RB_JBOSS_PORTs.00>
-<UC4RB_JBOSS_SERVER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
-<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/username</UC4RB_JBOSS_USERNAMEs.00>
-<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:@snapshot/UC4RB_SNAPSHOT_MODE</UC4RB_SNAPSHOT_MODEs.00>
-</PRPTBOX>
-</PROMPTSET>
-</node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
-<AGENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
-<LOGINs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<AGENTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE" name="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">
+<PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">
+<UC4RB_APP_FILTER_EXCLUDEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_APP_FILTER_EXCLUDE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
+<UC4RB_JBOSS_APP_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_APP_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/snapshot/application_name</UC4RB_JBOSS_APP_NAMEs.00>
+<UC4RB_JBOSS_HOMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/server/home_directory</UC4RB_JBOSS_HOMEs.00>
+<UC4RB_JBOSS_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/host</UC4RB_JBOSS_HOSTs.00>
+<UC4RB_JBOSS_HOST_CONTROLLERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_HOST_CONTROLLER#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
+<UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/password</UC4RB_JBOSS_PASSWORDs.00>
+<UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/port</UC4RB_JBOSS_PORTs.00>
+<UC4RB_JBOSS_SERVER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SERVER_NAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE"/>
+<UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">EXT:/jboss/username</UC4RB_JBOSS_USERNAMEs.00>
+<UC4RB_SNAPSHOT_MODEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SNAPSHOT_MODE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE">APPLICATION</UC4RB_SNAPSHOT_MODEs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -799,16 +799,17 @@
 <Mode>0</Mode>
 </VALUE>
 </node>
-<node content="1" id="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE" name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE" parent="PRPTS" type="PROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE" ontop="1">
-<PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_SNAPSHOT_LIVE" prptmode="1">
-<UC4RB_SNAPSHOT_MODEs.00 altview="1" haslist="0">EXT:@snapshot/UC4RB_SNAPSHOT_MODE</UC4RB_SNAPSHOT_MODEs.00>
+<node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" ontop="1">
+<PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" prptmode="1">
+<AGENTs.00 altview="1" haslist="0">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 altview="1" haslist="0">&amp;LOGIN#</LOGINs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
-<node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
-<PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" ontop="1">
-<PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" prptmode="1"/>
+<node content="1" id="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE" name="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE" ontop="1">
+<PRPTBOX promptset="PCK.AUTOMIC_JBOSS_V6.PUB.PROMPTSET.CREATE_SNAPSHOT_LIVE" prptmode="1"/>
 </PROMPTSET>
 </node>
 </dyntree>
