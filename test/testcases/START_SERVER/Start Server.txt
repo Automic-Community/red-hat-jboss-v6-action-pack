@@ -8,7 +8,7 @@ Resource          ../../resources/keywords.txt
 
 *** Test Cases ***    MODE          RETURN CODE    RETURN STATUS
 Start Server Normal
-                      Standalone    0              ${ENDED_OK - ended normally}
+                      Standalone    0              ${ENDED_OK}
 
 *** Keywords ***
 Start Server Template

@@ -7,7 +7,7 @@ Test Template     Stop Server Template
 Resource          ../../resources/keywords.txt
 
 *** Test Cases ***    MODE          RETURN CODE    RETURN STATUS
-Stop Server Normal    Standalone    0              ${ENDED_OK - ended normally}
+Stop Server Normal    Standalone    0              ${ENDED_OK}
 
 *** Keywords ***
 Stop Server Template
