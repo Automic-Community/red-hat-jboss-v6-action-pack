@@ -40,6 +40,7 @@ Download datatest for robot
 Suite Setup
     Init AE And Package
     Set Global Variable    ${_TEMPLATE_DESCRIPTOR}    ${_WORKING_DIR}${/}valid.txt
+    Start Server    Standalone
 
 Init Action
     [Arguments]    ${actionName}
@@ -138,6 +139,7 @@ Start Server
     [Arguments]    ${mode}
     Init Action    ${ACTION_START_SERVER}
     Action Set    ${PRT_START_SERVER_JBOSS_OPERATING_MODE}    ${mode}
+    Action Set    ${PRT_START_SERVER_JBOSS_CONFIG_FILE}    standalone-full.xml
     JBOSS Commont Setting No User
     Action Execute
 
