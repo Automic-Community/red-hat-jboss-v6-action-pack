@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation     Test Tomcat create snapshot action with invalid input of App Filter Exclude.
+Documentation     Test JBoss create snapshot action with invalid input of App Filter Exclude.
 ...               Possible valid input follow Unix/Window folder name convention OR just is EMPTY value.
 ...               Test case will using above values.
 Suite Setup       Suite Setup

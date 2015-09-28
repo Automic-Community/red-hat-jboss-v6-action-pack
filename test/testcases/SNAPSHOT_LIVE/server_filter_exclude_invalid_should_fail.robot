@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation     Test Tomcat create snapshot action with invalid input of Server Filter Exclude.
+Documentation     Test JBoss create snapshot action with invalid input of Server Filter Exclude.
 ...               Possible valid input follow Unix/Window folder name convention OR just is EMPTY value.
 ...               Default value is "temp/, logs/, work/, bin/".
 ...               Test case will not using above values.

@@ -1,10 +1,9 @@
 *** Settings ***
-Documentation     Test Tomcat create snapshot action with invalid input of App Filter Exclude.
+Documentation     Test JBoss create snapshot action with invalid input of App Filter Exclude.
 ...               Possible valid input follow Unix/Window folder name convention OR just is EMPTY value.
 ...               Test case will not using above values.
 Suite Setup       Suite Setup
-Suite Teardown    Run Keywords    Delete folder    ${AGENT_DIR}${/}snapshot
-...               AND    Stop Server    Standalone
+Suite Teardown    Run Keywords    Delete folder    ${AGENT_DIR}${/}snapshot    AND    Stop Server    Standalone
 Force Tags        SNAPSHOT_COMPARE    unix55    unix60    unix70    win55    win60    win70
 Test Template     archive_path_invalid_should_fail
 Resource          ../../resources/keywords.txt

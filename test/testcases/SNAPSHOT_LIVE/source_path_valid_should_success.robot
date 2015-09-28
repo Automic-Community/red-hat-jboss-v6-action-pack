@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation     Test Tomcat create snapshot action with invalid input.
+Documentation     Test JBoss create snapshot action with invalid input.
 ...               Test data MUST fill in deployment descriptor xml file, which will be using
 ...               for execute Application Workflow via UC4 apis.
 Suite Setup       Suite Setup

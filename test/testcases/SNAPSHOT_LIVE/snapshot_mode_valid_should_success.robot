@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation     Test Tomcat create snapshot action with valid input of Snapshot Mode.
+Documentation     Test JBoss create snapshot action with valid input of Snapshot Mode.
 ...               Possible valid input is:
 ...               + APPLICATION
 ...               + SERVER

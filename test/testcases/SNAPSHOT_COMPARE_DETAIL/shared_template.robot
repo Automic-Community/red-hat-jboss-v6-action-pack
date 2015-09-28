@@ -4,7 +4,7 @@ Documentation     This is action level shared template
 
 *** Key Words ***
 Config a valid application workflow
-    Start Server    SERVICE
+    Start Server    Standalone
     Deploy test app
     @{snapshot_info}=    Create Test Snapshot
     Init Application Workflow Standalone    ${ACTION_BOND_HOOK_SNAPSHOT_COMPARE_DETAIL}
