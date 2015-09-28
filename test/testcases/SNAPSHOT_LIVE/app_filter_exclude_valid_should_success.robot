@@ -4,7 +4,7 @@ Documentation     Test Tomcat create snapshot action with invalid input of App F
 ...               Test case will using above values.
 Suite Setup       Suite Setup
 Suite Teardown    Run Keywords    Delete folder    ${AGENT_DIR}${/}snapshot    AND    Stop Server    Standalone
-Force Tags        SNAPSHOT_CREATE    unix55    unix60    unix70    win55    win60    win70
+Force Tags        SNAPSHOT_LIVE    unix55    unix60    unix70    win55    win60    win70
 Test Template     Test App Filter Exclude
 Resource          ../../resources/keywords.txt
 Resource          shared_template.robot
