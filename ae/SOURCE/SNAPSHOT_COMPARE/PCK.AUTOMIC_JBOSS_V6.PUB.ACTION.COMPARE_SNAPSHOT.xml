@@ -62,7 +62,6 @@
 <UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.COMPARE_SNAPSHOT">EXT:@snapshot/variables/password</UC4RB_JBOSS_PASSWORDs.00>
 <UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.COMPARE_SNAPSHOT">EXT:@snapshot/variables/port</UC4RB_JBOSS_PORTs.00>
 <UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.COMPARE_SNAPSHOT">EXT:@snapshot/variables/username</UC4RB_JBOSS_USERNAMEs.00>
-<UC4RB_OUT_TARGET_GUID ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OUT_TARGET_GUID" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.COMPARE_SNAPSHOT">EXT:@snapshot/guid</UC4RB_OUT_TARGET_GUID>
 <UC4RB_OUT_TARGET_GUIDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OUT_TARGET_GUID#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.COMPARE_SNAPSHOT">EXT:@snapshot/guid</UC4RB_OUT_TARGET_GUIDs.00>
 </PRPTBOX>
 </PROMPTSET>
@@ -123,7 +122,6 @@
 <UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.COMPARE_SNAPSHOT">EXT:@snapshot/variables/password</UC4RB_JBOSS_PASSWORDs.00>
 <UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.COMPARE_SNAPSHOT">EXT:@snapshot/variables/port</UC4RB_JBOSS_PORTs.00>
 <UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.COMPARE_SNAPSHOT">EXT:@snapshot/variables/username</UC4RB_JBOSS_USERNAMEs.00>
-<UC4RB_OUT_TARGET_GUID ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OUT_TARGET_GUID" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.COMPARE_SNAPSHOT">EXT:@snapshot/guid</UC4RB_OUT_TARGET_GUID>
 <UC4RB_OUT_TARGET_GUIDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OUT_TARGET_GUID#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.COMPARE_SNAPSHOT">EXT:@snapshot/guid</UC4RB_OUT_TARGET_GUIDs.00>
 </PRPTBOX>
 </PROMPTSET>
@@ -184,7 +182,6 @@
 <UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.COMPARE_SNAPSHOT">EXT:@snapshot/variables/password</UC4RB_JBOSS_PASSWORDs.00>
 <UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.COMPARE_SNAPSHOT">EXT:@snapshot/variables/port</UC4RB_JBOSS_PORTs.00>
 <UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.COMPARE_SNAPSHOT">EXT:@snapshot/variables/username</UC4RB_JBOSS_USERNAMEs.00>
-<UC4RB_OUT_TARGET_GUID ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OUT_TARGET_GUID" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.COMPARE_SNAPSHOT">EXT:@snapshot/guid</UC4RB_OUT_TARGET_GUID>
 <UC4RB_OUT_TARGET_GUIDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OUT_TARGET_GUID#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.COMPARE_SNAPSHOT">EXT:@snapshot/guid</UC4RB_OUT_TARGET_GUIDs.00>
 </PRPTBOX>
 </PROMPTSET>
@@ -270,7 +267,6 @@
 <UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.COMPARE_SNAPSHOT">EXT:@snapshot/variables/password</UC4RB_JBOSS_PASSWORDs.00>
 <UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.COMPARE_SNAPSHOT">EXT:@snapshot/variables/port</UC4RB_JBOSS_PORTs.00>
 <UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.COMPARE_SNAPSHOT">EXT:@snapshot/variables/username</UC4RB_JBOSS_USERNAMEs.00>
-<UC4RB_OUT_TARGET_GUID ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OUT_TARGET_GUID" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.COMPARE_SNAPSHOT">EXT:@snapshot/guid</UC4RB_OUT_TARGET_GUID>
 <UC4RB_OUT_TARGET_GUIDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OUT_TARGET_GUID#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.COMPARE_SNAPSHOT">EXT:@snapshot/guid</UC4RB_OUT_TARGET_GUIDs.00>
 </PRPTBOX>
 </PROMPTSET>
@@ -311,7 +307,6 @@
 <UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.COMPARE_SNAPSHOT">EXT:@snapshot/variables/password</UC4RB_JBOSS_PASSWORDs.00>
 <UC4RB_JBOSS_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.COMPARE_SNAPSHOT">EXT:@snapshot/variables/port</UC4RB_JBOSS_PORTs.00>
 <UC4RB_JBOSS_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_USERNAME#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.COMPARE_SNAPSHOT">EXT:@snapshot/variables/username</UC4RB_JBOSS_USERNAMEs.00>
-<UC4RB_OUT_TARGET_GUID ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OUT_TARGET_GUID" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.COMPARE_SNAPSHOT">EXT:@snapshot/guid</UC4RB_OUT_TARGET_GUID>
 <UC4RB_OUT_TARGET_GUIDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OUT_TARGET_GUID#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.COMPARE_SNAPSHOT">EXT:@snapshot/guid</UC4RB_OUT_TARGET_GUIDs.00>
 </PRPTBOX>
 </PROMPTSET>
