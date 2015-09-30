@@ -8,7 +8,14 @@ Resource          actions.txt
 ${_AGENT}         /
 ${_LOGIN}         /
 ${_WORKING_DIR}    /
-${_JBOSS_HOME}    C:\JBoss\jboss-6.1.0.Final
+${_JBOSS_HOME}    /
+${_JBOSS_HOST}    localhost
+${_JBOSS_PORT}    9999
+${_JBOSS_USERNAME}    admin
+${_JBOSS_PASSWORD}    ventum2011@
+${_MOCKUP_URL}    http://vvnsatara11:9969
+${_TEMPLATE_DESCRIPTOR}    /
+${_SNAPSHOT_TYPE}    PCK.AUTOMIC_JBOSS_V6
 
 *** Key Words ***
 Init AE And Package
@@ -17,15 +24,19 @@ Init AE And Package
 Init Win Server
     [Documentation]    TODO: Write server description here
     Set Global Variable    ${_AGENT}    DEMO01AT03
+    Set Global Variable    ${AGENT_DIR}    C:\\automic\\agents\\DEMO01AT03\\bin
     Set Global Variable    ${_LOGIN}    VVNSAT.LOGIN_ALL
     Set Global Variable    ${_WORKING_DIR}    C:\\automic\\testcases\\PCK.AUTOMIC_JBOSS_V6
+    Set Global Variable    ${_JBOSS_HOME}    C:\\JBoss\\jboss-6.1.0.Final
     Set Global Variable    ${/}    \\
 
 Init Unix Server
     [Documentation]    TODO: Write server description here
     Set Global Variable    ${_AGENT}    VI03AT03
+    Set Global Variable    ${AGENT_DIR}    /opt/automic/agents/VI03AT03/bin
     Set Global Variable    ${_LOGIN}    VVNSAT.LOGIN_ALL
     Set Global Variable    ${_WORKING_DIR}    /opt/automic/testcases/PCK.AUTOMIC_JBOSS_V6
+    Set Global Variable    ${_JBOSS_HOME}    /usr/local/JBoss/jboss-eap-6.3
     Set Global Variable    ${/}    /
 
 Init Target Server

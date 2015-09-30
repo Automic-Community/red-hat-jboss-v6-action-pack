@@ -7,7 +7,7 @@ Test Template     Delete Mqt Template
 Resource          ../../resources/keywords.txt
 
 *** Test Cases ***    MODE          PROFILE       NAME       TYPE     FAIL IF MISSING    RETURN CODE    RETURN STATUS
-Delete MQT Normal     Standalone    mqtprofile    mqtname    Queue    NO                 0              ${ENDED_OK - ended normally}
+Delete MQT Normal     Standalone    mqtprofile    mqtname    Queue    NO                 0              ${ENDED_OK}
 
 *** Keywords ***
 Delete Mqt Template

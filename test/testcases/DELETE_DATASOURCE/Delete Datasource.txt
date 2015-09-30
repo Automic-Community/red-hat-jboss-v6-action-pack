@@ -8,10 +8,10 @@ Resource          ../../resources/keywords.txt
 
 *** Test Cases ***    MODE          PROFILE      NAME      DSTYPE           FAIL IF MISSING    RETURN CODE    RETURN STATUS
 Delete xa datasource
-                      Standalone    testds       testds    XA datasource    NO                 0              ${ENDED_OK - ended normally}
+                      Standalone    testds       testds    XA datasource    NO                 0              ${ENDED_OK}
 
 Delete tx datasource
-                      Standalone    profiletx    nametx    TX datasource    NO                 0              ${ENDED_OK - ended normally}
+                      Standalone    profiletx    nametx    TX datasource    NO                 0              ${ENDED_OK}
 
 *** Keywords ***
 Delete Datasource Template

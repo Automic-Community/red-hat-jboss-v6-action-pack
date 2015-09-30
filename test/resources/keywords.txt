@@ -3,11 +3,44 @@ Documentation     This is high level keywords that will be used by local test ca
 Resource          messages.txt
 Resource          context.txt
 Library           com.automic.robot.itpa.ItpaLibrary
+Library           OperatingSystem
 
 *** Key Words ***
-Suite Setup
+Create Data Test
     Init Target Server
+    Download datatest    /testdata/PCK.AUTOMIC_JBOSS_V6
+    Download datatest for robot    /testdata/PCK.AUTOMIC_JBOSS_V6
+
+Download datatest
+    [Arguments]    ${path}
+    Action Connect    ${_AE_HOST}    ${_AE_PORT}    ${_AE_USER}    ${_AE_PASS}    ${_AE_TEMP_FOLD}
+    Init Action    PCK.AUTOMIC_FTP.PUB.ACTION.GET
+    Action Set    &UC4RB_FTP_HOST#    vvni01
+    Action Set    &UC4RB_FTP_USER#    administrator
+    Action Set    &UC4RB_FTP_PWD#    S3rv3r@Aut
+    Action Set    &UC4RB_FTP_TGT_OVERWRITE#    YES
+    Action Set    &UC4RB_FTP_SOURCE_FILES#    ${path}
+    Action Set    &UC4RB_FTP_TGT_FILES_DIR#    ${_WORKING_DIR}
+    Action Set    &UC4RB_FTP_RECURSIVE_GET#    YES
+    Action Set    &UC4RB_FTP_PROTOCOL#    FTP
+    Action Set    &UC4RB_FTP_CONNECT_TIMEOUT#    5000
+    Action Set    &UC4RB_FTP_TR_MODE#    BINARY
+    Action Execute
+
+Download datatest for robot
+    [Arguments]    ${path}
+    ${DL_HOST}=    Set Variable    vvni01
+    ${DL_PORT}=    Set Variable    21
+    ${DL_USER}=    Set Variable    administrator
+    ${DL_PWD}=    Set Variable    S3rv3r@Aut
+    ${DL_SOURCE_FILES}=    Set Variable    ${path}
+    ${DL_TGT_FILES_DIR}=    Set Variable    ${_WORKING_DIR}
+    Ftp Download    ${DL_HOST}    ${DL_PORT}    ${DL_USER}    ${DL_PWD}    ${DL_SOURCE_FILES}    ${DL_TGT_FILES_DIR}
+
+Suite Setup
     Init AE And Package
+    Set Global Variable    ${_TEMPLATE_DESCRIPTOR}    ${_WORKING_DIR}${/}valid.txt
+    Start Server    Standalone
 
 Init Action
     [Arguments]    ${actionName}
@@ -60,8 +93,8 @@ JBOSS Commont Setting No User
 
 JBOSS Commont Setting No User Win
     Action Set    ${PRT_START_SERVER_JBOSS_HOME}    C:\\JBoss\\jboss-eap-6.3
-    Action Set    ${PRT_START_SERVER_JBOSS_HOST}    localhost
-    Action Set    ${PRT_START_SERVER_JBOSS_PORT}    9999
+    Action Set    ${PRT_START_SERVER_JBOSS_HOST}    ${_JBOSS_HOST}
+    Action Set    ${PRT_START_SERVER_JBOSS_PORT}    ${_JBOSS_PORT}
     Action Set    ${PRT_START_SERVER_JBOSS_USERNAME}    ${EMPTY}
     Action Set    ${PRT_START_SERVER_JBOSS_PASSWORD}    ${EMPTY}
     Action Set    ${PRT_STOP_SERVER_JBOSS_HOST_CONTROLLER}    ${EMPTY}
@@ -69,8 +102,8 @@ JBOSS Commont Setting No User Win
 
 JBOSS Commont Setting No User Unix
     Action Set    ${PRT_START_SERVER_JBOSS_HOME}    /usr/local/JBoss/jboss-eap-6.3
-    Action Set    ${PRT_START_SERVER_JBOSS_HOST}    localhost
-    Action Set    ${PRT_START_SERVER_JBOSS_PORT}    9999
+    Action Set    ${PRT_START_SERVER_JBOSS_HOST}    ${_JBOSS_HOST}
+    Action Set    ${PRT_START_SERVER_JBOSS_PORT}    ${_JBOSS_PORT}
     Action Set    ${PRT_START_SERVER_JBOSS_USERNAME}    ${EMPTY}
     Action Set    ${PRT_START_SERVER_JBOSS_PASSWORD}    ${EMPTY}
     Action Set    ${PRT_STOP_SERVER_JBOSS_HOST_CONTROLLER}    ${EMPTY}
@@ -83,28 +116,119 @@ JBOSS Commont Setting With User
 
 JBOSS Commont Setting With User Win
     Action Set    ${PRT_START_SERVER_JBOSS_HOME}    C:\\JBoss\\jboss-eap-6.3
-    Action Set    ${PRT_START_SERVER_JBOSS_HOST}    localhost
-    Action Set    ${PRT_START_SERVER_JBOSS_PORT}    9999
-    Action Set    ${PRT_START_SERVER_JBOSS_USERNAME}    admin
-    Action Set    ${PRT_START_SERVER_JBOSS_PASSWORD}    ventum2011@
+    Action Set    ${PRT_START_SERVER_JBOSS_HOST}    ${_JBOSS_HOST}
+    Action Set    ${PRT_START_SERVER_JBOSS_PORT}    ${_JBOSS_PORT}
+    Action Set    ${PRT_START_SERVER_JBOSS_USERNAME}    ${_JBOSS_USERNAME}
+    Action Set    ${PRT_START_SERVER_JBOSS_PASSWORD}    ${_JBOSS_PASSWORD}
     Action Set    ${PRT_STOP_SERVER_JBOSS_HOST_CONTROLLER}    ${EMPTY}
     Action Set    ${PRT_STOP_SERVER_JBOSS_SERVER}    ${EMPTY}
 
 JBOSS Commont Setting With User Unix
     Action Set    ${PRT_START_SERVER_JBOSS_HOME}    /usr/local/JBoss/jboss-eap-6.3
-    Action Set    ${PRT_START_SERVER_JBOSS_HOST}    localhost
-    Action Set    ${PRT_START_SERVER_JBOSS_PORT}    9999
-    Action Set    ${PRT_START_SERVER_JBOSS_USERNAME}    admin
-    Action Set    ${PRT_START_SERVER_JBOSS_PASSWORD}    ventum2011@
+    Action Set    ${PRT_START_SERVER_JBOSS_HOST}    ${_JBOSS_HOST}
+    Action Set    ${PRT_START_SERVER_JBOSS_PORT}    ${_JBOSS_PORT}
+    Action Set    ${PRT_START_SERVER_JBOSS_USERNAME}    ${_JBOSS_USERNAME}
+    Action Set    ${PRT_START_SERVER_JBOSS_PASSWORD}    ${_JBOSS_PASSWORD}
     Action Set    ${PRT_STOP_SERVER_JBOSS_HOST_CONTROLLER}    ${EMPTY}
     Action Set    ${PRT_STOP_SERVER_JBOSS_SERVER}    ${EMPTY}
 
 JBOSS Setting Package
-    Run Keyword If    '${OS}' == 'WIN'    JBOSS Setting Win Package
-    Run Keyword If    '${OS}' == 'UNIX'    JBOSS Setting Unix Package
+    Action Set    ${PRT_DEPLOY_APPLICATION_JBOSS_PACKAGE}    ${_WORKING_DIR}${/}sample.war
 
-JBOSS Setting Win Package
-    Action Set    ${PRT_DEPLOY_APPLICATION_JBOSS_PACKAGE}    C:\\JBoss\\sample.war
+Start Server
+    [Arguments]    ${mode}
+    Init Action    ${ACTION_START_SERVER}
+    Action Set    ${PRT_START_SERVER_JBOSS_OPERATING_MODE}    ${mode}
+    Action Set    ${PRT_START_SERVER_JBOSS_CONFIG_FILE}    standalone-full.xml
+    JBOSS Commont Setting No User
+    Action Execute
 
-JBOSS Setting Unix Package
-    Action Set    ${PRT_DEPLOY_APPLICATION_JBOSS_PACKAGE}    /usr/local/JBoss/sample.war
+Stop Server
+    [Arguments]    ${mode}
+    Init Action    ${ACTION_STOP_SERVER}
+    Action Set    ${PRT_STOP_SERVER_JBOSS_OPERATING_MODE}    ${mode}
+    JBOSS Commont Setting No User
+    Action Execute
+
+Deploy test app
+    Init Action    ${ACTION_DEPLOY_APPLICATION}
+    Action Set    ${PRT_DEPLOY_APPLICATION_JBOSS_OPERATING_MODE}    Standalone
+    Action Set    ${PRT_DEPLOY_APPLICATION_JBOSS_APP_NAME}    sample.war
+    Action Set    ${PRT_DEPLOY_APPLICATION_JBOSS_FAIL_EXISTING}    NO
+    Action Set    ${PRT_DEPLOY_APPLICATION_JBOSS_UPDATE}    YES
+    Action Set    ${PRT_DEPLOY_APPLICATION_JBOSS_SERVER_GROUPS}    ${EMPTY}
+    JBOSS Commont Setting With User
+    JBOSS Setting Package
+    Action Execute
+
+Init Application Workflow
+    [Arguments]    ${action_name}
+    Action Create With File    ${action_name}    ${_TEMPLATE_DESCRIPTOR}
+    @{config}=    Create List    ${_MOCKUP_URL}    anything    anything    ${AGENT}    ${_LOGIN}
+    Deployment Config    @{config}
+    Add Common essential variable
+
+Init Application Workflow Standalone
+    [Arguments]    ${action_name}
+    Action Create With File    ${action_name}    ${_TEMPLATE_DESCRIPTOR}    false
+    @{config}=    Create List    ${_MOCKUP_URL}    anything    anything    ${AGENT}    ${_LOGIN}
+    Deployment Config    @{config}
+    Add Common essential variable
+
+Add Common essential variable
+    Add Custom Variable    /jboss/server/home_directory    ${_JBOSS_HOME}
+    Add Custom Variable    /jboss/host    ${_JBOSS_HOST}
+    Add Custom Variable    /jboss/port    ${_JBOSS_PORT}
+    Add Custom Variable    /jboss/username    ${_JBOSS_USERNAME}
+    Add Custom Variable    /jboss/password    ${_JBOSS_PASSWORD}
+    Add Custom Variable    /system/id    123456
+    Add Custom Variable    @deployment_package/system/id    123456
+    Add Custom Variable    @target/system/id    123456
+    Add Custom Variable    @snapshot/snapshotType    ${_SNAPSHOT_TYPE}
+    Add Custom Variable    @snapshot/reportId    123456789
+
+Common testsuites execute and assert
+    [Arguments]    ${returnStatus}    ${returnCode}
+    Action Execute
+    Action Return Status Should Be    ${returnStatus}
+    #Run Keyword If    '${returnStatus}' == '${ENDED_OK}'    Action Report Should Be Found
+    #Run Keyword If    '${returnStatus}' == '${ENDED_OK}'    Assert Pass
+    #Action Return Code Should Be    ${returnCode}
+
+Assert Pass
+    Action Return Status Should Be    ${ENDED_OK}
+
+Assert Fail
+    Action Return Status Should Not Be    ${ENDED_OK}
+
+Create Test Snapshot
+    Init Application Workflow    ${ACTION_SNAPSHOT_CREATE}
+    Add Custom Variable    /jboss/server/home_directory    ${_JBOSS_HOME}
+    Add Custom Variable    /jboss/host    ${_JBOSS_HOST}
+    Add Custom Variable    /jboss/port    ${_JBOSS_PORT}
+    Add Custom Variable    /jboss/username    ${_JBOSS_USERNAME}
+    Add Custom Variable    /jboss/password    ${_JBOSS_PASSWORD}
+    Add Custom Variable    /jboss/application_name    sample.war
+    Action Execute
+    ${archive_path}=    Action Get Variable    &UC4RB_ARCHIVE_PATH#
+    ${guid}=    Action Get Variable    &UC4RB_OUT_TARGET_GUID#
+    @{return}=    Create List    ${archive_path}    ${guid}
+    [Return]    @{return}
+
+Clean Snapshot
+    [Arguments]    ${archive_path}    ${guid}
+    Init Application Workflow Standalone    ${ACTION_BOND_HOOK_SNAPSHOT_DELETE}
+    Add Custom Variable    @snapshot/variables/archivepath    ${archive_path}
+    Add Custom Variable    @snapshot/guid    ${guid}
+    Add Custom Variable    @snapshot/snapshotType    PCK.AUTOMIC_JBOSS_V6
+    Action Execute
+    Action Report Should Be Found
+
+Delete folder
+    [Arguments]    ${folder}
+    Init Action    PCK.AUTOMIC_FILESYSTEM.PUB.ACTION.DELETE
+    Action Set    &UC4RB_DIR_FILE_RM_NAME#    ${folder}
+    Action Set    &UC4RB_DIR_FILE_RM_FAIL#    NO
+    Action Execute
+    Action Report Should Be Found
+    Action Return Status Should Be    ${ENDED_OK}
