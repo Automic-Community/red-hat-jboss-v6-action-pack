@@ -7,11 +7,11 @@ binaries:
   - name: DEPLOYMENTTARGET#JBOSS_V6#1
     type: TEXT
     path: ara/types/deploymenttarget/JBoss v6.xml
-    version: 5.0
+    version: 1.0.0
   - name: COMPONENT#JBOSS_V6#2
     type: TEXT
     path: ara/types/component/JBoss v6.xml
-    version: 5.0
+    version: 1.0.0
 - object: RESOURCES/LIBS/PCK.AUTOMIC_JBOSS_V6.PRV.STORE
   resources: 
   - name: JBOSSV6TOOL.JAR
