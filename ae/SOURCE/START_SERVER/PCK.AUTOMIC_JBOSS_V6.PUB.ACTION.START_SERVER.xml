@@ -114,9 +114,9 @@
 <node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;AGENT_A#" Value="nothing at all"/>
-<row Mod="0" Name="&amp;VAR1#" Value="&amp;$PHYS_DATE_DD_MM_YYYY_d#"/>
-<row Mod="0" Name="&amp;VAR2#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;AGENT_A#" Value="nothing at all"/>
+<row ERTUsage="0" Mod="0" Name="&amp;VAR1#" Value="&amp;$PHYS_DATE_DD_MM_YYYY_d#"/>
+<row ERTUsage="0" Mod="0" Name="&amp;VAR2#" Value=""/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -124,8 +124,8 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_BACKUP_REPORT#" Value=""/>
-<row Mod="0" Name="&amp;UC4RB_JBOSS_SERVER_STARTED#" Value="FALSE"/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_BACKUP_REPORT#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_JBOSS_SERVER_STARTED#" Value="FALSE"/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -200,8 +200,8 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_BACKUP_REPORT#" Value=""/>
-<row Mod="0" Name="&amp;UC4RB_JBOSS_SERVER_STARTED#" Value="FALSE"/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_BACKUP_REPORT#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_JBOSS_SERVER_STARTED#" Value="FALSE"/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -318,7 +318,7 @@
 <MaxRetCode>0</MaxRetCode>
 <MrcExecute/>
 <MrcElseE>0</MrcElseE>
-<FcstStatus>0|U00000000 ??? ""</FcstStatus>
+<FcstStatus>0| |</FcstStatus>
 
 <ErtMethodDef>1</ErtMethodDef>
 <ErtMethodFix>0</ErtMethodFix>
@@ -405,7 +405,10 @@ Managed Domain mode:
 
 Rollback:
  - If JBoss is started using standalone.bat/domain.bat (.sh), the PID is backed up. Rollback will be done by killing this PID.
- - If JBoss servers are started in Managed Domain mode, stop the running servers.]]></DOC>
+ - If JBoss servers are started in Managed Domain mode, stop the running servers.
+
+=Output=
+&UC4RB_JBOSS_SERVER_STARTED# is set to TRUE if the server was started successfully]]></DOC>
 </DOCU_Docu>
 </JOBP>
 </uc-export>

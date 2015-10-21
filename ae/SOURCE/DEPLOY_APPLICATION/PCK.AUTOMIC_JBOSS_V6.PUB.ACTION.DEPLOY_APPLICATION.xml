@@ -106,7 +106,7 @@
 <node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;VAR2#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;VAR2#" Value=""/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -114,9 +114,9 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_BACKUP_DIRECTORY#" Value=""/>
-<row Mod="0" Name="&amp;UC4RB_BACKUP_REPORT#" Value=""/>
-<row Mod="0" Name="&amp;UC4RB_JBOSS_APPLN_DEPLOYED#" Value="FALSE"/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_BACKUP_DIRECTORY#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_BACKUP_REPORT#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_JBOSS_APPLN_DEPLOYED#" Value="FALSE"/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -183,9 +183,9 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_BACKUP_DIRECTORY#" Value=""/>
-<row Mod="0" Name="&amp;UC4RB_BACKUP_REPORT#" Value=""/>
-<row Mod="0" Name="&amp;UC4RB_JBOSS_APPLN_DEPLOYED#" Value="FALSE"/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_BACKUP_DIRECTORY#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_BACKUP_REPORT#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_JBOSS_APPLN_DEPLOYED#" Value="FALSE"/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -286,7 +286,7 @@
 <MaxRetCode>0</MaxRetCode>
 <MrcExecute/>
 <MrcElseE>0</MrcElseE>
-<FcstStatus>0|U00000000 ??? ""</FcstStatus>
+<FcstStatus>0| |</FcstStatus>
 
 <ErtMethodDef>1</ErtMethodDef>
 <ErtMethodFix>0</ErtMethodFix>
@@ -366,7 +366,10 @@
 <DOC><![CDATA[Deploy Application to JBoss V6 Standalone/Managed Domain. 
 Application name must not contain any space or special character.
 Server groups name (separated by commas) should be provided if application is to be deployed on Managed Domain. If not, application will be deployed to all server groups
-Undeploy Application is used for rollback. All parameters are the same.]]></DOC>
+Undeploy Application is used for rollback. All parameters are the same.
+
+=Output=
+&UC4RB_JBOSS_APPLN_DEPLOYED# If set to TRUE, then the application was deployed successfully]]></DOC>
 </DOCU_Docu>
 </JOBP>
 </uc-export>
