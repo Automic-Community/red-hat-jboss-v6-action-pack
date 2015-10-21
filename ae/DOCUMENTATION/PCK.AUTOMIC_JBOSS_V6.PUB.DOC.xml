@@ -9,15 +9,9 @@
 <DOCU_Docu state="1" type="text">
 <DOC><![CDATA[Manage your application deployments to a JBoss application server using these actions
 
-=Supported JBoss versions=
+=Supported versions=
 
-The following JBoss version is supported: 
-* JBoss EAP 5.1.2
-
-=Setup=
-
-* Java JDK 1.6 or higher must be installed and executeable as 'java'.
-* jboss-v6-tool.jar must be available in the agents install directory.
+See http://docs.automic.com/compatibility?len=Package.JBoss.v6&comp=PCK.AUTOMIC_JBOSS_V6&version=1.0.0
 
 =Rollback=
 
