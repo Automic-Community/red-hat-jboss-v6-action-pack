@@ -110,7 +110,7 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_JBOSS_APPLN_STARTED#" Value="FALSE"/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_JBOSS_APPLN_STARTED#" Value="FALSE"/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -175,7 +175,7 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_JBOSS_APPLN_STARTED#" Value="FALSE"/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_JBOSS_APPLN_STARTED#" Value="FALSE"/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -272,7 +272,7 @@
 <MaxRetCode>0</MaxRetCode>
 <MrcExecute/>
 <MrcElseE>0</MrcElseE>
-<FcstStatus>0|U00000000 ??? ""</FcstStatus>
+<FcstStatus>0| |</FcstStatus>
 
 <ErtMethodDef>1</ErtMethodDef>
 <ErtMethodFix>0</ErtMethodFix>
@@ -349,7 +349,10 @@
 <DOC><![CDATA[Start Application in JBoss V6 Standalone or Assign Application to Server groups in Managed Domain
 In case of Managed Domain, server groups (separated by commas) should be provided. If not, assign application to all server groups
 
-Stop Application is used for rollback. All parameters are the same.]]></DOC>
+Stop Application is used for rollback. All parameters are the same.
+
+=Output=
+&UC4RB_JBOSS_APPLN_STARTED# Is set to TRUE if the application was started successfully]]></DOC>
 </DOCU_Docu>
 </JOBP>
 </uc-export>
