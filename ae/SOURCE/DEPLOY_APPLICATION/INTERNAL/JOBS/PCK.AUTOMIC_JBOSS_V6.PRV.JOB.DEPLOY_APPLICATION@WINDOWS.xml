@@ -63,7 +63,7 @@
 <MaxRetCode>0</MaxRetCode>
 <MrcExecute/>
 <MrcElseE>0</MrcElseE>
-<FcstStatus>0|U00000000 ??? ""</FcstStatus>
+<FcstStatus>0| |</FcstStatus>
 
 <ErtMethodDef>1</ErtMethodDef>
 <ErtMethodFix>0</ErtMethodFix>
@@ -170,7 +170,7 @@
 
 !---------------------- Deploy command  ----------------------
 ! below escaping lets the command ends up like 'deploy \"<name>\" ...' to java, by this way package name with spaces is applicable
-:SET &UC4_JBOSS_CLI_DEPLOY# = '&UC4_JBOSS_CLI# --command="deploy \\\`""&PACKAGE_NAME#\\\`""'
+:SET &UC4_JBOSS_CLI_DEPLOY# = '&UC4_JBOSS_CLI# --command="deploy \\`""&PACKAGE_NAME#\\`""'
 :SET &UC4_JBOSS_CLI_DEPLOY# = '&UC4_JBOSS_CLI_DEPLOY# --name=&UC4RB_JBOSS_APP_NAME#'
 
 :IF &UC4RB_JBOSS_UPDATE# = "YES"
