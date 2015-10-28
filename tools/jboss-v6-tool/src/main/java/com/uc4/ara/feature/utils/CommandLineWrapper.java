@@ -50,9 +50,6 @@ public class CommandLineWrapper {
             }
         }
 
-        for (String param : cmd) {
-            FeatureUtil.logMsg("param : " + param);
-        }
         ProcessBuilder builder = new ProcessBuilder(cmd);
         builder.redirectErrorStream(true);
         Process p = builder.start();
