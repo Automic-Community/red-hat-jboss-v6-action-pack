@@ -20,7 +20,7 @@ Deploy Application Template
     Action Set    ${PRT_DEPLOY_APPLICATION_JBOSS_FAIL_EXISTING}    ${fail_existing}
     Action Set    ${PRT_DEPLOY_APPLICATION_JBOSS_UPDATE}    ${update_existing}
     Action Set    ${PRT_DEPLOY_APPLICATION_JBOSS_SERVER_GROUPS}    ${group}
-    JBOSS Commont Setting With User
+    JBOSS Common Setting With User
     JBOSS Setting Package
     Action Execute
     Action Report Should Be Found
@@ -31,5 +31,5 @@ Deploy Application Template
     Action Set    ${PRT_UNDEPLOY_APPLICATION_JBOSS_APP_NAME}    ${app}
     Action Set    ${PRT_UNDEPLOY_APPLICATION_JBOSS_FAIL_MISSING}    NO
     Action Set    ${PRT_UNDEPLOY_APPLICATION_JBOSS_SERVER_GROUPS}    ${EMPTY}
-    JBOSS Commont Setting With User
+    JBOSS Common Setting With User
     Action Execute

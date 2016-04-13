@@ -19,7 +19,7 @@ Stop Application Template
     Action Set    ${PRT_DEPLOY_APPLICATION_JBOSS_FAIL_EXISTING}    NO
     Action Set    ${PRT_DEPLOY_APPLICATION_JBOSS_UPDATE}    YES
     Action Set    ${PRT_DEPLOY_APPLICATION_JBOSS_SERVER_GROUPS}    ${EMPTY}
-    JBOSS Commont Setting With User
+    JBOSS Common Setting With User
     JBOSS Setting Package
     Action Execute
     Init Action    ${ACTION_START_APPLICATION}
@@ -27,14 +27,14 @@ Stop Application Template
     Action Set    ${PRT_START_APPLICATION_JBOSS_SERVER_GROUPS}    ${EMPTY}
     Action Set    ${PRT_START_APPLICATION_JBOSS_APP_NAME}    ${app_name}
     Action Set    ${PRT_START_APPLICATION_JBOSS_FAIL_IF_RUNNING}    NO
-    JBOSS Commont Setting With User
+    JBOSS Common Setting With User
     Action Execute
     Init Action    ${ACTION_STOP_APPLICATION}
     Action Set    ${PRT_STOP_APPLICATION_JBOSS_OPERATING_MODE}    ${mode}
     Action Set    ${PRT_STOP_APPLICATION_JBOSS_SERVER_GROUPS}    ${server_group}
     Action Set    ${PRT_STOP_APPLICATION_JBOSS_APP_NAME}    ${app_name}
     Action Set    ${PRT_STOP_APPLICATION_JBOSS_FAIL_IF_STOPPED}    ${fail_if_stopped}
-    JBOSS Commont Setting With User
+    JBOSS Common Setting With User
     Action Execute
     Action Report Should Be Found
     Action Return Code Should Be    ${returnCode}
@@ -44,5 +44,5 @@ Stop Application Template
     Action Set    ${PRT_UNDEPLOY_APPLICATION_JBOSS_APP_NAME}    ${app_name}
     Action Set    ${PRT_UNDEPLOY_APPLICATION_JBOSS_FAIL_MISSING}    NO
     Action Set    ${PRT_UNDEPLOY_APPLICATION_JBOSS_SERVER_GROUPS}    ${EMPTY}
-    JBOSS Commont Setting With User
+    JBOSS Common Setting With User
     Action Execute

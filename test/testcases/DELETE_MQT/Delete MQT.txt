@@ -19,7 +19,7 @@ Delete Mqt Template
     Action Set    ${PRT_DELETE_MQT_JBOSS_NAME}    ${name}
     Action Set    ${PRT_DELETE_MQT_JBOSS_TYPE}    ${type}
     Action Set    ${PRT_DELETE_MQT_JBOSS_FAIL_MISSING}    ${fail_if_missing}
-    JBOSS Commont Setting With User
+    JBOSS Common Setting With User
     Action Execute
     Action Report Should Be Found
     Action Return Code Should Be    ${returnCode}

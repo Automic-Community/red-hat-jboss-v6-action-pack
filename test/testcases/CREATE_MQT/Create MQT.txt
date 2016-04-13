@@ -32,7 +32,7 @@ Create Mqt Template
     Action Set    ${PRT_DELETE_MQT_JBOSS_NAME}    ${name}
     Action Set    ${PRT_DELETE_MQT_JBOSS_TYPE}    ${type}
     Action Set    ${PRT_DELETE_MQT_JBOSS_FAIL_MISSING}    NO
-    JBOSS Commont Setting With User
+    JBOSS Common Setting With User
     Action Execute
     Init Action    ${ACTION_CREATE_MQT}
     Action Set    ${PRT_CREATE_MQT_JBOSS_OPERATING_MODE}    ${mode}
@@ -51,7 +51,7 @@ Create Mqt Template
     Action Set    ${PRT_CREATE_MQT_JBOSS_TYPE}    ${type}
     Action Set    ${PRT_CREATE_MQT_JBOSS_FAIL_EXISTING}    ${fail_existing}
     Action Set    ${PRT_CREATE_MQT_JBOSS_UPDATE_EXISTING}    ${update_existing}
-    JBOSS Commont Setting With User
+    JBOSS Common Setting With User
     Action Execute
     Action Report Should Be Found
     Action Return Code Should Be    ${returnCode}
@@ -62,5 +62,5 @@ Create Mqt Template
     Action Set    ${PRT_DELETE_MQT_JBOSS_NAME}    ${name}
     Action Set    ${PRT_DELETE_MQT_JBOSS_TYPE}    ${type}
     Action Set    ${PRT_DELETE_MQT_JBOSS_FAIL_MISSING}    NO
-    JBOSS Commont Setting With User
+    JBOSS Common Setting With User
     Action Execute

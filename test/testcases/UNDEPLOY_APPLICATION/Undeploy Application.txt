@@ -19,7 +19,7 @@ Undeploy Application Template
     Action Set    ${PRT_DEPLOY_APPLICATION_JBOSS_FAIL_EXISTING}    NO
     Action Set    ${PRT_DEPLOY_APPLICATION_JBOSS_UPDATE}    YES
     Action Set    ${PRT_DEPLOY_APPLICATION_JBOSS_SERVER_GROUPS}    ${EMPTY}
-    JBOSS Commont Setting With User
+    JBOSS Common Setting With User
     JBOSS Setting Package
     Action Execute
     Init Action    ${ACTION_UNDEPLOY_APPLICATION}
@@ -27,7 +27,7 @@ Undeploy Application Template
     Action Set    ${PRT_UNDEPLOY_APPLICATION_JBOSS_APP_NAME}    ${app}
     Action Set    ${PRT_UNDEPLOY_APPLICATION_JBOSS_FAIL_MISSING}    ${fail_if_missing}
     Action Set    ${PRT_UNDEPLOY_APPLICATION_JBOSS_SERVER_GROUPS}    ${EMPTY}
-    JBOSS Commont Setting With User
+    JBOSS Common Setting With User
     Action Execute
     Action Report Should Be Found
     Action Return Code Should Be    ${returnCode}
