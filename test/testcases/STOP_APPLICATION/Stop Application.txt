@@ -8,7 +8,7 @@ Resource          ../../resources/keywords.txt
 
 *** Test Cases ***    MODE          SERVER GROUP    APP NAME      FAIL IF STOPPED    RETURN CODE    RETURN STATUS
 Stop Application Normal
-                      Standalone    ${EMPTY}        sample.war    NO                 0              ENDED_OK - ended normally
+                      Standalone    ${EMPTY}        ${_JBOSS_APP}    NO                 0              ENDED_OK - ended normally
 
 *** Keywords ***
 Stop Application Template

@@ -13,7 +13,7 @@ Config a valid application workflow
     Add Custom Variable    @snapshot/UC4RB_JBOSS_PORT    ${_JBOSS_PORT}
     Add Custom Variable    @snapshot/UC4RB_JBOSS_USERNAME    ${_JBOSS_USERNAME}
     Add Custom Variable    @snapshot/UC4RB_JBOSS_PASSWORD    ${_JBOSS_PASSWORD}
-    Add Custom Variable    @snapshot/UC4RB_JBOSS_APP_NAME    sample.war
+    Add Custom Variable    @snapshot/UC4RB_JBOSS_APP_NAME    ${_JBOSS_APP}
     Add Custom Variable    @snapshot/UC4RB_JBOSS_HOST_CONTROLLER    ${EMPTY}
     Add Custom Variable    @snapshot/UC4RB_JBOSS_SERVER_NAME    ${EMPTY}
 

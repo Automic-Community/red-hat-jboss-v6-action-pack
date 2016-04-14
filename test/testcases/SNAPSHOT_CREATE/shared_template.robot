@@ -20,7 +20,7 @@ Test Snapshot Mode
 Test App Filter Exclude
     [Arguments]    ${filter}    ${returnStatus}    ${returnCode}
     Config a valid application workflow
-    Add Custom Variable    /jboss/application_name    sample.war
+    Add Custom Variable    /jboss/application_name    ${_JBOSS_APP}
     Action Set    ${PRT_CREATE_SNAPSHOT_APP_FILTER_EXCLUDE}    ${filter}
     Common testsuites execute and assert    ${returnStatus}    ${returnCode}
     ${archive_path}=    Action Get Variable    &UC4RB_ARCHIVE_PATH#

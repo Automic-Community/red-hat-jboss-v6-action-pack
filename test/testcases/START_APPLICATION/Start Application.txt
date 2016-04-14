@@ -8,7 +8,7 @@ Resource          ../../resources/keywords.txt
 
 *** Test Cases ***    MODE          APPNAME       FAIL IF RUNNING    RETURN CODE    RETURN STATUS
 Start Application Normal
-                      Standalone    sample.war    NO                 0              ENDED_OK - ended normally
+                      Standalone    ${_JBOSS_APP}    NO                 0              ENDED_OK - ended normally
 
 *** Keywords ***
 Start Application Template

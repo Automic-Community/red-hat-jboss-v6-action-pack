@@ -8,7 +8,7 @@ Resource          ../../resources/keywords.txt
 
 *** Test Cases ***    MODE          APP           FAIL EXISTING    UPDATE EXISTING    GROUP       RETURN CODE    RETURN STATUS
 Deploy Application Normal
-                      Standalone    sample.war    NO               NO                 ${EMPTY}    0              ENDED_OK - ended normally
+                      Standalone    ${_JBOSS_APP}    NO               NO                 ${EMPTY}    0              ENDED_OK - ended normally
 
 *** Keywords ***
 Deploy Application Template
