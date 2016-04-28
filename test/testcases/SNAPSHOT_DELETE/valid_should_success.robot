@@ -3,7 +3,7 @@ Documentation     Test JBoss delete snapshot.
 Suite Setup       Suite Setup
 Suite Teardown    Run Keywords    Delete folder    ${AGENT_DIR}${/}snapshot
 ...               AND    Stop Server    Standalone
-Force Tags        SNAPSHOT_DELETE    win    unix
+Force Tags        SNAPSHOT_DELETE    unix55    unix60    unix70    win55    win60    win70
 Test Template     valid_should_success
 Resource          ../../resources/keywords.txt
 Resource          shared_template.robot
