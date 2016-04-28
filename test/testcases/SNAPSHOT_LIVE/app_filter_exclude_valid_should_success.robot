@@ -4,7 +4,7 @@ Documentation     Test JBoss create snapshot action with invalid input of App Fi
 ...               Test case will using above values.
 Suite Setup       Suite Setup
 Suite Teardown    Run Keywords    Delete folder    ${AGENT_DIR}${/}snapshot    AND    Stop Server    Standalone
-Force Tags        SNAPSHOT_LIVE    unix55    unix60    unix70    win55    win60    win70
+Force Tags        SNAPSHOT_LIVE    win    unix
 Test Template     Test App Filter Exclude
 Resource          ../../resources/keywords.txt
 Resource          shared_template.robot

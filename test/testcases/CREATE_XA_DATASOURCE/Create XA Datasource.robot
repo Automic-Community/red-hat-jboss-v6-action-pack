@@ -2,7 +2,7 @@
 Documentation     NOTE:
 ...               add note here
 Suite Setup       Suite Setup
-Force Tags        CREATE_XA_DATASOURCE    _template_
+Force Tags        CREATE_XA_DATASOURCE    win    unix
 Test Template     Create Xa Datasource Template
 Resource          ../../resources/keywords.txt
 
