@@ -28,7 +28,6 @@
                 $localPort = $item[1].split(':')[-1]
             }
 
-
             New-Object PSObject -Property @{
                 PID = $item[-1]
                 ProcessName = (Get-Process -Id $item[-1] -ErrorAction SilentlyContinue).Name

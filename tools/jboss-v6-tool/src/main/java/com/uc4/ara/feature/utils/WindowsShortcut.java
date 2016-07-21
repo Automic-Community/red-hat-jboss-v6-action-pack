@@ -13,8 +13,6 @@ public class WindowsShortcut
 	private boolean isLocal;
 	private String real_file;
 
-
-
 	public WindowsShortcut(File file) throws IOException, ParseException {
 		InputStream in = new FileInputStream(file);
 		try {

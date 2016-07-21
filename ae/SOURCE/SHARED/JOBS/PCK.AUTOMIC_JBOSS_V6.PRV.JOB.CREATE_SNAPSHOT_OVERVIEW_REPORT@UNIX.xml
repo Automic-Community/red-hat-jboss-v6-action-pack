@@ -120,7 +120,6 @@
 :  SET &UC4RB_APP_FILTER_EXCLUDE# = STR_CAT(&UC4RB_APP_FILTER_EXCLUDE#, " ")
 :ENDIF
 
-
 :JCL_CONCAT_CHAR "?"
 java -jar "&$AGENT_RESOURCES_CLIENT#jboss-v6-tool.jar" jbossv6 CompareJBossV6Snapshot --home "&UC4RB_JBOSS_HOME#" ?
 --port &UC4RB_JBOSS_PORT# --username "&UC4RB_JBOSS_USERNAME#" --host "&UC4RB_JBOSS_HOST#" ?

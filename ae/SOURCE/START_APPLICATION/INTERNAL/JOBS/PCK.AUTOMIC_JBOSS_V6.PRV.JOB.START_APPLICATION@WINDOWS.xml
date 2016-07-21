@@ -242,7 +242,6 @@ if ("$?" -eq "True") {
   exit 1
 }
 
-
 ! --------------------------------------
 
 Write-Host "Enabling process finished. Checking &UC4RB_JBOSS_APP_NAME# status again ..."

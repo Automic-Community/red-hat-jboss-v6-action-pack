@@ -21,7 +21,6 @@ import com.uc4.ara.feature.utils.CmdLineParser;
 import com.uc4.ara.feature.utils.Maxim;
 import com.uc4.ara.util.Logger;
 
-
 public class CreateJBossV6Snapshot extends AbstractInternalFeature  {
 
     private CmdLineParser.Option<String> home;
@@ -149,8 +148,6 @@ public class CreateJBossV6Snapshot extends AbstractInternalFeature  {
             return ErrorCodes.ERROR;
         }
 
-
-
         JBossV6SnapshotType jb = new JBossV6SnapshotType();
 
         jb.setType("JBossV6");
@@ -217,7 +214,6 @@ public class CreateJBossV6Snapshot extends AbstractInternalFeature  {
 
         return errorCode;
     }
-
 
     /*
      * snap.xml, OverviewSnap.xml, CompareSnap.xml

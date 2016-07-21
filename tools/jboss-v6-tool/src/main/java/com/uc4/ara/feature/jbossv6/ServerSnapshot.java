@@ -104,7 +104,6 @@ public class ServerSnapshot extends AbstractJBossV6Feature {
             return snapshot;
         }
 
-
     }
 
     /**

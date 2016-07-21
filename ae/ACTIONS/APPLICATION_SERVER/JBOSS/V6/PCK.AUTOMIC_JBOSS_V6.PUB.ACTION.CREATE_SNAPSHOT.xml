@@ -842,7 +842,6 @@ The snapshot is stored in the local machine containing compressed file of the de
 * Requirement:
 - jboss-cli-client.jar exists in {$JBOSS_HOME}/bin/client
 
-
 Application snapshot:
 * Requirement:
 - Application must already be deployed

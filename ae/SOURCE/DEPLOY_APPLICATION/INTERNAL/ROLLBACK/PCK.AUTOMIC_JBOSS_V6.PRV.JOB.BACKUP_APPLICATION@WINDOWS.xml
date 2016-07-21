@@ -162,7 +162,6 @@ if %errorlevel% == 0 (
   echo SERVER_GROUP:%GROUP%
 :ENDIF
 
-
 :IF &UC4RB_JBOSS_OPERATING_MODE# = "Managed Domain"
 ! Get local host controller, where application file is stored.
   &UC4_JBOSS_CLI# --command=^":read-attribute(name=local-host-name)^" | findstr /R /C:"\"result\" => " > "&TEMP_FILE1#"
@@ -178,7 +177,6 @@ if %errorlevel% == 0 (
   &UC4_JBOSS_CLI# --command=^"/core-service=platform-mbean/type=runtime:read-attribute(name=system-properties)^"  > "&TEMP_FILE1#"
   type "&TEMP_FILE1#" | findstr /R /C:"\"jboss.server.base.dir\" => " > "&TEMP_FILE2#"
 :ENDIF
-
 
 if not %errorlevel% == 0 (
   echo Failed to get property: jboss.server.base.dir ^(jboss.domain.base.dir^). Rollback will not be available.
@@ -227,7 +225,6 @@ echo SHA1: %SHA%
 ! Split the string. The deployment should be placed in SHA1\SHA2
 set SHA1=%SHA:~0,2%
 set SHA2=%SHA:~2%
-
 
 ! Copy deployment package to BACKUP directory
 cd /d "%BASE_DIR%\data\content\%SHA1%\%SHA2%"

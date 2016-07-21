@@ -447,8 +447,6 @@
          </properties>
     </text><combo alt="1" dynamic="0" enabled="1" fill="b" filter="0" focus="0" id="UC4RB_JBOSS_ADDR_FULL_POLICYs.00" nl="1" strict="1" text="Address Full Policy" tooltip="This attribute determines what happens when an address where max-size-bytes is specified becomes full" vtype="i"><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command owner="_self" owneraction="setsource" ownerparam="src|_dialog@src"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptcombolist" target="_self" targetaction="setlist" wait="0"/>
          
-         
-         
       <properties>
         <entry listparam="" name="reference" reftype="STATIC">PCK.AUTOMIC_JBOSS_V6.PRV.VARA.JMS_FULL_POLICY</entry>
         <entry name="text">Address Full Policy</entry>

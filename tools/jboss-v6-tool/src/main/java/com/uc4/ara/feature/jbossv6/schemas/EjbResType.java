@@ -5,7 +5,6 @@
 // Generated on: 2013.12.04 at 03:31:00 PM ICT 
 //
 
-
 package com.uc4.ara.feature.jbossv6.schemas;
 
 import java.util.ArrayList;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * <p>Java class for EjbResType complex type.
@@ -176,7 +174,6 @@ public class EjbResType {
         this.name = value;
     }
 
-
     /**
      * <p>Java class for anonymous complex type.
      * 
@@ -275,7 +272,6 @@ public class EjbResType {
         public void setName(String value) {
             this.name = value;
         }
-
 
         /**
          * <p>Java class for anonymous complex type.
@@ -472,7 +468,6 @@ public class EjbResType {
 
     }
 
-
     /**
      * <p>Java class for anonymous complex type.
      * 
@@ -571,7 +566,6 @@ public class EjbResType {
         public void setName(String value) {
             this.name = value;
         }
-
 
         /**
          * <p>Java class for anonymous complex type.

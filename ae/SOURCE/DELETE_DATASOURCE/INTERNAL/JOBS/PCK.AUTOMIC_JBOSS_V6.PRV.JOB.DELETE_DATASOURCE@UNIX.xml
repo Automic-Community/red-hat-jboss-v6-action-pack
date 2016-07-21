@@ -136,7 +136,6 @@
 :  SET &UC4RB_JBOSS_DS_COMMAND# = '&UC4RB_JBOSS_DS_TYPE_CMD#'
 :ENDIF
 
-
 failIfMissing() {
    echo Data source &UC4RB_JBOSS_NAME# did not exist
 :  IF  &UC4RB_JBOSS_FAIL_MISSING# = "YES"

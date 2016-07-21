@@ -48,7 +48,6 @@ import com.uc4.ara.feature.FeatureUtil;
 import com.uc4.ara.feature.FeatureUtil.MsgTypes;
 import com.uc4.importexportservice.Result;
 
-
 /**
  * Utility class for file-handling.
  */
@@ -59,7 +58,6 @@ public class FileUtil {
 	 * allocated to copy a file.
 	 */
 	public static final int maxBlockSize = 10 * 1024 * 1024;
-
 
 	private static final int defaultBlockSize = 8 * 1024;
 
@@ -81,7 +79,6 @@ public class FileUtil {
      * The Windows separator character.
      */
     private static final char WINDOWS_SEPARATOR = '\\';
-
 
 	/**
 	 * reads the whole content of a file denoted by the parameter
@@ -257,7 +254,6 @@ public class FileUtil {
 		}
 		return (path.delete());
 	}
-
 
 	/**Check if child is a sub directory of base
 	 * @param base
@@ -599,7 +595,6 @@ public class FileUtil {
 		}
 	}
 
-
 	/**
 	 * @param sourceFile
 	 * @param destFile
@@ -630,7 +625,6 @@ public class FileUtil {
 			e.printStackTrace();
 		}
 	}
-
 
 	public static String normalize(String uri) {
 		if ("".equals(uri)) {
@@ -767,7 +761,6 @@ public class FileUtil {
 		return path;
 
 	}
-
 
 	/**
 	 * @param path

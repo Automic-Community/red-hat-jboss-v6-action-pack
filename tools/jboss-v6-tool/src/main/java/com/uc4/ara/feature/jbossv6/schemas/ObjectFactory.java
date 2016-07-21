@@ -5,11 +5,9 @@
 // Generated on: 2013.12.04 at 03:31:00 PM ICT 
 //
 
-
 package com.uc4.ara.feature.jbossv6.schemas;
 
 import javax.xml.bind.annotation.XmlRegistry;
-
 
 /**
  * This object contains factory methods for each 
@@ -27,7 +25,6 @@ import javax.xml.bind.annotation.XmlRegistry;
  */
 @XmlRegistry
 public class ObjectFactory {
-
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.uc4.ara.feature.jbossv6.schemas

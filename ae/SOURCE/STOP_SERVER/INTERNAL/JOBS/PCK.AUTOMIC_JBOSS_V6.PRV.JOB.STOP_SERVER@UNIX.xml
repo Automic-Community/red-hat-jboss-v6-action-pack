@@ -117,7 +117,6 @@
 :INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CONVERT_SLASHES_UNIX_STYLE
 :SET &UC4RB_JBOSS_HOME# = &UC4RB_CONVERTED_STRING#
 
-
 :INCLUDE PCK.AUTOMIC_JBOSS_V6.PRV.INCLUDE.JBOSS_CLI@UNIX
 
 !Escaped jboss-cli.sh
@@ -183,7 +182,6 @@ StopJBossEAP() {
     echo "JBoss Server (&UC4RB_JBOSS_OPERATING_MODE#) is not running. Aborting ..."
     FailIfNotRunning
   fi
-
 
 : IF &UC4RB_JBOSS_SERVICE_NAME# NE ""
     echo "Trying to stop service &UC4RB_JBOSS_SERVICE_NAME# ..."

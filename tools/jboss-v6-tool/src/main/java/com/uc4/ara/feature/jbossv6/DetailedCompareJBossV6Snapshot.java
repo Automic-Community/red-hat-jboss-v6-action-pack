@@ -56,7 +56,6 @@ import difflib.Patch;
  * @version $Change$
  */
 
-
 public class DetailedCompareJBossV6Snapshot extends  AbstractInternalFeature {
 
     private CmdLineParser.Option<String> home;
@@ -77,7 +76,6 @@ public class DetailedCompareJBossV6Snapshot extends  AbstractInternalFeature {
         super.initialize();
         StringBuilder examples = new StringBuilder();
         StringBuilder description = new StringBuilder();
-
 
         description.append("This function creates jboss server/application snapshot.");
 
@@ -119,13 +117,11 @@ public class DetailedCompareJBossV6Snapshot extends  AbstractInternalFeature {
         parser.setDescription(description.toString());
     }
 
-
     @Override
     public int run(String[] args) throws Exception {
 
         int errorCode = ErrorCodes.OK;
         super.run(args);
-
 
         // handle parameters
         String homeValue = parser.getOptionValue(home);
@@ -140,7 +136,6 @@ public class DetailedCompareJBossV6Snapshot extends  AbstractInternalFeature {
         String resultFileValue = parser.getOptionValue(resultFile);
 
         String appName = null;
-
 
         File jbossHome = new File(homeValue);
         if (! jbossHome.exists() )
@@ -181,7 +176,6 @@ public class DetailedCompareJBossV6Snapshot extends  AbstractInternalFeature {
 
         zipDate = parent.getAttribute("date");
 
-
         AbstractJBossV6Feature a = new AbstractJBossV6Feature(homeValue, hostValue, portValue, userValue, passValue) {};
 
         File appFile = a.getApplicationFile(appName);
@@ -214,7 +208,6 @@ public class DetailedCompareJBossV6Snapshot extends  AbstractInternalFeature {
             throw new FileNotFoundException(
                     new File(workingDir, fileValue).getCanonicalPath());
 
-
         ZipInputStream is = new ZipInputStream(new FileInputStream(new File(
                 snapDirectory, "snap.zip")));
 
@@ -233,11 +226,9 @@ public class DetailedCompareJBossV6Snapshot extends  AbstractInternalFeature {
             throw new FileNotFoundException("zip://" + fileValue); // not in zip
         }
 
-
         File unzipDir = new File(snapDirectory, "diffs");
         File unzipFile = new File(unzipDir, fileValue);
         File diffFile = new File(unzipDir, resultFileValue);
-
 
         unzipFile.getParentFile().mkdirs();
         FileOutputStream out = new FileOutputStream(unzipFile);
@@ -261,7 +252,6 @@ public class DetailedCompareJBossV6Snapshot extends  AbstractInternalFeature {
 
         return errorCode;
     }
-
 
     /** Copy application file(directory) to a temporary directory
      * @param applicationFile
@@ -287,7 +277,6 @@ public class DetailedCompareJBossV6Snapshot extends  AbstractInternalFeature {
 
         return appWorkingDir;
     }
-
 
     public Document diff(File archiveFile, File currentFile, File diffFile)
             throws Exception {

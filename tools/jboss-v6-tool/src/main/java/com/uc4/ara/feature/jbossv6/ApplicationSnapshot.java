@@ -95,7 +95,6 @@ public class ApplicationSnapshot extends AbstractJBossV6Feature {
 
     }
 
-
     public ApplicationType createSnapshot(boolean zipFile) throws Exception {
 
         ApplicationType applicationType = objectFactory.createApplicationType();
@@ -142,7 +141,6 @@ public class ApplicationSnapshot extends AbstractJBossV6Feature {
         return applicationType;
     }
 
-
     private ApplicationRuntimeType createApplicationRuntimeType() throws JBossCLIException {
 
         ApplicationRuntimeType runtime = objectFactory.createApplicationRuntimeType();
@@ -188,14 +186,12 @@ public class ApplicationSnapshot extends AbstractJBossV6Feature {
             runtime.setAppName(appName);
             runtime.setName("Application Runtime");
 
-
             return runtime;
 
         }  finally {
             disconnect();
         }
     }
-
 
     // ********************************************** Subsystem module **********************************************
 
@@ -264,7 +260,6 @@ public class ApplicationSnapshot extends AbstractJBossV6Feature {
             disconnect();
         }
 
-
     }
 
     private DsSubsystemType createDsSubsystemType(JsonNode node) {
@@ -331,7 +326,6 @@ public class ApplicationSnapshot extends AbstractJBossV6Feature {
         return ejb3;
     }
 
-
     /**
      * @param node Contain all attributes of WEB (context-root, servlet .. )
      * @return
@@ -361,7 +355,6 @@ public class ApplicationSnapshot extends AbstractJBossV6Feature {
 
         return null;
     }
-
 
     private RarSubsystemType createRarSubsystemType(JsonNode node) {
         RarSubsystemType rarSubsystem = objectFactory.createRarSubsystemType();
@@ -411,13 +404,10 @@ public class ApplicationSnapshot extends AbstractJBossV6Feature {
         return null;
     }
 
-
     // TODO: nothing to do with this subsystem atm.
     private SarSubsystemType createSarSubsystemType(JsonNode node) {
         return null;
     }
-
-
 
     // ********************************************** Sub deployment module **********************************************
 
@@ -501,8 +491,6 @@ public class ApplicationSnapshot extends AbstractJBossV6Feature {
         return subDeploymentType;
     }
 
-
-
     // ********************************************** Deployment descriptor module **********************************************
 
     private DeploymentDescriptorsType createDeploymentDescriptorsType(File appWorkingDir) {
@@ -528,7 +516,6 @@ public class ApplicationSnapshot extends AbstractJBossV6Feature {
         }
         return null;
     }
-
 
     private WebDDType createWebDDType(File webDirectory) throws SAXException, IOException, ParserConfigurationException {
 
@@ -638,7 +625,6 @@ public class ApplicationSnapshot extends AbstractJBossV6Feature {
         return war;
     }
 
-
     private RarDDType createRarDDType(File raDir) throws Exception {
         RarDDType rar = objectFactory.createRarDDType();
         rar.setName("ra.xml");
@@ -699,7 +685,6 @@ public class ApplicationSnapshot extends AbstractJBossV6Feature {
         return rar;
     }
 
-
     private SarDDType createSarDDType(File sarDir) throws Exception {
         SarDDType sar = objectFactory.createSarDDType();
         sar.setName("jboss-service.xml");
@@ -741,7 +726,6 @@ public class ApplicationSnapshot extends AbstractJBossV6Feature {
         return sar;
     }
 
-
     private EjbDDType createEjbDDType(File ejbDirectory) throws ParserConfigurationException {
 
         File ejbXml = new File(ejbDirectory, "META-INF/ejb-jar.xml");
@@ -767,7 +751,6 @@ public class ApplicationSnapshot extends AbstractJBossV6Feature {
         return null;
     }
 
-
     private List<SessionBeanType> createSessionBeanType(Document ejbJarXml) {
 
         List<SessionBeanType> sessionBeans = new ArrayList<SessionBeanType>();
@@ -791,7 +774,6 @@ public class ApplicationSnapshot extends AbstractJBossV6Feature {
 
         return sessionBeans;
     }
-
 
     private List<MessageDrivenBeanType> createMessageDrivenBeanType(Document ejbJarXml) {
 
@@ -849,8 +831,6 @@ public class ApplicationSnapshot extends AbstractJBossV6Feature {
         return entityBeans;
     }
 
-
-
     private EjbResType createEjbResType(Element e) {
 
         // Set ejb references (ejb-ref, ejb-local-ref)
@@ -866,7 +846,6 @@ public class ApplicationSnapshot extends AbstractJBossV6Feature {
             ejbRes.getEjbRefs().setName("Ejb references");
             ejbRes.getEjbRefs().getEjbRef().addAll(Arrays.asList(ejbRefs));
         }
-
 
         EjbLocalRef[] ejbLocalRefs = setObjectsFields(
                 e.getElementsByTagNameNS(e.getNamespaceURI(), "ejb-local-ref"), EjbLocalRef.class);
@@ -899,7 +878,6 @@ public class ApplicationSnapshot extends AbstractJBossV6Feature {
             reRes.getResourceRefs().getResourceRef().addAll(Arrays.asList(resRefs));
         }
 
-
         ResourceEnvRef[] resEnvRefs = setObjectsFields(
                 getElementsByTagName(e, "resource-env-ref"), ResourceEnvRef.class);
 
@@ -909,7 +887,6 @@ public class ApplicationSnapshot extends AbstractJBossV6Feature {
             reRes.getResourceEnvRefs().setName("Resource environment references");
             reRes.getResourceEnvRefs().getResourceEnvRef().addAll(Arrays.asList(resEnvRefs));
         }
-
 
         EnvEntry[] envEntries = setObjectsFields(
                 getElementsByTagName(e, "env-entry"), EnvEntry.class);
@@ -926,7 +903,6 @@ public class ApplicationSnapshot extends AbstractJBossV6Feature {
 
         return null;
     }
-
 
     private FileGroupType createFileGroupType(File directory, String groupName, String include, String exclude) throws IOException {
         FileGroupType fileGroup = objectFactory.createFileGroupType();
@@ -975,7 +951,6 @@ public class ApplicationSnapshot extends AbstractJBossV6Feature {
         return null;
     }
 
-
     /** Copy application file(directory) to a temporary directory
      * @param applicationFile
      * @return
@@ -1001,7 +976,6 @@ public class ApplicationSnapshot extends AbstractJBossV6Feature {
 
         return appWorkingDir;
     }
-
 
     /**Set all declared field's values in the given object to suitable values of XML elements
      */
@@ -1056,7 +1030,6 @@ public class ApplicationSnapshot extends AbstractJBossV6Feature {
         }
     }
 
-
     /**Set all declared field's values in the given object to suitable values of JsonNode
      */
     private void setObjectFields(JsonNode node, Object obj)  {
@@ -1102,7 +1075,6 @@ public class ApplicationSnapshot extends AbstractJBossV6Feature {
             }
         }
     }
-
 
     /**Set suitable values of XML elements (NodeList) to all declared field's values of the given Class type.
      */

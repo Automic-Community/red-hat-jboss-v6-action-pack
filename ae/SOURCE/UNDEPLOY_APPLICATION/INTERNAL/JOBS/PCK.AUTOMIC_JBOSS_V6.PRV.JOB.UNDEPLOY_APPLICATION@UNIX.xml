@@ -190,8 +190,6 @@ else
   echo "&UC4RB_JBOSS_APP_NAME# does not exist. Undeployment successfully."
 fi
 
-
-
 ]]></MSCRI>
 </SCRIPT>
 <OUTPUTSCAN state="1">

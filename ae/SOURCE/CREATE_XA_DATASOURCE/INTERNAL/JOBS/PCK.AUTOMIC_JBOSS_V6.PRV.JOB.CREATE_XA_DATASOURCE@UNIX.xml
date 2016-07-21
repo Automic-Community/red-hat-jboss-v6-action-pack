@@ -159,7 +159,6 @@
 !:  SET &UC4RB_JBOSS_XA_DS_PARAMS# = STR_CAT(&UC4RB_JBOSS_XA_DS_PARAMS#, '--jta=false ')
 !:ENDIF
 
-
 failIfExisting() {
   echo XA data source &UC4RB_JBOSS_NAME# already existed
 : IF  &UC4RB_JBOSS_FAIL_EXISTING# = "YES"

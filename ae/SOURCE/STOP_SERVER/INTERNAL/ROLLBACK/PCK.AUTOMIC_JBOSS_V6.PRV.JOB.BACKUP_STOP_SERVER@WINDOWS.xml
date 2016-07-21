@@ -194,7 +194,6 @@ function backUpPID {
 :  EXIT 0
 :ENDIF
 
-
 if (!(Test-Path "&UC4RB_BACKUP_DIRECTORY#")) {
   mkdir "&UC4RB_BACKUP_DIRECTORY#" | Out-Null
   if ($? -ne 1) {

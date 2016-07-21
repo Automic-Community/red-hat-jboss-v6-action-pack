@@ -224,7 +224,6 @@ if [ "`echo "$output" | grep " operation failed "`" ]; then
   exit 1
 fi
 
-
 ! --------------------------------------
 
 echo -e "\nStarting/Assigning process finished. Checking &UC4RB_JBOSS_APP_NAME# status again ..."

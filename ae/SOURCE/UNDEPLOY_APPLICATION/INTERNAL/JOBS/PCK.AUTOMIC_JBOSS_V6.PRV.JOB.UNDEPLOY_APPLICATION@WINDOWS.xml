@@ -180,7 +180,6 @@ if ($? -eq 1) {
 : ENDIF
 }
 
-
 !---------- Undeployment ------------
 Write-Host "Undeploying &UC4RB_JBOSS_APP_NAME# on JBoss EAP 6(&UC4RB_JBOSS_OPERATING_MODE#) ..."
 
@@ -191,7 +190,6 @@ $output | findstr /C:"Undeploy failed:" | Out-Null
 if ("$?" -eq "True") {
   exit 1
 }
-
 
 !---------------------------------
 Write-Host "Undeployment process finished. Checking for &UC4RB_JBOSS_APP_NAME# after deployment ..."

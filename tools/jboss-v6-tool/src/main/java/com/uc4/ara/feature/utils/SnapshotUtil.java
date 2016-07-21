@@ -232,7 +232,6 @@ public class SnapshotUtil {
 		return filterList;
 	}
 
-
 	public static List<File> filterFiles(List<File> files, String topDir, String excludefilters) throws IOException {
 		// form the include exclude lists
 
@@ -250,7 +249,6 @@ public class SnapshotUtil {
 		}
 		return files;
 	}
-
 
 	public static List<Pattern> getFilters(String excludefilters) throws IOException {
 
@@ -342,7 +340,6 @@ public class SnapshotUtil {
 							throw new FileNotFoundException("Real file " + realFile.getCanonicalPath() + " not exist");
 						}
 
-
 					} else
 						files.add(file);
 				}
@@ -355,8 +352,6 @@ public class SnapshotUtil {
 
 		return files;
 	}
-
-
 
 	/**
 	 * @param dir
@@ -402,7 +397,6 @@ public class SnapshotUtil {
 						} else {
 							throw new FileNotFoundException("Real file " + realFile.getCanonicalPath() + " not exist");
 						}
-
 
 					} else
 						files.add(file);
@@ -478,7 +472,6 @@ public class SnapshotUtil {
 		}
 	}
 
-
 	/**All files and directories the symbolicFile links to will be added to snap.zip
 	 * @param zip
 	 * @param fileName
@@ -515,7 +508,6 @@ public class SnapshotUtil {
 		}
 	}
 
-
 	public static void addFileToZip(ZipOutputStream zip, String fileName, File f) throws IOException {
 		byte buf[] = new byte[8192];
 		BufferedInputStream fin = null;
@@ -541,14 +533,12 @@ public class SnapshotUtil {
 		}
 	}
 
-
 	public static String getRelativePath(String top, File f) throws IOException {
 		String path = f.getAbsolutePath().substring(top.length());
 		if (path.length() > 0)
 			path = path.substring(1); // remove leading / or \
 		return path;
 	}
-
 
 	/**
 	 * Parse the content of the given file as an XML document and return a new
@@ -603,7 +593,6 @@ public class SnapshotUtil {
 
 		builder = factory.newDocumentBuilder();
 
-
 		Document doc = null;
 		try {
 			doc = builder.parse(new File(fileName));
@@ -618,7 +607,6 @@ public class SnapshotUtil {
 
 		return doc;
 	}
-
 
 	public static List<Node> getChildElements(Node node) {
 

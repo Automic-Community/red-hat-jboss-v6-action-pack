@@ -130,7 +130,6 @@
 :INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CONVERT_SLASHES_WINDOWS_STYLE
 :SET &UC4RB_JBOSS_HOME# = &UC4RB_CONVERTED_STRING#
 
-
 :INCLUDE PCK.AUTOMIC_JBOSS_V6.PRV.INCLUDE.JBOSS_CLI@WINDOWS
 
 !Escaped jboss-cli.bat
@@ -146,7 +145,6 @@ function FailIfRunning {
     exit 0;
 :  ENDIF
 }
-
 
 !----------------------------------------------------------------------------------------------------
 function IsServerRunning {

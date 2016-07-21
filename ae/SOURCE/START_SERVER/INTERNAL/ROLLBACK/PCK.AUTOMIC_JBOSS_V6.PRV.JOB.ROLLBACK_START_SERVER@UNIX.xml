@@ -126,7 +126,6 @@ fi
 echo "Implementing Rollback on the STARTED instances."
 echo "Warning: if server states are modified after finishing START_SERVER, this implementation may fail."
 
-
 !Stop all started server instances (next Action)
 :IF &UC4RB_JBOSS_OPERATING_MODE# = "Managed Domain"
 : IF &UC4RB_JBOSS_SERVER# NE ""
@@ -135,7 +134,6 @@ echo "Warning: if server states are modified after finishing START_SERVER, this 
     exit 0
 : ENDIF
 :ENDIF
-
 
 !Stop JBoss EAP Standalone or Domain Controller.
 :IF &UC4RB_JBOSS_SERVICE_NAME# NE ""

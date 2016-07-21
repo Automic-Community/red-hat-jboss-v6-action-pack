@@ -171,7 +171,6 @@ $env:NOPAUSE="True"
 :  SET &UC4RB_JBOSS_DS_PARAMS# = STR_CAT(&UC4RB_JBOSS_DS_PARAMS#, '--jta=false ')
 :ENDIF
 
-
 function FailIfExisting {
   Write-Host Datasource &UC4RB_JBOSS_NAME# already exists
 : IF  &UC4RB_JBOSS_FAIL_EXISTING# = "YES"

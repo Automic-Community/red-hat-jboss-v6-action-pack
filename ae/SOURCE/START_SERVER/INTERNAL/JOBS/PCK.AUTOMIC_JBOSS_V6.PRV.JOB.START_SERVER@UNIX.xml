@@ -166,7 +166,6 @@
 
 :SET &START_JBOSS_COMMAND# = '&START_JBOSS_COMMAND# &'
 
-
 !Escaped jboss-cli.sh
 set NOPAUSE="True"
 
@@ -322,7 +321,6 @@ cd "&UC4RB_JBOSS_HOME#/bin"
 :    ENDWHILE
 :  ENDIF
 :ENDIF
-
 
 ]]></MSCRI>
 </SCRIPT>

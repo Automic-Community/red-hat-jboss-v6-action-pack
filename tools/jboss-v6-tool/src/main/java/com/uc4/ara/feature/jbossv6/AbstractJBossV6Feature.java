@@ -14,9 +14,7 @@ import org.jboss.as.cli.scriptsupport.CLI.Result;
 import com.uc4.ara.feature.jbossv6.schemas.ObjectFactory;
 import com.uc4.ara.util.Logger;
 
-
 abstract class AbstractJBossV6Feature  {
-
 
     public String slash = File.separator;
 
@@ -26,11 +24,9 @@ abstract class AbstractJBossV6Feature  {
     private final String username;
     private final String password;
 
-
     protected static final String DEFAULT_HASH = "MD5";
     protected static final DateFormat dateFormat = DateFormat
             .getDateTimeInstance(DateFormat.SHORT, DateFormat.FULL);
-
 
     protected ObjectFactory objectFactory;
     protected final CLI cli;
@@ -128,7 +124,6 @@ abstract class AbstractJBossV6Feature  {
 
             if (jbBaseDir.matches("jboss.*.base.dir"))
                 throw new JBossCLIException("Cannot get base directory " + jbBaseDir);
-
 
             result = cli.cmd("/deployment=" + appName + ":read-attribute(name=content)");
             jsonResult = result.getResponse().get("result").toJSONString(true);

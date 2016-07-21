@@ -5,7 +5,6 @@
 // Generated on: 2013.12.04 at 03:31:00 PM ICT 
 //
 
-
 package com.uc4.ara.feature.jbossv6.schemas;
 
 import java.util.ArrayList;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * <p>Java class for SarDDType complex type.
@@ -129,7 +127,6 @@ public class SarDDType {
         this.name = value;
     }
 
-
     /**
      * <p>Java class for anonymous complex type.
      * 
@@ -209,7 +206,6 @@ public class SarDDType {
             }
             return this.mbean;
         }
-
 
         /**
          * <p>Java class for anonymous complex type.
@@ -331,7 +327,6 @@ public class SarDDType {
             public void setCode(String value) {
                 this.code = value;
             }
-
 
             /**
              * <p>Java class for anonymous complex type.

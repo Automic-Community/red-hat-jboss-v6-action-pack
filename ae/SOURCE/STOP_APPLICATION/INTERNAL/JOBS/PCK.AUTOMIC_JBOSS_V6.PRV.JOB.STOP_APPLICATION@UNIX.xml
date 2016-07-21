@@ -178,7 +178,6 @@ fi
     fi
   fi
 
-
 !  If application is not assigned to given server groups
 :  IF &UC4RB_JBOSS_SERVER_GROUPS# NE ""
 :    DEFINE &SERVER_GROUPS#,string, 100

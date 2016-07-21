@@ -36,7 +36,6 @@ public class CompareJBossV6Snapshot extends AbstractInternalFeature  {
 
     private final String slash = File.separator;
 
-
     private CmdLineParser.Option<String> home;
     private CmdLineParser.Option<String> host;
     private CmdLineParser.Option<Integer> port;
@@ -168,7 +167,6 @@ public class CompareJBossV6Snapshot extends AbstractInternalFeature  {
             else
                 overviewSnapshot(snapXml);
 
-
         } catch (Exception e) {
             Logger.log(e.getMessage(), "INFO");
             status = ErrorCodes.EXCEPTION;
@@ -185,7 +183,6 @@ public class CompareJBossV6Snapshot extends AbstractInternalFeature  {
 
         return status;
     }
-
 
     private void overviewSnapshot(File snapXml) {
 
@@ -219,7 +216,6 @@ public class CompareJBossV6Snapshot extends AbstractInternalFeature  {
             return;
         }
     }
-
 
     /** Recursively add 'equal' state to OverviewSnap.xml
      */
@@ -319,7 +315,6 @@ public class CompareJBossV6Snapshot extends AbstractInternalFeature  {
         FeatureUtil.writeFile(report, resultFile);
     }
 
-
     /** Compare attributes or text content of a single node.
      * @param snapNode
      * @param compareNode
@@ -394,7 +389,6 @@ public class CompareJBossV6Snapshot extends AbstractInternalFeature  {
             updateNodeState( parent);
         }
     }
-
 
     /** Unique identification of an element
      */
@@ -520,7 +514,6 @@ public class CompareJBossV6Snapshot extends AbstractInternalFeature  {
                 }
         }
     }
-
 
     /**Check if the file (specified by ele) is a binary file or not. Set the "isBinary" attribute accordingly
      * @param ele
