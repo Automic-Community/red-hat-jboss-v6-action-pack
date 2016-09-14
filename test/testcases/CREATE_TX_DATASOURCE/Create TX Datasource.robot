@@ -6,9 +6,9 @@ Force Tags        CREATE_TX_DATASOURCE    win    unix
 Test Template     Create Tx Datasource Template
 Resource          ../../resources/keywords.txt
 
-*** Test Cases ***    MODE          PROFILE      NAME      JNDI_NAME                        DRIVER_NAME    URL      DRIVER_CLASS     DS_USERNAME    DS_PASSWORD    MAX_POOL    MIN_POOL    PROPERTIES        JTA    FAIL_EXISTING    UPDATE_EXISTING    RETURN CODE    RETURN STATUS
+*** Test Cases ***    MODE          PROFILE      NAME            JNDI_NAME                              DRIVER_NAME    URL      DRIVER_CLASS     DS_USERNAME    DS_PASSWORD    MAX_POOL    MIN_POOL    PROPERTIES        JTA    FAIL_EXISTING    UPDATE_EXISTING    RETURN CODE    RETURN STATUS
 Create TX Datasource
-                      Standalone    profiletx    nametx    java:jboss/datasources/nametx    h2             urltx    org.h2.Driver    usertx         passtx         200         100         testproperties    YES    NO               YES                0              ${ENDED_OK}
+                      Standalone    profiletx    nametx_${OS}    java:jboss/datasources/nametx_${OS}    h2             urltx    org.h2.Driver    usertx         passtx         200         100         testproperties    YES    NO               YES                0              ${ENDED_OK}
 
 *** Keywords ***
 Create Tx Datasource Template

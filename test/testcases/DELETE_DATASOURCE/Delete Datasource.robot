@@ -6,12 +6,14 @@ Force Tags        DELETE_DATASOURCE    win
 Test Template     Delete Datasource Template
 Resource          ../../resources/keywords.txt
 
-*** Test Cases ***    MODE          PROFILE      NAME      DSTYPE           FAIL IF MISSING    RETURN CODE    RETURN STATUS
+*** Test Cases ***    MODE          PROFILE                          NAME            DSTYPE           FAIL IF MISSING    RETURN CODE    RETURN STATUS
 Delete xa datasource
-                      Standalone    testds       testds    XA datasource    NO                 0              ${ENDED_OK}
+                      [Setup]       Create Xa Datasource Template    testds_${OS}
+                      Standalone    testds                           testds_${OS}    XA datasource    NO                 0              ${ENDED_OK}
 
 Delete tx datasource
-                      Standalone    profiletx    nametx    TX datasource    NO                 0              ${ENDED_OK}
+                      [Setup]       Create Tx Datasource Template    nametx_${OS}
+                      Standalone    profiletx                        nametx_${OS}    TX datasource    NO                 0              ${ENDED_OK}
 
 *** Keywords ***
 Delete Datasource Template
@@ -28,3 +30,44 @@ Delete Datasource Template
     Action Report Should Be Found
     Action Return Code Should Be    ${returnCode}
     Action Return Status Should Be    ${returnStatus}
+
+Create Xa Datasource Template
+    [Arguments]    ${name}
+    Init Action    ${ACTION_CREATE_XA_DATASOURCE}
+    Action Set    ${PRT_CREATE_XA_DATASOURCE_JBOSS_OPERATING_MODE}    Standalone
+    Action Set    ${PRT_CREATE_XA_DATASOURCE_JBOSS_PROFILE}    testds
+    Action Set    ${PRT_CREATE_XA_DATASOURCE_JBOSS_NAME}    ${name}
+    Action Set    ${PRT_CREATE_XA_DATASOURCE_JBOSS_JNDI_NAME}    java:jboss/datasources/${name}
+    Action Set    ${PRT_CREATE_XA_DATASOURCE_JBOSS_DRIVER_NAME}    h2
+    Action Set    ${PRT_CREATE_XA_DATASOURCE_JBOSS_DS_CLASS}    org.h2.Driver
+    Action Set    ${PRT_CREATE_XA_DATASOURCE_JBOSS_DS_USERNAME}    testds
+    Action Set    ${PRT_CREATE_XA_DATASOURCE_JBOSS_DS_PASSWORD}    testds
+    Action Set    ${PRT_CREATE_XA_DATASOURCE_JBOSS_MAX_POOL_SIZE}    100
+    Action Set    ${PRT_CREATE_XA_DATASOURCE_JBOSS_MIN_POOL_SIZE}    200
+    Action Set    ${PRT_CREATE_XA_DATASOURCE_JBOSS_PROPERTIES}    testproperty
+    Action Set    ${PRT_CREATE_XA_DATASOURCE_JBOSS_JTA_INTEGRATION}    YES
+    Action Set    ${PRT_CREATE_XA_DATASOURCE_JBOSS_FAIL_EXISTING}    NO
+    Action Set    ${PRT_CREATE_XA_DATASOURCE_JBOSS_UPDATE_EXISTING}    NO
+    JBOSS Common Setting With User
+    Action Execute
+
+Create Tx Datasource Template
+    [Arguments]    ${name}
+    Init Action    ${ACTION_CREATE_TX_DATASOURCE}
+    Action Set    ${PRT_CREATE_TX_DATASOURCE_JBOSS_OPERATING_MODE}    Standalone
+    Action Set    ${PRT_CREATE_TX_DATASOURCE_JBOSS_PROFILE}    profiletx
+    Action Set    ${PRT_CREATE_TX_DATASOURCE_JBOSS_NAME}    ${name}
+    Action Set    ${PRT_CREATE_TX_DATASOURCE_JBOSS_JNDI_NAME}    java:jboss/datasources/${name}
+    Action Set    ${PRT_CREATE_TX_DATASOURCE_JBOSS_DRIVER_NAME}    h2
+    Action Set    ${PRT_CREATE_TX_DATASOURCE_JBOSS_URL}    urltx
+    Action Set    ${PRT_CREATE_TX_DATASOURCE_JBOSS_DRIVER_CLASS}    org.h2.Driver
+    Action Set    ${PRT_CREATE_TX_DATASOURCE_JBOSS_DS_USERNAME}    usertx
+    Action Set    ${PRT_CREATE_TX_DATASOURCE_JBOSS_DS_PASSWORD}    passtx
+    Action Set    ${PRT_CREATE_TX_DATASOURCE_JBOSS_MAX_POOL_SIZE}    200
+    Action Set    ${PRT_CREATE_TX_DATASOURCE_JBOSS_MIN_POOL_SIZE}    100
+    Action Set    ${PRT_CREATE_TX_DATASOURCE_JBOSS_PROPERTIES}    testproperties
+    Action Set    ${PRT_CREATE_TX_DATASOURCE_JBOSS_JTA_INTEGRATION}    YES
+    Action Set    ${PRT_CREATE_TX_DATASOURCE_JBOSS_FAIL_EXISTING}    NO
+    Action Set    ${PRT_CREATE_TX_DATASOURCE_JBOSS_UPDATE_EXISTING}    YES
+    JBOSS Common Setting With User
+    Action Execute

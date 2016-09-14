@@ -6,21 +6,21 @@ Force Tags        CREATE_MQT    win    unix
 Test Template     Create Mqt Template
 Resource          ../../resources/keywords.txt
 
-*** Test Cases ***    MODE          PROFILE       NAME        JNDI NAME              DLA              POLICY    TYPE     FAIL EXISTING    UPDATE EXISTING    RETURN CODE    RETURN STATUS
-Create MQT Page       Standalone    mqtprofile    mqtname3    java:/jms/queue/mqt    jms.queue.mqt    PAGE      Queue    NO               NO                 0              ${ENDED_OK}
+*** Test Cases ***    MODE          PROFILE       NAME                         JNDI NAME                                    DLA              POLICY    TYPE     FAIL EXISTING    UPDATE EXISTING    RETURN CODE    RETURN STATUS
+Create MQT Page       Standalone    mqtprofile    mqtname_Page_Queue_${OS}     java:/jms/queue/mqtname_Page_Queue_${OS}     jms.queue.mqt    PAGE      Queue    NO               NO                 0              ${ENDED_OK}
 
-Create MQT BLOCK      Standalone    mqtprofile    mqtname1    java:/jms/queue/mqt    jms.queue.mqt    BLOCK     Queue    NO               NO                 0              ${ENDED_OK}
+Create MQT BLOCK      Standalone    mqtprofile    mqtname_Block_Queue_${OS}    java:/jms/queue/mqtname_Block_Queue_${OS}    jms.queue.mqt    BLOCK     Queue    NO               NO                 0              ${ENDED_OK}
 
-Create MQT DROP       Standalone    mqtprofile    mqtname1    java:/jms/queue/mqt    jms.queue.mqt    DROP      Queue    NO               NO                 0              ${ENDED_OK}
+Create MQT DROP       Standalone    mqtprofile    mqtname_Drop_Queue_${OS}     java:/jms/queue/mqtname_Drop_Queue_${OS}     jms.queue.mqt    DROP      Queue    NO               NO                 0              ${ENDED_OK}
 
 Create MQT Page Topic
-                      Standalone    mqtprofile    mqtname1    java:/jms/queue/mqt    jms.queue.mqt    PAGE      Topic    NO               NO                 0              ${ENDED_OK}
+                      Standalone    mqtprofile    mqtname_Page_Topic_${OS}     java:/jms/queue/mqtname_Page_Topic_${OS}     jms.queue.mqt    PAGE      Topic    NO               NO                 0              ${ENDED_OK}
 
 Create MQT BLOCK Topic
-                      Standalone    mqtprofile    mqtname1    java:/jms/queue/mqt    jms.queue.mqt    BLOCK     Topic    NO               NO                 0              ${ENDED_OK}
+                      Standalone    mqtprofile    mqtname_Block_topic_${OS}    java:/jms/queue/mqtname_Block_topic_${OS}    jms.queue.mqt    BLOCK     Topic    NO               NO                 0              ${ENDED_OK}
 
 Create MQT DROP Topic
-                      Standalone    mqtprofile    mqtname1    java:/jms/queue/mqt    jms.queue.mqt    DROP      Topic    NO               NO                 0              ${ENDED_OK}
+                      Standalone    mqtprofile    mqtname_Drop_Topic_${OS}     java:/jms/queue/mqtname_Drop_Topic_${OS}     jms.queue.mqt    DROP      Topic    NO               NO                 0              ${ENDED_OK}
 
 *** Keywords ***
 Create Mqt Template

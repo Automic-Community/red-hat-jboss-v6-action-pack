@@ -6,9 +6,9 @@ Force Tags        CREATE_XA_DATASOURCE    win    unix
 Test Template     Create Xa Datasource Template
 Resource          ../../resources/keywords.txt
 
-*** Test Cases ***    MODE          PROFILE    NAME      JNDI NAME                        DRIVER NAME    DS CLASS         DS USERNAME    DS PASSWORD    MIN POOL SIZE    MAX POOL SIZE    PROPERTIES      JTA    FAIL IF EXIST    UPDATE EXISTING    RETURN CODE    RETURN STATUS
+*** Test Cases ***    MODE          PROFILE    NAME            JNDI NAME                              DRIVER NAME    DS CLASS         DS USERNAME    DS PASSWORD    MIN POOL SIZE    MAX POOL SIZE    PROPERTIES      JTA    FAIL IF EXIST    UPDATE EXISTING    RETURN CODE    RETURN STATUS
 Create XA Datasource
-                      Standalone    testds     testds    java:jboss/datasources/testds    h2             org.h2.Driver    testds         testds         100              200              testproperty    YES    NO               YES                0              ${ENDED_OK}
+                      Standalone    testds     testds_${OS}    java:jboss/datasources/testds_${OS}    h2             org.h2.Driver    testds         testds         100              200              testproperty    YES    NO               YES                0              ${ENDED_OK}
 
 *** Keywords ***
 Create Xa Datasource Template
