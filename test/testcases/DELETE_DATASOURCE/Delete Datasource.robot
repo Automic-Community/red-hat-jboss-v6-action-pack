@@ -2,18 +2,18 @@
 Documentation     NOTE:
 ...               add note here
 Suite Setup       Suite Setup
-Force Tags        DELETE_DATASOURCE    win
+Force Tags        DELETE_DATASOURCE    win    unix
 Test Template     Delete Datasource Template
 Resource          ../../resources/keywords.txt
 
-*** Test Cases ***    MODE          PROFILE                          NAME            DSTYPE           FAIL IF MISSING    RETURN CODE    RETURN STATUS
+*** Test Cases ***    MODE          PROFILE                          NAME                  DSTYPE           FAIL IF MISSING    RETURN CODE    RETURN STATUS
 Delete xa datasource
-                      [Setup]       Create Xa Datasource Template    testds_${OS}
-                      Standalone    testds                           testds_${OS}    XA datasource    NO                 0              ${ENDED_OK}
+                      [Setup]       Create Xa Datasource Template    xa_to_delete_${OS}
+                      Standalone    testds                           xa_to_delete_${OS}    XA datasource    NO                 0              ${ENDED_OK}
 
 Delete tx datasource
-                      [Setup]       Create Tx Datasource Template    nametx_${OS}
-                      Standalone    profiletx                        nametx_${OS}    TX datasource    NO                 0              ${ENDED_OK}
+                      [Setup]       Create Tx Datasource Template    tx_to_delete_${OS}
+                      Standalone    profiletx                        tx_to_delete_${OS}    TX datasource    NO                 0              ${ENDED_OK}
 
 *** Keywords ***
 Delete Datasource Template
@@ -59,7 +59,7 @@ Create Tx Datasource Template
     Action Set    ${PRT_CREATE_TX_DATASOURCE_JBOSS_NAME}    ${name}
     Action Set    ${PRT_CREATE_TX_DATASOURCE_JBOSS_JNDI_NAME}    java:jboss/datasources/${name}
     Action Set    ${PRT_CREATE_TX_DATASOURCE_JBOSS_DRIVER_NAME}    h2
-    Action Set    ${PRT_CREATE_TX_DATASOURCE_JBOSS_URL}    urltx
+    Action Set    ${PRT_CREATE_TX_DATASOURCE_JBOSS_URL}    jdbc:h2:mem:test;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
     Action Set    ${PRT_CREATE_TX_DATASOURCE_JBOSS_DRIVER_CLASS}    org.h2.Driver
     Action Set    ${PRT_CREATE_TX_DATASOURCE_JBOSS_DS_USERNAME}    usertx
     Action Set    ${PRT_CREATE_TX_DATASOURCE_JBOSS_DS_PASSWORD}    passtx
