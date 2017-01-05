@@ -55,7 +55,7 @@
 <MaxRetCode>0</MaxRetCode>
 <MrcExecute/>
 <MrcElseE>0</MrcElseE>
-<FcstStatus>0|U00000000 ??? ""</FcstStatus>
+<FcstStatus>0| |</FcstStatus>
 
 <ErtMethodDef>1</ErtMethodDef>
 <ErtMethodFix>0</ErtMethodFix>
@@ -163,7 +163,6 @@ echo $entries > &UC4RB_BACKUP_REPORT#
 : ELSE
     result=$(&UC4RB_JBOSS_CLI# --command="&UC4RB_JBOSS_JMS_QUERY_CMD#/address-setting=jms.topic.&UC4RB_JBOSS_NAME#:read-resource")
 : ENDIF
-:INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHECK_SHELL_CMD@UNIX
 
 add_settings=$(echo $result | grep -o "result.*}")
 
@@ -176,7 +175,7 @@ fi
 start=$(expr index "${add_settings}" '{')
 end=$(expr index "${add_settings}" '}')
 
-if [ $start -gt 0 ] && [ $end -gt $start ]; then
+if [ $start -gt 0 -a $end -gt $start ]; then
   add_settings=$(echo ${add_settings:$start:$end-$start-1})
    IFS=','
    for attribute in $add_settings
