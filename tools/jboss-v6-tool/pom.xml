@@ -12,7 +12,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<vendor>Automic Software GmbH</vendor>
-		<version>1.0.1-SNAPSHOT</version>
+		<version>1.0.2</version>
 		<timestamp>${maven.build.timestamp}</timestamp>
 		<maven.build.timestamp.format>yyyy-MM-dd HH:mm</maven.build.timestamp.format>
 		<stagingProfileId>1a3366b29e1d77</stagingProfileId>
@@ -22,26 +22,10 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>commons-discovery</groupId>
-			<artifactId>commons-discovery</artifactId>
-			<version>0.2</version>
-		</dependency>
-		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
 			<version>3.1</version>
 		</dependency>
-		<dependency>
-			<groupId>javax.xml</groupId>
-			<artifactId>jaxrpc</artifactId>
-			<version>1.1</version>
-		</dependency>
-		<dependency>
-			<groupId>wsdl4j</groupId>
-			<artifactId>wsdl4j</artifactId>
-			<version>1.6.2</version>
-		</dependency>
-
 		<dependency>
 			<groupId>org.codehaus.jackson</groupId>
 			<artifactId>jackson-core-asl</artifactId>
@@ -56,6 +40,8 @@
 			<groupId>org.jboss</groupId>
 			<artifactId>jboss-cli-client</artifactId>
 			<version>7.2.0.Final-redhat-8</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/unboundid-jboss/jboss-cli-client-7.2.0.Final-redhat-8.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>com.googlecode.java-diff-utils</groupId>
@@ -66,37 +52,6 @@
 			<groupId>com.esotericsoftware</groupId>
 			<artifactId>wildcard</artifactId>
 			<version>1.0</version>
-		</dependency>
-
-		<dependency>
-			<groupId>ch.qos.logback</groupId>
-			<artifactId>logback-core</artifactId>
-			<version>${logback.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>ch.qos.logback</groupId>
-			<artifactId>logback-classic</artifactId>
-			<version>${logback.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>ch.qos.logback</groupId>
-			<artifactId>logback-access</artifactId>
-			<version>${logback.version}</version>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>log4j-over-slf4j</artifactId>
-			<version>${slf4j.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.12</version>
-			<scope>test</scope> <!-- not included in final build -->
 		</dependency>
 	</dependencies>
 
