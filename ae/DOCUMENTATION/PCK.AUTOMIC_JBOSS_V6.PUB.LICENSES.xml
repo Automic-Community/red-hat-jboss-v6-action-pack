@@ -10,17 +10,11 @@
 <DOC><![CDATA[=================
 = Libraries =
 =================
-commons-discovery version 0.2 Apache 1.1 Copyright (C) 1999-2001 The Apache Software Foundation
-jaxrpc version 1.1 Common Development and Distribution License (CDDL-1.0)
-wsdl4j version 1.6.2 Common Public License 1.0
-logback-core, logback-classic, logback-access version 1.0.13 Eclipse Public License v1.0
-log4j-over-slf4j version 1.7.5 MIT License
 commons-lang3 version 3.1 Apache 2.0 Copyright (C) 2012 The Apache Software Foundation
 wildcard version 1.0
 diffutils version 1.2.1 Apache License Version 2.0, January 2004
 jackson-core-asl version 1.8.1 The Apache Software License, Version 2.0
 jackson-mapper-asl version 1.8.1 The Apache Software License, Version 2.0
-jboss-cli-client version 7.2.0.Final-redhat-8 Apache License Version 2.0, January 2004
 
 ==================
 = Licenses =
