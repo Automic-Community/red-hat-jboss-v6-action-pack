@@ -6,8 +6,9 @@ Force Tags        STOP_APPLICATION    unix    win
 Test Template     Stop Application Template
 Resource          ../../resources/keywords.txt
 
-*** Test Cases ***    MODE          SERVER GROUP    APP NAME      FAIL IF STOPPED    RETURN CODE    RETURN STATUS
+*** Test Cases ***    MODE          SERVER GROUP    APP NAME         FAIL IF STOPPED    RETURN CODE    RETURN STATUS
 Stop Application Normal
+                      [Tags]        SMOKE_TEST
                       Standalone    ${EMPTY}        ${_JBOSS_APP}    NO                 0              ENDED_OK - ended normally
 
 *** Keywords ***
