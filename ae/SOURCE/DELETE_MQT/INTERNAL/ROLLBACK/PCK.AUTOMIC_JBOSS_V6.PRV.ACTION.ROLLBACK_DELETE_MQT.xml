@@ -27,6 +27,7 @@
 <DeactDelay>0</DeactDelay>
 <ActAtRun>1</ActAtRun>
 <UC4Priority>0</UC4Priority>
+<PassPriority>0</PassPriority>
 <MaxParallel2>0</MaxParallel2>
 <ReuseHG>1</ReuseHG>
 <MpElse1>1</MpElse1>
@@ -100,8 +101,8 @@
 <node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_BACKUP_DIRECTORY#" Value=""/>
-<row Mod="0" Name="&amp;UC4RB_BACKUP_REPORT#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_BACKUP_DIRECTORY#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_BACKUP_REPORT#" Value=""/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -130,8 +131,8 @@
 <UC4RB_JBOSS_PASSWORDs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PASSWORD#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_MQT">&amp;UC4RB_JBOSS_PASSWORD#</UC4RB_JBOSS_PASSWORDs.00>
 <UC4RB_JBOSS_PORTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PORT#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_MQT">&amp;UC4RB_JBOSS_PORT#</UC4RB_JBOSS_PORTs.00>
 <UC4RB_JBOSS_PROFILEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_PROFILE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_MQT">&amp;UC4RB_JBOSS_PROFILE#</UC4RB_JBOSS_PROFILEs.00>
-<UC4RB_JBOSS_REDIS_DELAYs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_REDIS_DELAY#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_MQT">0</UC4RB_JBOSS_REDIS_DELAYs.00>
 <UC4RB_JBOSS_RE_DELAYs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_RE_DELAY#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_MQT">0</UC4RB_JBOSS_RE_DELAYs.00>
+<UC4RB_JBOSS_REDIS_DELAYs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_REDIS_DELAY#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_MQT">0</UC4RB_JBOSS_REDIS_DELAYs.00>
 <UC4RB_JBOSS_SIZE_MAXs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SIZE_MAX#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_MQT">1000</UC4RB_JBOSS_SIZE_MAXs.00>
 <UC4RB_JBOSS_SIZE_PAGEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SIZE_PAGE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_MQT">1000</UC4RB_JBOSS_SIZE_PAGEs.00>
 <UC4RB_JBOSS_SIZE_PAGE_CACHEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_JBOSS_SIZE_PAGE_CACHE#" promptsetname="PCK.AUTOMIC_JBOSS_V6.PRV.PROMPTSET.CREATE_MQT">5</UC4RB_JBOSS_SIZE_PAGE_CACHEs.00>
@@ -312,7 +313,7 @@
 <MaxRetCode>0</MaxRetCode>
 <MrcExecute/>
 <MrcElseE>0</MrcElseE>
-<FcstStatus>0|U00000000 ??? ""</FcstStatus>
+<FcstStatus>0| |</FcstStatus>
 
 <ErtMethodDef>1</ErtMethodDef>
 <ErtMethodFix>0</ErtMethodFix>
