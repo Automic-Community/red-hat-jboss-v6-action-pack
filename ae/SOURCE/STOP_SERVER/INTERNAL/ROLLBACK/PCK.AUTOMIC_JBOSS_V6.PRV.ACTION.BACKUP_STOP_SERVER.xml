@@ -27,6 +27,7 @@
 <DeactDelay>0</DeactDelay>
 <ActAtRun>1</ActAtRun>
 <UC4Priority>0</UC4Priority>
+<PassPriority>0</PassPriority>
 <MaxParallel2>0</MaxParallel2>
 <ReuseHG>1</ReuseHG>
 <MpElse1>1</MpElse1>
@@ -174,7 +175,7 @@
 <MaxRetCode>0</MaxRetCode>
 <MrcExecute/>
 <MrcElseE>0</MrcElseE>
-<FcstStatus>0|U00000000 ??? ""</FcstStatus>
+<FcstStatus>0| |</FcstStatus>
 
 <ErtMethodDef>1</ErtMethodDef>
 <ErtMethodFix>0</ErtMethodFix>

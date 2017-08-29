@@ -27,6 +27,7 @@
 <DeactDelay>0</DeactDelay>
 <ActAtRun>1</ActAtRun>
 <UC4Priority>0</UC4Priority>
+<PassPriority>0</PassPriority>
 <MaxParallel2>0</MaxParallel2>
 <ReuseHG>1</ReuseHG>
 <MpElse1>1</MpElse1>
@@ -100,9 +101,9 @@
 <node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_BACKUP_DIRECTORY#" Value=""/>
-<row Mod="0" Name="&amp;UC4RB_BACKUP_REPORT#" Value=""/>
-<row Mod="0" Name="&amp;UC4RB_JBOSS_APPLN_UNDEPLOYED#" Value="FALSE"/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_BACKUP_DIRECTORY#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_BACKUP_REPORT#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_JBOSS_APPLN_UNDEPLOYED#" Value="FALSE"/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -110,7 +111,7 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_JBOSS_UPDATE1#" Value="&amp;UC4RB_JBOSS_UPDATE#"/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_JBOSS_UPDATE1#" Value="&amp;UC4RB_JBOSS_UPDATE#"/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -211,7 +212,7 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_JBOSS_UPDATE1#" Value="&amp;UC4RB_JBOSS_UPDATE#"/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_JBOSS_UPDATE1#" Value="&amp;UC4RB_JBOSS_UPDATE#"/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -289,7 +290,7 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_JBOSS_UPDATE1#" Value="&amp;UC4RB_JBOSS_UPDATE#"/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_JBOSS_UPDATE1#" Value="&amp;UC4RB_JBOSS_UPDATE#"/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -362,9 +363,9 @@
 <node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_BACKUP_DIRECTORY#" Value=""/>
-<row Mod="0" Name="&amp;UC4RB_BACKUP_REPORT#" Value=""/>
-<row Mod="0" Name="&amp;UC4RB_JBOSS_APPLN_DEPLOYED#" Value="FALSE"/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_BACKUP_DIRECTORY#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_BACKUP_REPORT#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_JBOSS_APPLN_DEPLOYED#" Value="FALSE"/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -372,7 +373,7 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_JBOSS_UPDATE1#" Value="&amp;UC4RB_JBOSS_UPDATE#"/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_JBOSS_UPDATE1#" Value="&amp;UC4RB_JBOSS_UPDATE#"/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -446,7 +447,7 @@
 <MaxRetCode>0</MaxRetCode>
 <MrcExecute/>
 <MrcElseE>0</MrcElseE>
-<FcstStatus>0|U00000000 ??? ""</FcstStatus>
+<FcstStatus>0| |</FcstStatus>
 
 <ErtMethodDef>1</ErtMethodDef>
 <ErtMethodFix>0</ErtMethodFix>
